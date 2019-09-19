@@ -8,14 +8,25 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>github代码上传 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="1.准备工作1）安装Git Bash因为这个是国外的软件是被限制的，推荐挂个代理本文推荐一个代理软件链接：https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA提取码：xfhn目前本人正在使用的一个代理链接：https://www.52jying.com/nobe如果崩了大家可以上网百度一个自己找一个代理网址。2）  配置SSH keyssh key是用来解">
+<meta property="og:type" content="article">
 <meta property="og:title" content="github代码上传">
 <meta property="og:url" content="http://yoursite.com/2019/09/19/github代码上传/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.准备工作1）安装Git Bash因为这个是国外的软件是被限制的，推荐挂个代理本文推荐一个代理软件链接：https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA提取码：xfhn目前本人正在使用的一个代理链接：https://www.52jying.com/nobe如果崩了大家可以上网百度一个自己找一个代理网址。2）  配置SSH keyssh key是用来解">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-19T05:50:59.864Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919125634.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919125751.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919130017.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190918224214.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919161957.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919163250.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919163336.png">
+<meta property="og:updated_time" content="2019-09-19T08:44:47.540Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github代码上传">
+<meta name="twitter:description" content="1.准备工作1）安装Git Bash因为这个是国外的软件是被限制的，推荐挂个代理本文推荐一个代理软件链接：https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA提取码：xfhn目前本人正在使用的一个代理链接：https://www.52jying.com/nobe如果崩了大家可以上网百度一个自己找一个代理网址。2）  配置SSH keyssh key是用来解">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919125634.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -171,7 +182,38 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h3><p>1）安装Git Bash<br>因为这个是国外的软件是被限制的，推荐挂个代理<br>本文推荐一个代理软件链接：<a href="https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA" target="_blank" rel="noopener">https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA</a><br>提取码：xfhn<br>目前本人正在使用的一个代理链接：<a href="https://www.52jying.com/nobe" target="_blank" rel="noopener">https://www.52jying.com/nobe</a><br>如果崩了大家可以上网百度一个自己找一个代理网址。<br>2）  配置SSH key<br>ssh key是用来解决本地与服务器的连接问题的。<br>打开git bash输入命令</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh <span class="comment">#检查本机已存在的ssh密钥</span></span><br></pre></td></tr></table></figure>
+
+<p>如果提示：No such file or directory 说明你是第一次使用git。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"邮件地址"</span></span><br></pre></td></tr></table></figure>
+
+<p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\ <strong>id_rsa.pub</strong> 文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key： </p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919125634.png" alt> </p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919125751.png" alt> </p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919130017.png" alt> </p>
+<p>将刚复制的内容粘贴到key那里，title随便填，保存。<br>2) 测试是否成功</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com <span class="comment"># 注意邮箱地址不用改</span></span><br></pre></td></tr></table></figure>
+
+<p>如果提示：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Are you sure you want to continue connecting (yes/no)?</span><br></pre></td></tr></table></figure>
+
+<p>输入yes，然后会看到：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi liuxianan! Yo<span class="string">u've successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
+
+<p>看到这个信息说明SSH已配置成功！此时你还需要配置：</p>
+<h3 id="3-创建仓库"><a href="#3-创建仓库" class="headerlink" title="3. 创建仓库"></a>3. 创建仓库</h3><p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190918224214.png" alt> </p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919161957.png" alt> </p>
+<h3 id="4-上传代码"><a href="#4-上传代码" class="headerlink" title="4. 上传代码"></a>4. 上传代码</h3><p>1）创建目录在目录下右键打开git bash。（这里创建的是text）<br>2) 将当前目录变为git管理仓库：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">``` </span><br><span class="line">将本地仓库链接到GitHub远程仓库：</span><br><span class="line"></span><br><span class="line">```python</span><br><span class="line"> git remote add orign https://github.com/upsilverfox/fox.git <span class="comment">#这个只要写一次就好，其中https://github.com/upsilverfox/fox为你的仓库地址。</span></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">运行成功后本地目录下将会增加 .git 如下图所示： </span><br><span class="line"></span><br><span class="line">![](https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919160509.png)</span><br><span class="line"></span><br><span class="line">这样本地仓库就配置好了。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="number">3</span>）进行测试</span><br><span class="line">将一篇holle_word的文本文件放入text文件夹中。</span><br><span class="line">![](https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919160913.png) </span><br><span class="line"></span><br><span class="line">重新在text目录下右键打开git bash。</span><br><span class="line">输入代码：</span><br><span class="line">```python</span><br><span class="line">git add . <span class="comment">#这是为了告诉git将文件转到了仓库</span></span><br><span class="line">git commit -m <span class="string">"fist"</span> <span class="comment">#对本次上传进行说明，一定要写,而且每次上传都要写</span></span><br><span class="line">git push -u orign master <span class="comment">#上传代码</span></span><br></pre></td></tr></table></figure>
+
+<p>示例图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919163250.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919163336.png" alt><br>这样就成功了，有什么问题联系作者哦，虽然不一定能解决，哈哈哈哈！</p>
+<h3 id="4-参考文献"><a href="#4-参考文献" class="headerlink" title="4. 参考文献"></a>4. 参考文献</h3><ol>
+<li><a href="https://shansan.top/2019/03/08/将本地项目推送到GitHub远程仓库/" target="_blank" rel="noopener">https://shansan.top/2019/03/08/将本地项目推送到GitHub远程仓库/</a></li>
+</ol>
+
       
 
       
@@ -444,7 +486,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="https://shansan.top/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
             </li>
           
             <li class="search-li">
