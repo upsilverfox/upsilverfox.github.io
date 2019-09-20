@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>c++小知识1 | Hexo</title>
+  <title>c++小知识1 | silverfox</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="小记1. c++的默认参数默认参数一旦使用，后续形参都必须使用默认参数 12int add(a, b = 1, c)     //错误写法int add(a, b = 1, c = 2)  //正确写法  2. c++的标准库123451） 绝对值```c++int abs(int i); //返回整型参数i的绝对值 double fabs(double i);//返回双精度参数i的绝对值 lon">
+  <meta name="description" content="c++的标准库cmath常用函数1. 求解绝对值123int abs(int i); //返回整型参数i的绝对值 double fabs(double i);//返回双精度参数i的绝对值 long labs(long n);//返回长整型参数i的绝对值">
 <meta property="og:type" content="article">
 <meta property="og:title" content="c++小知识1">
-<meta property="og:url" content="http://yoursite.com/2019/09/19/c-小知识1/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="小记1. c++的默认参数默认参数一旦使用，后续形参都必须使用默认参数 12int add(a, b = 1, c)     //错误写法int add(a, b = 1, c = 2)  //正确写法  2. c++的标准库123451） 绝对值```c++int abs(int i); //返回整型参数i的绝对值 double fabs(double i);//返回双精度参数i的绝对值 lon">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-19T10:05:15.568Z">
+<meta property="og:url" content="http://yoursite.com/2019/09/19/c++小知识1/index.html">
+<meta property="og:site_name" content="silverfox">
+<meta property="og:description" content="c++的标准库cmath常用函数1. 求解绝对值123int abs(int i); //返回整型参数i的绝对值 double fabs(double i);//返回双精度参数i的绝对值 long labs(long n);//返回长整型参数i的绝对值">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-09-19T13:31:00.947Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c++小知识1">
-<meta name="twitter:description" content="小记1. c++的默认参数默认参数一旦使用，后续形参都必须使用默认参数 12int add(a, b = 1, c)     //错误写法int add(a, b = 1, c = 2)  //正确写法  2. c++的标准库123451） 绝对值```c++int abs(int i); //返回整型参数i的绝对值 double fabs(double i);//返回双精度参数i的绝对值 lon">
+<meta name="twitter:description" content="c++的标准库cmath常用函数1. 求解绝对值123int abs(int i); //返回整型参数i的绝对值 double fabs(double i);//返回双精度参数i的绝对值 long labs(long n);//返回长整型参数i的绝对值">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="silverfox" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -50,7 +50,7 @@
 			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">银狐</a></h1>
 		</hgroup>
 		
 
@@ -108,7 +108,7 @@
 				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">银狐</h1>
 			</hgroup>
 			
 			
@@ -154,7 +154,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-c-小知识1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-c++小知识1" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -166,7 +166,7 @@
   
 
         
-        <a href="/2019/09/19/c-小知识1/" class="archive-article-date">
+        <a href="/2019/09/19/c++小知识1/" class="archive-article-date">
   	<time datetime="2019-09-19T09:25:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-19</time>
 </a>
         
@@ -174,29 +174,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="小记"><a href="#小记" class="headerlink" title="小记"></a>小记</h3><h5 id="1-c-的默认参数"><a href="#1-c-的默认参数" class="headerlink" title="1. c++的默认参数"></a>1. c++的默认参数</h5><p>默认参数一旦使用，后续形参都必须使用默认参数</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int add(a, b = 1, c)     //错误写法</span><br><span class="line">int add(a, b = 1, c = 2)  //正确写法</span><br></pre></td></tr></table></figure>
+        <h3 id="c-的标准库cmath常用函数"><a href="#c-的标准库cmath常用函数" class="headerlink" title="c++的标准库cmath常用函数"></a>c++的标准库cmath常用函数</h3><h4 id="1-求解绝对值"><a href="#1-求解绝对值" class="headerlink" title="1. 求解绝对值"></a>1. 求解绝对值</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">abs</span><span class="params">(<span class="keyword">int</span> i)</span></span>; <span class="comment">//返回整型参数i的绝对值 </span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">fabs</span><span class="params">(<span class="keyword">double</span> i)</span></span>;<span class="comment">//返回双精度参数i的绝对值 </span></span><br><span class="line"><span class="function"><span class="keyword">long</span> <span class="title">labs</span><span class="params">(<span class="keyword">long</span> n)</span></span>;<span class="comment">//返回长整型参数i的绝对值</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="2-c-的标准库"><a href="#2-c-的标准库" class="headerlink" title="2. c++的标准库"></a>2. c++的标准库<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1） 绝对值</span><br><span class="line">```c++</span><br><span class="line">int abs(int i); //返回整型参数i的绝对值 </span><br><span class="line">double fabs(double i);//返回双精度参数i的绝对值 </span><br><span class="line">long labs(long n);//返回长整型参数i的绝对值</span><br></pre></td></tr></table></figure></h5><p>2）  指数</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">exp</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">//返回e^x的值</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pow</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>;<span class="comment">//返回x^y的值，其他数据类型也一样</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pow10</span><span class="params">(<span class="keyword">int</span> x)</span></span>;<span class="comment">//返回10^x</span></span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 
-<p>3） 取余</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">float</span>  <span class="title">fmod</span><span class="params">(<span class="keyword">float</span> x,<span class="keyword">float</span> y)</span></span>; <span class="comment">//求x除以y的余数</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-求解指数函数"><a href="#2-求解指数函数" class="headerlink" title="2. 求解指数函数"></a>2. 求解指数函数</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">exp</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">//返回e^x的值</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pow</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>;<span class="comment">//返回x^y的值，其他数据类型也一样</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pow10</span><span class="params">(<span class="keyword">int</span> x)</span></span>;<span class="comment">//返回10^x</span></span><br></pre></td></tr></table></figure>
 
-<p>4） 对数</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">log</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">//返回loge(x)的值</span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">log10</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">////返回log10(x)的值</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-求余数"><a href="#3-求余数" class="headerlink" title="3. 求余数"></a>3. 求余数</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">float</span>  <span class="title">fmod</span><span class="params">(<span class="keyword">float</span> x,<span class="keyword">float</span> y)</span></span>; <span class="comment">//求x除以y的余数</span></span><br></pre></td></tr></table></figure>
 
-<p>5） 开根号</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">double sqrt(double x) 返回√x的值</span><br></pre></td></tr></table></figure>
+<h4 id="4-求解对数函数"><a href="#4-求解对数函数" class="headerlink" title="4. 求解对数函数"></a>4. 求解对数函数</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">log</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">//返回loge(x)的值</span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">log10</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">////返回log10(x)的值</span></span><br></pre></td></tr></table></figure>
 
-<p>6） 三角函数</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">double acos(double x) 返回x的反余弦arccos(x)值,x为弧度</span><br><span class="line">double asin(double x) 返回x的反正弦arcsin(x)值,x为弧度</span><br><span class="line">double atan(double x) 返回x的反正切arctan(x)值,x为弧度</span><br><span class="line">double cos(double x) 返回x的余弦cos(x)值,x为弧度</span><br><span class="line">double sin(double x) 返回x的正弦sin(x)值,x为弧度</span><br><span class="line">double tan(double x) 返回x的正切tan(x)值,x为弧度</span><br><span class="line">double hypot(double x,double y) 返回直角三角形斜边的长度(z), x和y为直角边的长度,z^2=x^2+y^2</span><br><span class="line">``` </span><br><span class="line"><span class="number">7</span>） 取整</span><br><span class="line">```c++</span><br><span class="line">double ceil(double x) 返回不小于x的最小整数</span><br><span class="line">double floor(double x) 返回不大于x的最大整数</span><br></pre></td></tr></table></figure>
+<h4 id="5-开根号"><a href="#5-开根号" class="headerlink" title="5. 开根号"></a>5. 开根号</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">sqrt</span><span class="params">(<span class="keyword">double</span> x)</span></span>; <span class="comment">//返回√x的值</span></span><br></pre></td></tr></table></figure>
 
-<p>8） 随机数</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int rand() 产生一个随机数并返回这个数</span><br></pre></td></tr></table></figure>
+<h4 id="6-三角函数求解"><a href="#6-三角函数求解" class="headerlink" title="6. 三角函数求解"></a>6. 三角函数求解</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">asin</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">//返回x的反正弦函数值，x为弧度 </span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">sin</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">//返回x的正弦函数值，x为弧度</span></span><br></pre></td></tr></table></figure>
 
-<p>9） 数据转换</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">double atof(char *nptr) 将字符串nptr转换成浮点数并返回这个浮点数</span><br><span class="line">double atol(char *nptr) 将字符串nptr转换成长整数并返回这个整数</span><br><span class="line">double atof(char *nptr) 将字符串nptr转换成双精度数,并返回这个数,错误返回0</span><br><span class="line">int atoi(char *nptr) 将字符串nptr转换成整型数, 并返回这个数,错误返回0</span><br><span class="line">long atol(char *nptr) 将字符串nptr转换成长整型数,并返回这个数,错误返回0</span><br></pre></td></tr></table></figure>
+<h4 id="7-取整"><a href="#7-取整" class="headerlink" title="7. 取整"></a>7. 取整</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">ceil</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">//返回不小于x的最小整数</span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">floor</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">//返回不大于x的最大整数</span></span><br></pre></td></tr></table></figure>
       
 
       
@@ -275,7 +267,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/19/c-小知识1/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/19/c++小知识1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -334,7 +326,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 John Doe
+    		&copy; 2019 银狐
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -469,7 +461,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://shansan.top/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
             </li>
           
             <li class="search-li">

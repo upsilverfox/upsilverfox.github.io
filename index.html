@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>silverfox</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="silverfox">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en">
+<meta property="og:site_name" content="silverfox">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="silverfox">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="silverfox" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -46,7 +46,7 @@
 			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">银狐</a></h1>
 		</hgroup>
 		
 
@@ -104,7 +104,7 @@
 				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">银狐</h1>
 			</hgroup>
 			
 			
@@ -152,19 +152,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-c-小知识1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-c++小知识1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/19/c-小知识1/">c++小知识1</a>
+      <a class="article-title" href="/2019/09/19/c++小知识1/">c++小知识1</a>
     </h1>
   
 
         
-        <a href="/2019/09/19/c-小知识1/" class="archive-article-date">
+        <a href="/2019/09/19/c++小知识1/" class="archive-article-date">
   	<time datetime="2019-09-19T09:25:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-19</time>
 </a>
         
@@ -172,29 +172,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="小记"><a href="#小记" class="headerlink" title="小记"></a>小记</h3><h5 id="1-c-的默认参数"><a href="#1-c-的默认参数" class="headerlink" title="1. c++的默认参数"></a>1. c++的默认参数</h5><p>默认参数一旦使用，后续形参都必须使用默认参数</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int add(a, b = 1, c)     //错误写法</span><br><span class="line">int add(a, b = 1, c = 2)  //正确写法</span><br></pre></td></tr></table></figure>
-
-<h5 id="2-c-的标准库"><a href="#2-c-的标准库" class="headerlink" title="2. c++的标准库"></a>2. c++的标准库<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1） 绝对值</span><br><span class="line">```c++</span><br><span class="line">int abs(int i); //返回整型参数i的绝对值 </span><br><span class="line">double fabs(double i);//返回双精度参数i的绝对值 </span><br><span class="line">long labs(long n);//返回长整型参数i的绝对值</span><br></pre></td></tr></table></figure></h5><p>2）  指数</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">exp</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">//返回e^x的值</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pow</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>;<span class="comment">//返回x^y的值，其他数据类型也一样</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pow10</span><span class="params">(<span class="keyword">int</span> x)</span></span>;<span class="comment">//返回10^x</span></span><br><span class="line">`</span><br></pre></td></tr></table></figure>
-
-<p>3） 取余</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">float</span>  <span class="title">fmod</span><span class="params">(<span class="keyword">float</span> x,<span class="keyword">float</span> y)</span></span>; <span class="comment">//求x除以y的余数</span></span><br></pre></td></tr></table></figure>
-
-<p>4） 对数</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">log</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">//返回loge(x)的值</span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">log10</span><span class="params">(<span class="keyword">double</span> x)</span></span>;<span class="comment">////返回log10(x)的值</span></span><br></pre></td></tr></table></figure>
-
-<p>5） 开根号</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">double sqrt(double x) 返回√x的值</span><br></pre></td></tr></table></figure>
-
-<p>6） 三角函数</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">double acos(double x) 返回x的反余弦arccos(x)值,x为弧度</span><br><span class="line">double asin(double x) 返回x的反正弦arcsin(x)值,x为弧度</span><br><span class="line">double atan(double x) 返回x的反正切arctan(x)值,x为弧度</span><br><span class="line">double cos(double x) 返回x的余弦cos(x)值,x为弧度</span><br><span class="line">double sin(double x) 返回x的正弦sin(x)值,x为弧度</span><br><span class="line">double tan(double x) 返回x的正切tan(x)值,x为弧度</span><br><span class="line">double hypot(double x,double y) 返回直角三角形斜边的长度(z), x和y为直角边的长度,z^2=x^2+y^2</span><br><span class="line">``` </span><br><span class="line"><span class="number">7</span>） 取整</span><br><span class="line">```c++</span><br><span class="line">double ceil(double x) 返回不小于x的最小整数</span><br><span class="line">double floor(double x) 返回不大于x的最大整数</span><br></pre></td></tr></table></figure>
-
-<p>8） 随机数</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int rand() 产生一个随机数并返回这个数</span><br></pre></td></tr></table></figure>
-
-<p>9） 数据转换</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">double atof(char *nptr) 将字符串nptr转换成浮点数并返回这个浮点数</span><br><span class="line">double atol(char *nptr) 将字符串nptr转换成长整数并返回这个整数</span><br><span class="line">double atof(char *nptr) 将字符串nptr转换成双精度数,并返回这个数,错误返回0</span><br><span class="line">int atoi(char *nptr) 将字符串nptr转换成整型数, 并返回这个数,错误返回0</span><br><span class="line">long atol(char *nptr) 将字符串nptr转换成长整型数,并返回这个数,错误返回0</span><br></pre></td></tr></table></figure>
+        <h3 id="c-的标准库cmath常用函数"><a href="#c-的标准库cmath常用函数" class="headerlink" title="c++的标准库cmath常用函数"></a>c++的标准库cmath常用函数</h3><h4 id="1-求解绝对值"><a href="#1-求解绝对值" class="headerlink" title="1. 求解绝对值"></a>1. 求解绝对值</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">abs</span><span class="params">(<span class="keyword">int</span> i)</span></span>; <span class="comment">//返回整型参数i的绝对值 </span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">fabs</span><span class="params">(<span class="keyword">double</span> i)</span></span>;<span class="comment">//返回双精度参数i的绝对值 </span></span><br><span class="line"><span class="function"><span class="keyword">long</span> <span class="title">labs</span><span class="params">(<span class="keyword">long</span> n)</span></span>;<span class="comment">//返回长整型参数i的绝对值</span></span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2019/09/19/c++小知识1/#more">more >></a>
+        
       
 
       
@@ -206,7 +187,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/19/c-小知识1/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/19/c++小知识1/">展开全文 >></a>
         </p>
       
 
@@ -256,48 +237,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h3><p>1）安装Git Bash<br>因为这个是国外的软件是被限制的，推荐挂个代理<br>本文推荐一个代理软件链接：<a href="https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA" target="_blank" rel="noopener">https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA</a><br>提取码：xfhn<br>目前本人正在使用的一个代理链接：<a href="https://www.52jying.com/nobe" target="_blank" rel="noopener">https://www.52jying.com/nobe</a><br>如果崩了大家可以上网百度一个自己找一个代理网址。<br>2）  配置SSH key<br>ssh key是用来解决本地与服务器的连接问题的。<br>打开git bash输入命令</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh <span class="comment">#检查本机已存在的ssh密钥</span></span><br></pre></td></tr></table></figure>
-
-<p>如果提示：No such file or directory 说明你是第一次使用git。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"邮件地址"</span></span><br></pre></td></tr></table></figure>
-
-<p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\ <strong>id_rsa.pub</strong> 文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key： </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919125634.png" alt> </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919125751.png" alt> </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919130017.png" alt> </p>
-<p>将刚复制的内容粘贴到key那里，title随便填，保存。<br>2) 测试是否成功</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com <span class="comment"># 注意邮箱地址不用改</span></span><br></pre></td></tr></table></figure>
-
-<p>如果提示：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Are you sure you want to continue connecting (yes/no)?</span><br></pre></td></tr></table></figure>
-
-<p>输入yes，然后会看到：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi liuxianan! Yo<span class="string">u've successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
-
-<p>看到这个信息说明SSH已配置成功！此时你还需要配置：</p>
-<h3 id="3-创建仓库"><a href="#3-创建仓库" class="headerlink" title="3. 创建仓库"></a>3. 创建仓库</h3><p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190918224214.png" alt> </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919161957.png" alt> </p>
-<h3 id="4-上传代码"><a href="#4-上传代码" class="headerlink" title="4. 上传代码"></a>4. 上传代码</h3><p>1）创建目录在目录下右键打开git bash。（这里创建的是text）<br>2) 将当前目录变为git管理仓库代码：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-
-<p>如图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919160417.png" alt> </p>
-<p>同理将本地仓库链接到GitHub远程仓库：<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add orign https://github.com/upsilverfox/fox.git</span><br><span class="line"><span class="comment">#这个只要写一次就好，其中https://github.com/upsilverfox/fox为你的仓库地址。</span></span><br></pre></td></tr></table></figure></p>
-<p>运行成功后本地目录下将会增加 .git 如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919160509.png" alt></p>
-<p>这样本地仓库就配置好了。</p>
-<p>3）进行测试<br>将一篇holle_word的文本文件放入text文件夹中。<br><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919160913.png" alt> </p>
-<p>重新在text目录下右键打开git bash。<br>输入代码：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add . <span class="comment">#这是为了告诉git将文件转到了仓库</span></span><br><span class="line">$ git commit -m <span class="string">"fist"</span> <span class="comment">#对本次上传进行说明，一定要写,而且每次上传都要写</span></span><br><span class="line">$ git push -u orign master <span class="comment">#上传代码</span></span><br></pre></td></tr></table></figure>
-
-<p>示例图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919163250.png" alt></p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919163336.png" alt><br>这样就成功了，有什么问题联系作者哦，虽然不一定能解决，哈哈哈哈！</p>
-<h3 id="4-参考文献"><a href="#4-参考文献" class="headerlink" title="4. 参考文献"></a>4. 参考文献</h3><ol>
-<li><a href="https://shansan.top/2019/03/08/将本地项目推送到GitHub远程仓库/" target="_blank" rel="noopener">https://shansan.top/2019/03/08/将本地项目推送到GitHub远程仓库/</a></li>
-</ol>
-
+        <h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h3><p>1）安装Git Bash<br>因为这个是国外的软件是被限制的，推荐挂个代理<br>本文推荐一个代理软件链接：<a href="https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA" target="_blank" rel="noopener">https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA</a><br>提取码：xfhn<br>目前本人正在使用的一个代理链接：<a href="https://www.52jying.com/nobe" target="_blank" rel="noopener">https://www.52jying.com/nobe</a><br>如果崩了大家可以上网百度一个自己找一个代理网址。</p>
+        
+          <a class="article-more-a" href="/2019/09/19/github代码上传/#more">more >></a>
+        
       
 
       
@@ -359,80 +302,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h3><p>1）安装Git Bash<br>因为这个是国外的软件是被限制的，推荐挂个代理<br>本文推荐一个代理软件链接：<a href="https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA" target="_blank" rel="noopener">https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA</a><br>提取码：xfhn<br>目前本人正在使用的一个代理链接：<a href="https://www.52jying.com/nobe" target="_blank" rel="noopener">https://www.52jying.com/nobe</a><br>如果崩了大家可以上网百度一个自己找一个代理网址。<br>2）安装node.js、npm<br>3） 有一个GitHub账号</p>
-<h3 id="2-GitHub创建仓库和一些小细节"><a href="#2-GitHub创建仓库和一些小细节" class="headerlink" title="2. GitHub创建仓库和一些小细节"></a>2. GitHub创建仓库和一些小细节</h3><p>1）GitHub账号创建后邮箱需要进行验证，如果想要在手机上进行验证需要将电脑上的GitHub账号退出登录。邮箱验证完毕后需要将邮箱进行公开，因为GitHub默认为private。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190918223548.png" alt></p>
-<p>2）创建GitHub仓库 </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190918224214.png" alt> </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190918224552.png" alt>  </p>
-<p> <img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919130520.png" alt> </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919130142.png" alt> </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919130246.png" alt></p>
-<h3 id="3-配置SSH-key"><a href="#3-配置SSH-key" class="headerlink" title="3. 配置SSH key"></a>3. 配置SSH key</h3><p>ssh key是用来解决本地与服务器的连接问题的。<br>1）打开git bash输入命令</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh <span class="comment">#检查本机已存在的ssh密钥</span></span><br></pre></td></tr></table></figure>
-
-<p>如果提示：No such file or directory 说明你是第一次使用git。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"邮件地址"</span></span><br></pre></td></tr></table></figure>
-
-<p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\ <strong>id_rsa.pub</strong> 文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key： </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919125634.png" alt> </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919125751.png" alt> </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919130017.png" alt> </p>
-<p>将刚复制的内容粘贴到key那里，title随便填，保存。<br>2) 测试是否成功</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com <span class="comment"># 注意邮箱地址不用改</span></span><br></pre></td></tr></table></figure>
-
-<p>如果提示：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Are you sure you want to continue connecting (yes/no)?</span><br></pre></td></tr></table></figure>
-
-<p>输入yes，然后会看到：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi liuxianan! Yo<span class="string">u've successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
-
-<p>看到这个信息说明SSH已配置成功！此时你还需要配置：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --<span class="keyword">global</span> user.name <span class="string">"liuxianan"</span>// 你的github用户名，非昵称</span><br><span class="line">$ git config --<span class="keyword">global</span> user.email  <span class="string">"xxx@qq.com"</span>//填写你GitHub注册的邮箱</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-hexo的安装与配置"><a href="#4-hexo的安装与配置" class="headerlink" title="4. hexo的安装与配置"></a>4. hexo的安装与配置</h3><p>1）hexo安装代码<br>在电脑的某个地方新建blog一个文件夹（文件名可以随意取），该文件夹是用来存放代码的地方，鼠标右键点击文件夹，选择git bash指令输入代码(之后的命令都是这样操作)</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<p>hexo就会自动生成一些文件到你blog目录下，之后的操作都在这个目录下进行的。</p>
-<p>2）测试效果</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$hexo g  <span class="comment">#生成</span></span><br><span class="line">$hexo s  <span class="comment">#启动服务</span></span><br></pre></td></tr></table></figure>
-
-<p>hexo s是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到内容，很多人会碰到浏览器一直在转圈但是就是加载不出来的问题，一般情况下是因为端口占用的缘故，因为4000这个端口太常见了，解决端口冲突问题请参考这篇文章：<br><a href="http://blog.liuxianan.com/windows-port-bind.html" target="_blank" rel="noopener">http://blog.liuxianan.com/windows-port-bind.html</a></p>
-<p>3) 修改主题<br>既然默认主题很丑，那我们别的不做，首先来替换一个好看点的主题。这是 官方主题。<br>个人比较喜欢的一个个主题 <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia</a> </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919133718.png" alt> </p>
-<p> 修改_config.yml中的theme: landscape改为theme: yilia，（yilia为你复制下来的文件名）然后重新执行hexo g来重新生成。<br>如果出现一些莫名其妙的问题，可以先执行hexo clean来清理一下public的内容，然后再来重新生成和发布 </p>
-<p>4）上传github<br>如果你一切都配置好了，发布上传很容易，一句hexo d就搞定，当然关键还是你要把所有东西配置好。<br>首先，ssh key肯定要配置好。<br>其次，配置_config.yml中有关deploy的部分：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/liuxianan/liuxianan.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<p>其中<a href="https://github.com/liuxianan/liuxianan.github.io.git为你创建仓库里的网址" target="_blank" rel="noopener">https://github.com/liuxianan/liuxianan.github.io.git为你创建仓库里的网址</a><br>安装插件</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>5) 常见的一些hexo命令</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"postName"</span> <span class="comment">#新建文章</span></span><br><span class="line">hexo new page <span class="string">"pageName"</span> <span class="comment">#新建页面</span></span><br><span class="line">hexo generate <span class="comment">#生成静态页面至public目录</span></span><br><span class="line">hexo server <span class="comment">#开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span></span><br><span class="line">hexo deploy <span class="comment">#部署到GitHub</span></span><br><span class="line">hexo help  <span class="comment"># 查看帮助</span></span><br><span class="line">hexo version  <span class="comment">#查看Hexo的版本</span></span><br></pre></td></tr></table></figure>
-
-<p>缩写：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>组合命令</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">组合命令：</span><br><span class="line">hexo s -g <span class="comment">#生成并本地预览</span></span><br><span class="line">hexo d -g <span class="comment">#生成并上传</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="5-写博客"><a href="#5-写博客" class="headerlink" title="5. 写博客"></a>5. 写博客</h3><p>1）定位到我们的blog根目录下，输入代码：</p>
-<pre><code class="python">hexo new <span class="string">'my-first-work'</span></code></pre>
-<p>hexo会帮我们在_posts下生成相关md文件：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919135205.png" alt> </p>
-<p>我们只需要打开这个文件就可以开始写博客了，默认生成如下内容： </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919135403.png" alt> </p>
-<p>2）推荐一款写博客的软件Visual Studio Code<br>链接：<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com/</a><br>下载完后可还可以在软件里面下载markdown  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919140215.png" alt></p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919140327.png" alt></p>
-<p>图片上传推荐免费图床工具链接：<a href="https://www.itrhx.com/2019/08/01/A27-image-hosting/" target="_blank" rel="noopener">https://www.itrhx.com/2019/08/01/A27-image-hosting/</a></p>
-<h3 id="6-参考"><a href="#6-参考" class="headerlink" title="6. 参考"></a>6. 参考</h3><ol>
-<li><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html</a> </li>
-<li><a href="http://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="noopener">http://www.cnblogs.com/zhcncn/p/4097881.html</a></li>
-<li><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="noopener">http://www.jianshu.com/p/05289a4bc8b2</a></li>
-<li><a href="https://www.itrhx.com/2019/08/01/A27-image-hosting/" target="_blank" rel="noopener">https://www.itrhx.com/2019/08/01/A27-image-hosting/</a></li>
-</ol>
-
+        <h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h3><p>1）安装Git Bash<br>因为这个是国外的软件是被限制的，推荐挂个代理<br>本文推荐一个代理软件链接：<a href="https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA" target="_blank" rel="noopener">https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA</a><br>提取码：xfhn<br>目前本人正在使用的一个代理链接：<a href="https://www.52jying.com/nobe" target="_blank" rel="noopener">https://www.52jying.com/nobe</a><br>如果崩了大家可以上网百度一个自己找一个代理网址。</p>
+        
+          <a class="article-more-a" href="/2019/09/18/hexo从零开始到搭建完整/#more">more >></a>
+        
       
 
       
@@ -496,19 +369,10 @@
       
         <h3 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h3><p> 电脑系统崩溃了，必须得安装系统，以下是本人归类装机的教程</p>
 <h3 id="2-准备工作"><a href="#2-准备工作" class="headerlink" title="2. 准备工作"></a>2. 准备工作</h3><p>  自带两个U盘，一个U盘来制作装机U盘，另一个U盘用来下载window10的镜像</p>
-<h3 id="3-下载制作U盘软件制作装机U盘"><a href="#3-下载制作U盘软件制作装机U盘" class="headerlink" title="3.下载制作U盘软件制作装机U盘"></a>3.下载制作U盘软件制作装机U盘</h3><p>  这里使用的是PE工具箱。<br> 链接 :<a href="https://pan.baidu.com/s/1smOthvlX3JQJNecebcO35A" target="_blank" rel="noopener">https://pan.baidu.com/s/1smOthvlX3JQJNecebcO35A</a><br>提取码：opn0<br> 下载的软件存放到用来制作装机U盘中，打开程序安装示意图如下：<br> 1）推荐使用自定义的安装 </p>
-<p><a href="https://sm.ms/image/Pj4UW6nKe9rQhqo" target="_blank"><img src="https://i.loli.net/2019/09/18/Pj4UW6nKe9rQhqo.png"></a> </p>
-<p> 2）在安装方法处建议选择方案三，U盘卷标为你的U盘名，pe壁纸下建议全选，当然不全选也行。然后点击安装就行了。 </p>
-<p><a href="https://sm.ms/image/zjMq5YLixVINnrc" target="_blank"><img src="https://i.loli.net/2019/09/18/zjMq5YLixVINnrc.png"></a> </p>
-<h3 id="4-下载-windows10镜像"><a href="#4-下载-windows10镜像" class="headerlink" title="4. 下载 windows10镜像"></a>4. 下载 windows10镜像</h3><p> 推荐链接：<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">https://msdn.itellyou.cn/</a> </p>
-<p><a href="https://sm.ms/image/C6hYrukD9gOWEfP" target="_blank"><img src="https://i.loli.net/2019/09/18/C6hYrukD9gOWEfP.png"></a></p>
-<h3 id="5-开始进行刷机"><a href="#5-开始进行刷机" class="headerlink" title="5. 开始进行刷机"></a>5. 开始进行刷机</h3><p> 1）将电脑重启，在电脑开机时不断给点击F12进入刷机系统。<br> 2）将电脑磁盘进行分区 </p>
-<p><img src="https://i.loli.net/2019/09/18/JjQi4v5InxrUEX1.png" alt="1_3.png"> </p>
-<p> 3）记住磁盘类型要选择GPT,扇区选择4096，选择完后点击开始执行 </p>
-<p><img src="https://i.loli.net/2019/09/18/S7UouYhLPFGJiNI.png" alt="1_4.png"> </p>
-<p> 4）将电脑格式化分区后插入你下载好window10镜像的U盘，点击安装包就可以安装了。记住在安装完window10时电脑会关机，当电脑关机时要将U盘拔出。</p>
-<h3 id="6-装好系统后"><a href="#6-装好系统后" class="headerlink" title="6. 装好系统后"></a>6. 装好系统后</h3><p>安装Windows10后，windows10是未激活状态，下面推荐一款Windows10（激活）工具<br> 链接：<a href="https://pan.baidu.com/s/1hV9lNjew_Ne1drM216e9-A" target="_blank" rel="noopener">https://pan.baidu.com/s/1hV9lNjew_Ne1drM216e9-A</a><br>提取码：l6cx<br>还有一款office（激活）工具<br>链接：<a href="https://pan.baidu.com/s/1KEahExeIv95iekWLaNpiRw" target="_blank" rel="noopener">https://pan.baidu.com/s/1KEahExeIv95iekWLaNpiRw</a><br>提取码：a7fw<br>还有什么不懂可以留言！！！</p>
-
+<h3 id="3-下载制作U盘软件制作装机U盘"><a href="#3-下载制作U盘软件制作装机U盘" class="headerlink" title="3.下载制作U盘软件制作装机U盘"></a>3.下载制作U盘软件制作装机U盘</h3><p>  这里使用的是PE工具箱。<br>
+        
+          <a class="article-more-a" href="/2019/09/18/刷机教程/#more">more >></a>
+        
       
 
       
@@ -646,7 +510,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 John Doe
+    		&copy; 2019 银狐
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -781,7 +645,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://shansan.top/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
             </li>
           
             <li class="search-li">
