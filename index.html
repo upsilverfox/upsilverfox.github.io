@@ -97,7 +97,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"always","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -865,7 +865,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/09/17/hello/" itemprop="url">Hello</a></h1>
+                <a class="post-title-link" href="/2019/09/17/hello/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -927,19 +927,48 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <p>@import “../Pisces/_layout”;<br>@import “../Pisces/_brand”;<br>@import “../Pisces/_menu”;<br>@import “../Pisces/_sidebar”;<br>// Import _posts if want to justify text-align on mobile.<br>//@import “../Pisces/_posts”;</p>
+<p>// =================================================<br>// Rewrite _layout.styl<br>// =================================================<br>// Sidebar padding used as main desktop content padding for sidebar padding and post blocks padding too.</p>
+<p>// In main NexT config set <code>sidebar: offset: 12</code> option as main padding.<br>// In <code>source/css/_variables/Gemini.styl</code> there are variables for other resolutions:<br>// $content-tablet-paddin            = 10px;<br>// $content-mobile-padding           = 8px;<br>// P.S. If u want to change this paddings u may set this variables into <code>source/css/_variables/custom.styl</code>.</p>
+<p>// So, it will 12px in Desktop, 10px in Tablets and 8px in Mobiles for all possible paddings.<br>// =================================================<br>// Read values from NexT config and set they as local variables to use as string variables (in any CSS section).<br>hexo-config(‘sidebar.offset’) is a ‘unit’ ? (sboffset = unit(hexo-config(‘sidebar.offset’), px)) : (sboffset = 0)<br>use_seo = hexo-config(‘seo’);</p>
+<p>// =================================================<br>// Desktop layout styles.<br>// =================================================<br>// Post blocks.<br>.content-wrap {<br>  padding initial;<br>  background: initial;<br>  box-shadow: initial;<br>  border-radius: initial;<br>}</p>
+<p>// Post &amp; Comments blocks.<br>.post-block {<br>  padding: $content-desktop-padding;<br>  background: white;<br>  box-shadow: $box-shadow-inner;<br>  border-radius: $border-radius-inner;<br>}</p>
+<p>// When blocks are siblings (homepage).</p>
+<p>#posts &gt; article + article {<br>  .post-block {<br>    margin-top: sboffset;<br>    // Rewrite shadows &amp; borders because all blocks have offsets.<br>    box-shadow: $box-shadow;<br>    border-radius: $border-radius;<br>  }<br>}</p>
+<p>// Comments blocks.<br>.comments {<br>  padding: $content-desktop-padding;<br>  margin: initial;<br>  margin-top: sboffset;<br>  background: white;<br>  box-shadow: $box-shadow;<br>  border-radius: $border-radius;<br>}</p>
+<p>// Top main padding from header to posts (default 40px).<br>.posts-expand {<br>  padding-top: initial;<br>}</p>
+<p>// Post navigation items.<br>.post-nav-divider {<br>  width: 4%;<br>}<br>.post-nav-item {<br>  width: 48%;<br>}</p>
+<p>// Post delimiters.<br>.post-eof,<br>.post-spread {<br>  hide();<br>}</p>
+<p>// Pagination.<br>.pagination {<br>  .prev, .next, .page-number {<br>    margin-bottom: initial;<br>    top: initial;<br>  }<br>  margin: sboffset 0 0;<br>  border-top: initial;<br>  background: white;<br>  box-shadow: $box-shadow;<br>  border-radius: $border-radius;<br>  padding: 10px 0 10px;<br>}</p>
+<p>// Footer alignment.<br>.main {<br>  padding-bottom: initial;<br>}<br>.footer {<br>  bottom: auto;<br>}</p>
+<p>// =================================================<br>// Headers.<br>// =================================================<br>// No need anymore?<br>.post-header {<br>  h1, h2 {<br>    margin: initial;<br>  }<br>}<br>.posts-expand .post-title-link {<br>  line-height: inherit;<br>}<br>.posts-expand .post-title {<br>  font-size: 1.7em;<br>}<br>.post-body {<br>  h1 {<br>    font-size: 1.6em;<br>    border-bottom: 1px solid $body-bg-color;<br>  }<br>  h2 {<br>    font-size: 1.45em;<br>    border-bottom: 1px solid $body-bg-color;<br>  }<br>  h3 {<br>    font-size: 1.3em;<br>    if use_seo {<br>      border-bottom: 1px solid $body-bg-color;<br>    } else {<br>      border-bottom: 1px dotted $body-bg-color;<br>    }<br>  }<br>  h4 {<br>    font-size: 1.2em;<br>    if use_seo {<br>      border-bottom: 1px dotted $body-bg-color;<br>    }<br>  }<br>  h5 {<br>    font-size: 1.07em;<br>  }<br>  h6 {<br>    font-size: 1.03em;<br>  }<br>}</p>
+<p>// =================================================<br>// &gt; 768px &amp; &lt; 991px<br>// =================================================<br>+tablet() {</p>
+<p>  // Posts in blocks.<br>  .content-wrap {<br>    padding: $content-tablet-padding;<br>  }<br>  .posts-expand {<br>    margin: initial;</p>
+<pre><code>// Components inside Posts.
+.post-button {
+  margin-top: ($content-tablet-padding * 2);
+}</code></pre><p>  }</p>
+<p>  .post-block {<br>    // Inside posts blocks content padding (default 40px).<br>    padding: ($content-tablet-padding * 2);<br>    // Rewrite shadows &amp; borders because all blocks have offsets.<br>    box-shadow: $box-shadow;<br>    border-radius: $border-radius;<br>  }</p>
+<p>  // Only if blocks are siblings need bottom margin (homepage).</p>
+<p>  #posts &gt; article + article {<br>    .post-block {<br>      margin-top: $content-tablet-padding;<br>    }<br>  }</p>
+<p>  .comments {<br>    margin-top: $content-tablet-padding;<br>    padding: $content-tablet-padding ($content-tablet-padding * 2);<br>    //padding: initial;<br>    //padding-top: $content-tablet-padding;<br>  }</p>
+<p>  .pagination {<br>    margin: $content-tablet-padding 0 0;<br>  }</p>
+<p>}<br>// =================================================<br>// &lt; 767px<br>// =================================================<br>+mobile() {</p>
+<p>  // Posts in blocks.<br>  .content-wrap {<br>    padding: $content-mobile-padding;<br>  }<br>  .posts-expand {<br>    margin: initial;</p>
+<pre><code>// Components inside Posts.
+.post-button {
+  margin-top: sboffset;
+  //padding-bottom : 15px;
+}
+img {
+  padding: initial !important;
+}</code></pre><p>  }</p>
+<p>  .post-block {<br>    // Inside posts blocks content padding (default 40px).<br>    padding: sboffset;<br>    min-height: auto;<br>    // Rewrite shadows &amp; borders because all blocks have offsets.<br>    box-shadow: $box-shadow;<br>    border-radius: $border-radius;<br>  }</p>
+<p>  // Only if blocks are siblings need bottom margin (homepage).</p>
+<p>  #posts &gt; article + article {<br>    .post-block {<br>      margin-top: $content-mobile-padding;<br>    }<br>  }</p>
+<p>  .comments {<br>    margin-top: $content-mobile-padding;<br>    padding: 0 sboffset;<br>  }</p>
+<p>  .pagination {<br>    margin: $content-mobile-padding 0 0;<br>  }</p>
+<p>}</p>
 
           
         
@@ -1096,17 +1125,18 @@
   
 </div>
 
+<!--
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 <div>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_pv" style="display:none">
+<span id="busuanzi_container_site_pv" style='display:none'>
     本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
     <span class="post-meta-divider">|</span>
 </span>
-<span id="busuanzi_container_site_uv" style="display:none">
+<span id="busuanzi_container_site_uv" style='display:none'>
     有<span id="busuanzi_value_site_uv"></span>人看过我的博客啦
 </span>
 </div>
@@ -1121,6 +1151,25 @@
 
 
 
+
+-->
+
+ <script>
+      var now = new Date(); 
+      function createtime() { 
+          var grt= new Date("03/12/2019 12:00:00");//此处修改你的建站时间或者网站上线时间 
+          now.setTime(now.getTime()+250); 
+          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+          document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+  setInterval("createtime()",250);
+  </script>
         
 
 
