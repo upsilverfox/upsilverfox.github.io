@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-19T13:31:00.947Z</updated>
+  <updated>2019-09-20T12:49:54.669Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,15 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>c++小知识1</title>
-    <link href="http://yoursite.com/2019/09/19/c++%E5%B0%8F%E7%9F%A5%E8%AF%861/"/>
-    <id>http://yoursite.com/2019/09/19/c++小知识1/</id>
-    <published>2019-09-19T09:25:18.000Z</published>
-    <updated>2019-09-19T13:31:00.947Z</updated>
+    <title>hexo-next主题的颜色配置</title>
+    <link href="http://yoursite.com/2019/09/20/hexo-next%E4%B8%BB%E9%A2%98%E7%9A%84%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2019/09/20/hexo-next主题的颜色配置/</id>
+    <published>2019-09-20T11:14:35.000Z</published>
+    <updated>2019-09-20T12:49:54.669Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;c-的标准库cmath常用函数&quot;&gt;&lt;a href=&quot;#c-的标准库cmath常用函数&quot; class=&quot;headerlink&quot; title=&quot;c++的标准库cmath常用函数&quot;&gt;&lt;/a&gt;c++的标准库cmath常用函数&lt;/h3&gt;&lt;h4 id=&quot;1-求解绝对值&quot;&gt;&lt;a href=&quot;#1-求解绝对值&quot; class=&quot;headerlink&quot; title=&quot;1. 求解绝对值&quot;&gt;&lt;/a&gt;1. 求解绝对值&lt;/h4&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i)&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;comment&quot;&gt;//返回整型参数i的绝对值 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;fabs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; i)&lt;/span&gt;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//返回双精度参数i的绝对值 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;labs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; n)&lt;/span&gt;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//返回长整型参数i的绝对值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;h3 id=&quot;图片分区：&quot;&gt;&lt;a href=&quot;#图片分区：&quot; class=&quot;headerlink&quot; title=&quot;图片分区：&quot;&gt;&lt;/a&gt;图片分区：&lt;/h3&gt;&lt;h3 id=&quot;1-第一部分背景颜色&quot;&gt;&lt;a href=&quot;#1-第一部分背景颜色&quot; class=&quot;headerlink&quot; title=&quot;1.第一部分背景颜色&quot;&gt;&lt;/a&gt;1.第一部分背景颜色&lt;/h3&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190920195326.png&quot;&gt;
+
+
+
+&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190920193543.png&quot;&gt;
     
     </summary>
     
@@ -34,11 +38,51 @@
   </entry>
   
   <entry>
+    <title>python-1</title>
+    <link href="http://yoursite.com/2019/09/20/python-1/"/>
+    <id>http://yoursite.com/2019/09/20/python-1/</id>
+    <published>2019-09-20T07:45:02.000Z</published>
+    <updated>2019-09-20T07:53:08.505Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-为jupyter设置默认浏览器&quot;&gt;&lt;a href=&quot;#1-为jupyter设置默认浏览器&quot; class=&quot;headerlink&quot; title=&quot;1. 为jupyter设置默认浏览器&quot;&gt;&lt;/a&gt;1. 为jupyter设置默认浏览器&lt;/h3&gt;&lt;p&gt;jupyter 打开后无法直接跳转到浏览器解决方案&lt;br&gt;1、首先打开Anoconda Prompt，输入命令 jupyter notebook –generate-config，系统会自动产生一个名为jupyter_notebook_config.py的文件，并且Anoconda Prompt窗口中会给出文件的路径。&lt;br&gt;2、打开jupyter_notebook_config.py，在文件最后添加以下代码&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c++小知识1</title>
+    <link href="http://yoursite.com/2019/09/19/c++%E5%B0%8F%E7%9F%A5%E8%AF%861/"/>
+    <id>http://yoursite.com/2019/09/19/c++小知识1/</id>
+    <published>2019-09-19T09:25:18.000Z</published>
+    <updated>2019-09-20T08:09:54.108Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;c-的标准库cmath常用函数&quot;&gt;&lt;a href=&quot;#c-的标准库cmath常用函数&quot; class=&quot;headerlink&quot; title=&quot;c++的标准库cmath常用函数&quot;&gt;&lt;/a&gt;c++的标准库cmath常用函数&lt;/h3&gt;&lt;h4 id=&quot;1-求解绝对值&quot;&gt;&lt;a href=&quot;#1-求解绝对值&quot; class=&quot;headerlink&quot; title=&quot;1. 求解绝对值&quot;&gt;&lt;/a&gt;1. 求解绝对值&lt;/h4&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i)&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;comment&quot;&gt;//返回整型参数i的绝对值 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;fabs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; i)&lt;/span&gt;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//返回双精度参数i的绝对值 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;labs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; n)&lt;/span&gt;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//返回长整型参数i的绝对值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="编程技术" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="c++" scheme="http://yoursite.com/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
     <title>github代码上传</title>
     <link href="http://yoursite.com/2019/09/19/github%E4%BB%A3%E7%A0%81%E4%B8%8A%E4%BC%A0/"/>
     <id>http://yoursite.com/2019/09/19/github代码上传/</id>
     <published>2019-09-19T05:50:59.000Z</published>
-    <updated>2019-09-19T13:31:15.388Z</updated>
+    <updated>2019-09-20T07:52:29.349Z</updated>
     
     <summary type="html">
     
@@ -48,6 +92,8 @@
     
     
     
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
   </entry>
   
   <entry>
@@ -55,7 +101,7 @@
     <link href="http://yoursite.com/2019/09/18/hexo%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%88%B0%E6%90%AD%E5%BB%BA%E5%AE%8C%E6%95%B4/"/>
     <id>http://yoursite.com/2019/09/18/hexo从零开始到搭建完整/</id>
     <published>2019-09-18T13:50:46.000Z</published>
-    <updated>2019-09-19T13:31:32.311Z</updated>
+    <updated>2019-09-20T07:52:30.365Z</updated>
     
     <summary type="html">
     
@@ -64,6 +110,8 @@
     </summary>
     
     
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -85,29 +133,6 @@
     
     
       <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2019/09/17/hello/"/>
-    <id>http://yoursite.com/2019/09/17/hello/</id>
-    <published>2019-09-17T13:27:44.439Z</published>
-    <updated>2019-09-20T06:38:12.908Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;@import “../Pisces/_layout”;&lt;br&gt;@import “../Pisces/_brand”;&lt;br&gt;@import “../Pisces/_menu”;&lt;br&gt;@import “../Pisces/_sidebar”;&lt;br&gt;// Import
-        
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
