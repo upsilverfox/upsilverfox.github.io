@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>silverfox</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-09-19T13:31:00.947Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>银狐</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>c++小知识1</title>
+    <link href="http://yoursite.com/2019/09/19/c++%E5%B0%8F%E7%9F%A5%E8%AF%861/"/>
+    <id>http://yoursite.com/2019/09/19/c++小知识1/</id>
+    <published>2019-09-19T09:25:18.000Z</published>
+    <updated>2019-09-19T13:31:00.947Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;c-的标准库cmath常用函数&quot;&gt;&lt;a href=&quot;#c-的标准库cmath常用函数&quot; class=&quot;headerlink&quot; title=&quot;c++的标准库cmath常用函数&quot;&gt;&lt;/a&gt;c++的标准库cmath常用函数&lt;/h3&gt;&lt;h4 id=&quot;1-求解绝对值&quot;&gt;&lt;a href=&quot;#1-求解绝对值&quot; class=&quot;headerlink&quot; title=&quot;1. 求解绝对值&quot;&gt;&lt;/a&gt;1. 求解绝对值&lt;/h4&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i)&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;comment&quot;&gt;//返回整型参数i的绝对值 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;fabs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; i)&lt;/span&gt;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//返回双精度参数i的绝对值 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;labs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; n)&lt;/span&gt;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//返回长整型参数i的绝对值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>github代码上传</title>
+    <link href="http://yoursite.com/2019/09/19/github%E4%BB%A3%E7%A0%81%E4%B8%8A%E4%BC%A0/"/>
+    <id>http://yoursite.com/2019/09/19/github代码上传/</id>
+    <published>2019-09-19T05:50:59.000Z</published>
+    <updated>2019-09-19T13:31:15.388Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-准备工作&quot;&gt;&lt;a href=&quot;#1-准备工作&quot; class=&quot;headerlink&quot; title=&quot;1.准备工作&quot;&gt;&lt;/a&gt;1.准备工作&lt;/h3&gt;&lt;p&gt;1）安装Git Bash&lt;br&gt;因为这个是国外的软件是被限制的，推荐挂个代理&lt;br&gt;本文推荐一个代理软件链接：&lt;a href=&quot;https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA&lt;/a&gt;&lt;br&gt;提取码：xfhn&lt;br&gt;目前本人正在使用的一个代理链接：&lt;a href=&quot;https://www.52jying.com/nobe&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.52jying.com/nobe&lt;/a&gt;&lt;br&gt;如果崩了大家可以上网百度一个自己找一个代理网址。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo从零开始到搭建完整</title>
+    <link href="http://yoursite.com/2019/09/18/hexo%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%88%B0%E6%90%AD%E5%BB%BA%E5%AE%8C%E6%95%B4/"/>
+    <id>http://yoursite.com/2019/09/18/hexo从零开始到搭建完整/</id>
+    <published>2019-09-18T13:50:46.000Z</published>
+    <updated>2019-09-19T13:31:32.311Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-准备工作&quot;&gt;&lt;a href=&quot;#1-准备工作&quot; class=&quot;headerlink&quot; title=&quot;1. 准备工作&quot;&gt;&lt;/a&gt;1. 准备工作&lt;/h3&gt;&lt;p&gt;1）安装Git Bash&lt;br&gt;因为这个是国外的软件是被限制的，推荐挂个代理&lt;br&gt;本文推荐一个代理软件链接：&lt;a href=&quot;https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA&lt;/a&gt;&lt;br&gt;提取码：xfhn&lt;br&gt;目前本人正在使用的一个代理链接：&lt;a href=&quot;https://www.52jying.com/nobe&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.52jying.com/nobe&lt;/a&gt;&lt;br&gt;如果崩了大家可以上网百度一个自己找一个代理网址。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>刷机教程</title>
+    <link href="http://yoursite.com/2019/09/18/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2019/09/18/刷机教程/</id>
+    <published>2019-09-18T10:14:00.000Z</published>
+    <updated>2019-09-19T13:33:37.081Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;headerlink&quot; title=&quot;1. 前言&quot;&gt;&lt;/a&gt;1. 前言&lt;/h3&gt;&lt;p&gt; 电脑系统崩溃了，必须得安装系统，以下是本人归类装机的教程&lt;/p&gt;
+&lt;h3 id=&quot;2-准备工作&quot;&gt;&lt;a href=&quot;#2-准备工作&quot; class=&quot;headerlink&quot; title=&quot;2. 准备工作&quot;&gt;&lt;/a&gt;2. 准备工作&lt;/h3&gt;&lt;p&gt;  自带两个U盘，一个U盘来制作装机U盘，另一个U盘用来下载window10的镜像&lt;/p&gt;
+&lt;h3 id=&quot;3-下载制作U盘软件制作装机U盘&quot;&gt;&lt;a href=&quot;#3-下载制作U盘软件制作装机U盘&quot; class=&quot;headerlink&quot; title=&quot;3.下载制作U盘软件制作装机U盘&quot;&gt;&lt;/a&gt;3.下载制作U盘软件制作装机U盘&lt;/h3&gt;&lt;p&gt;  这里使用的是PE工具箱。&lt;br&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello</title>
+    <link href="http://yoursite.com/2019/09/17/hello/"/>
+    <id>http://yoursite.com/2019/09/17/hello/</id>
+    <published>2019-09-17T13:27:44.439Z</published>
+    <updated>2019-09-19T09:13:12.544Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
