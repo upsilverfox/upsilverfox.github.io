@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2;
   color: #555;
   background: #f5f7f9;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 h1,
@@ -1234,7 +1234,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1264,7 +1264,7 @@ pre .javascript .function {
   opacity: 0;
 }
 .posts-expand {
-  padding-top: 40px;
+  padding-top: 0px;
 }
 @media (max-width: 767px) {
   .posts-expand {
@@ -1452,7 +1452,8 @@ pre .javascript .function {
 .posts-expand .post-title {
   text-align: center;
   word-break: break-word;
-  font-weight: 400;
+  font-weight: 5px;
+  color: #222;
 }
 .posts-expand .post-title-link {
   display: inline-block;
@@ -1466,10 +1467,10 @@ pre .javascript .function {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #f00;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -1489,11 +1490,11 @@ pre .javascript .function {
   transform: scaleX(1);
 }
 .posts-expand .post-title-link .fa {
-  font-size: 16px;
+  font-size: 50px;
 }
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
-  color: #999;
+  color: #555;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
@@ -1501,14 +1502,14 @@ pre .javascript .function {
 .posts-expand .post-meta .post-category-list {
   display: inline-block;
   margin: 0;
-  padding: 3px;
+  padding: 1px;
 }
 .posts-expand .post-meta .post-category-list-link {
   color: #999;
 }
 .posts-expand .post-meta .post-description {
-  font-size: 14px;
-  margin-top: 2px;
+  font-size: 1px;
+  margin-top: 1px;
 }
 .post-meta-divider {
   margin: 0 0.5em;
@@ -1828,7 +1829,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ee0aff;
+  background: #bafbff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2628,7 +2629,7 @@ pre .javascript .function {
 }
 @media (min-width: 1600px) {
   .container .header-inner {
-    width: 240px;
+    width: 400px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3030,10 +3031,10 @@ body {
   background: #258fb8;
 }
 .post {
-  margin-bottom: 100px;
-  padding: 100px;
-  -webkit-box-shadow: 0 0 100px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 100px rgba(202,203,204,0.5);
+  margin-bottom: 12px;
+  padding: 12px;
+  -webkit-box-shadow: 0 0 10px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 10px rgba(202,203,204,0.5);
 }
 .hider_title {
   font-family: "Microsoft Yahei";
