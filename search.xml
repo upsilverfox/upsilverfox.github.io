@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Chrome浏览器F12介绍]]></title>
+    <url>%2F2019%2F09%2F21%2FChrome%E6%B5%8F%E8%A7%88%E5%99%A8F12%E4%BB%8B%E7%BB%8D%2F</url>
+    <content type="text"><![CDATA[1. 可以直接修改页面元素选择页面上元素，右键“检查”，会打开开发者工具窗口，显示当前选择元素的源代码，可以双击进行修改。如果要修改的东西比较多，可以折叠元素并单击选择，再右键选择编辑为 HTML修改 2. 快速查找并定位文件查看源代码，鼠标移到开发工具窗口，按ctrl+p，输入链接地址的前几个字母，会自动联想显示所有符合条件的地址，点击打开即可。（有时第一次打开是空白内容，可再点击一次链接）打开之后，如果是js内容，就可以直接在上面打断点调试，另外可以点击内容框的左下角大括号图标“{ }”(pretty print)，对代码进行排版美化 3. 在修改别人写的网页时需要查找网页某处代码源代码 例如：]]></content>
+      <tags>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[计算机常用小知识点]]></title>
+    <url>%2F2019%2F09%2F21%2F%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%B8%B8%E7%94%A8%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9%2F</url>
+    <content type="text"><![CDATA[1. 任务管理器快捷键方法一：同时按住电脑键盘上的“Shift+Ctrl+Esc”组合键，即可直接打开任务管理器。方法二：同时按住电脑键盘上的“Alt+Ctrl+Del”组合键，然后选择“任务管理器”，也可顺利打开。 2. 在浏览器显示全屏按住电脑键盘上的F11即浏览器显示全屏，再一次退出全屏。 3. 不常用但及其有用的Ctrl组合键个人认为下面几种在写代码时很有用哦。 123ctrl+f 查找 #importctrl+g 定位 ctrl+h 替换 还有一些一般人不常用的: 1234ctrl+W 关闭当前窗口ctrl +esc 打开开始菜单ctrl+Y 恢复ctrl+H 历史 其他的什么ctrl+c的就不讲了]]></content>
+      <tags>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Anaconda环境中OpenCV库的安装及编程]]></title>
+    <url>%2F2019%2F09%2F21%2FAnaconda%E7%8E%AF%E5%A2%83%E4%B8%ADOpenCV%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%BC%96%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[1. OpenCV的安装下面提示两种方法的安装 方法一：Anaconda 下使用 conda 安装 opencv：如果输入 conda install -c menpo opencv ，安装的版本是 v2.4.11；如果输入 conda install -c menpo opencv3 ，安装的版本是 v3.1.0 ；注：命令行启动的时候，需要右键-选择管理员权限。安装过程如下： 安装完成后：执行以下命令可查看是否成功安装openCV 3 该方法很多新的python系统不支持这样运行。如果用了方法一安装不了可以尝试下面的方法。 方法二：直接安装最新版本的opencvAnaconda 下使用 conda 安装 opencv：直接输入：pip install python-opencv安装过程如下： 1. OpenCV的编程]]></content>
+      <categories>
+        <category>编程技术</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo-next主题的颜色配置]]></title>
     <url>%2F2019%2F09%2F20%2Fhexo-next%E4%B8%BB%E9%A2%98%E7%9A%84%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[图片分区：1.第一部分背景颜色 2.第二部分背景颜色 1D:\博客\themes\next\source\css\_schemes\Pisces\_layout.styl 3.第三部分背景颜色 1D:\博客\themes\next\source\css\_schemes\Pisces\_sidebar.styl 4. 左侧上标签的底色 1D:\博客\themes\next\source\css\_schemes\Pisces\menu.styl 5. 主页上的文字 1D:\博客\themes\next\source\css\_schemes\Pisces\_layout.styl 需要添加： 6. 第一部分文字 1D:\博客\themes\next\source\css\_schemes\Pisces\menu.styl 需要添加： 7. 第三部分文字 在 1D:\博客\themes\next\source\css\_custom\_custom.styl 里添加 1234//侧边颜色#sidebar &#123; p,span,a &#123;color: red&#125;&#125; red表示所变的颜色 8. 底部字体颜色 在 1D:\博客\themes\next\source\css\_custom\_custom.sty 里添加 12//底部颜色.footer-inner &#123;color: white&#125; 9. 总体背景颜色在 1D:\博客\themes\next\source\css\_custom\_custom.styl 里添加 12345678//Custom styles.body &#123; background-image:url(https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic1.jpg);#填入照片 background-repeat: no-repeat;#不重复 background-attachment:fixed;#不移动 background-position:50% 50%;#照片位置 background-size: 100% 100%;#照片大小 &#125;]]></content>
@@ -8,7 +35,7 @@
   <entry>
     <title><![CDATA[python-1]]></title>
     <url>%2F2019%2F09%2F20%2Fpython-1%2F</url>
-    <content type="text"><![CDATA[1. 为jupyter设置默认浏览器jupyter 打开后无法直接跳转到浏览器解决方案1、首先打开Anoconda Prompt，输入命令 jupyter notebook –generate-config，系统会自动产生一个名为jupyter_notebook_config.py的文件，并且Anoconda Prompt窗口中会给出文件的路径。2、打开jupyter_notebook_config.py，在文件最后添加以下代码 1234# c.NotebookApp.browser = ''import webbrowserwebbrowser.register('chrome',None,webbrowser.GenericBrowser(u'C:\ProgramFiles(x86)\Google\Chrome\Application\chrome.exe'))c.NotebookApp.browser = 'chrome' 其中C:\Program Files (x86)\Google\Chrome\Application\chrome.exe，这是你想要使用的浏览器路径，可通过右键点击浏览器快捷方式查看属性得到，chrome是你的浏览器名称，可修改，修改完成后，再次打开Jupyter Notebook，则自动打开浏览器编辑窗口最重要的一点是如果你使用的浏览器例如为msedge.exe无论你如何努力都不会有结果因为jupyter notebook不支持 哈哈哈傻了吧我也被坑过 2. 为jupyter设置默认目录1、目标：在C:\...\jupyter-notebook-script.py与%USERPROFILE%之间加入要默认的目录地址，如 E:\jupyter（两边加空格）2、 起始位置改为：E:\jupyter （为你的存储的位置）然后点击应用，并确定。就可以了]]></content>
+    <content type="text"><![CDATA[1. 为jupyter设置默认浏览器jupyter 打开后无法直接跳转到浏览器解决方案1、首先打开Anoconda Prompt，输入命令 jupyter notebook –generate-config，系统会自动产生一个名为jupyter_notebook_config.py的文件，并且Anoconda Prompt窗口中会给出文件的路径。2、打开jupyter_notebook_config.py，在文件最后添加以下代码 1234# c.NotebookApp.browser = ''import webbrowserwebbrowser.register('chrome',None,webbrowser.GenericBrowser(u'C:\ProgramFiles(x86)\Google\Chrome\Application\chrome.exe'))c.NotebookApp.browser = 'chrome' 其中C:\Program Files (x86)\Google\Chrome\Application\chrome.exe，这是你想要使用的浏览器路径，可通过右键点击浏览器快捷方式查看属性得到，chrome是你的浏览器名称，可修改，修改完成后，再次打开Jupyter Notebook，则自动打开浏览器编辑窗口最重要的一点是如果你使用的浏览器例如为msedge.exe无论你如何努力都不会有结果因为jupyter notebook不支持 哈哈哈傻了吧我也被坑过 2. 为jupyter设置默认目录1、目标：在C:\...\jupyter-notebook-script.py与%USERPROFILE%之间加入要默认的目录地址，如 E:\jupyter（两边加空格）2、 起始位置改为：E:\jupyter （为你的存储的位置）然后点击应用，并确定。就可以了！]]></content>
       <tags>
         <tag>python</tag>
       </tags>
