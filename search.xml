@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Computer-English-one]]></title>
+    <url>%2F2019%2F09%2F22%2FComputer-English-one%2F</url>
+    <content type="text"><![CDATA[基础篇 关于电脑组成部分的英语单词中央处理器： CPU主板： motherboard内存： disk硬盘： hard disk闪存盘/U盘： flash disk光盘： CD-compact disk驱动器： driver显示器： display / monitor触屏器： touch screen打印器： printer扬声器： speaker 鼠标： mouse键盘： keyboad输入/输出设备： I/O device外部设备： peripheral主机： mainframe电缆： cable]]></content>
+      <categories>
+        <category>conmput English</category>
+      </categories>
+      <tags>
+        <tag>conmput English</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[win10的命令提示符1]]></title>
     <url>%2F2019%2F09%2F22%2F%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A62%2F</url>
-    <content type="text"><![CDATA[网络安全课程中用到的命令1）arp -a 获取IP地址，MAC地址解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。地址解析协议是建立在网络中各个主机互相信任的基础上的，局域网络上的主机可以自主发送ARP应答消息，其他主机收到应答报文时不会检测该报文的真实性就会将其记入本机ARP缓存；由此攻击者就可以向某一主机发送伪ARP应答报文，使其发送的信息无法到达预期的主机或到达错误的主机，这就构成了一个ARP欺骗。ARP命令可用于查询本机ARP缓存中IP地址和MAC地址的对应关系、添加或删除静态对应关系等。相关协议有RARP、代理ARP。NDP用于在IPv6中代替地址解析协议。 2）arp -d* 命令用于清空arp缓存表。第一次运行：第二次运行： 3）arp -s 网关IP，网关MAC，命令是将网关IP地址与相应的MAC地址进行静态绑定。 4） cleanmgr 垃圾整理 5）compmgmt.msc 计算机管理6) calc 启动计算器 7）mmc 打开控制台 8) logoff 注销（尝试的话记得保存文件） 9）osk 屏幕键盘 10）winver 检查系统信息 注：先写十个记一下，后续在操作其他内容。]]></content>
+    <content type="text"><![CDATA[1）arp -a 获取IP地址，MAC地址解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。地址解析协议是建立在网络中各个主机互相信任的基础上的，局域网络上的主机可以自主发送ARP应答消息，其他主机收到应答报文时不会检测该报文的真实性就会将其记入本机ARP缓存；由此攻击者就可以向某一主机发送伪ARP应答报文，使其发送的信息无法到达预期的主机或到达错误的主机，这就构成了一个ARP欺骗。ARP命令可用于查询本机ARP缓存中IP地址和MAC地址的对应关系、添加或删除静态对应关系等。相关协议有RARP、代理ARP。NDP用于在IPv6中代替地址解析协议。 2）arp -d* 命令用于清空arp缓存表。第一次运行： 第二次运行： 3）arp -s 网关IP，网关MAC，命令是将网关IP地址与相应的MAC地址进行静态绑定: 4） cleanmgr 垃圾整理: 5）compmgmt.msc 计算机管理: 6) calc 启动计算器: 7）mmc 打开控制台 8) logoff 注销（尝试的话记得保存文件） 9）osk 屏幕键盘 10）winver 检查系统信息 注：先写十个记一下，后续在操作其他内容。]]></content>
       <categories>
         <category>cmd</category>
       </categories>

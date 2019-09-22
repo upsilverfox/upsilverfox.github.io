@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-22T13:00:25.639Z</updated>
+  <updated>2019-09-22T13:26:50.399Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,21 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Computer-English-one</title>
+    <link href="http://yoursite.com/2019/09/22/Computer-English-one/"/>
+    <id>http://yoursite.com/2019/09/22/Computer-English-one/</id>
+    <published>2019-09-22T13:13:08.000Z</published>
+    <updated>2019-09-22T13:26:50.399Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;基础篇&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;关于电脑组成部分的英语单词&lt;br&gt;中央处理器：    CPU&lt;br&gt;主板：         motherboard&lt;br&gt;内存：         disk&lt;br&gt;硬盘：         hard disk&lt;br&gt;闪存盘/U盘：   flash disk&lt;br&gt;光盘：         CD-compact disk&lt;br&gt;驱动器：       driver&lt;br&gt;显示器：       display / monitor&lt;br&gt;触屏器：       touch screen&lt;br&gt;打印器：       printer&lt;br&gt;扬声器：       speaker
+    
+    </summary>
+    
+    
+      <category term="conmput English" scheme="http://yoursite.com/categories/conmput-English/"/>
+    
+    
+      <category term="conmput English" scheme="http://yoursite.com/tags/conmput-English/"/>
+    
+  </entry>
+  
+  <entry>
     <title>win10的命令提示符1</title>
     <link href="http://yoursite.com/2019/09/22/%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A62/"/>
     <id>http://yoursite.com/2019/09/22/命令提示符2/</id>
     <published>2019-09-22T12:19:42.000Z</published>
-    <updated>2019-09-22T13:00:25.639Z</updated>
+    <updated>2019-09-22T13:05:37.622Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h4 id=&quot;网络安全课程中用到的命令&quot;&gt;&lt;a href=&quot;#网络安全课程中用到的命令&quot; class=&quot;headerlink&quot; title=&quot;网络安全课程中用到的命令&quot;&gt;&lt;/a&gt;网络安全课程中用到的命令&lt;/h4&gt;&lt;p&gt;1）arp -a 
-        
-      
+      &lt;p&gt;1）arp -a  获取IP地址，MAC地址&lt;br&gt;解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。地址解析协议是建立在网络中各个主机互相信任的基础上的，局域网络上的主机可以自主发送ARP应答消息，其他主机收到应答报文时不会检测该报文的真实性就会将其记入本机ARP缓存；由此攻击者就可以向某一主机发送伪ARP应答报文，使其发送的信息无法到达预期的主机或到达错误的主机，这就构成了一个ARP欺骗。ARP命令可用于查询本机ARP缓存中IP地址和MAC地址的对应关系、添加或删除静态对应关系等。相关协议有RARP、代理ARP。NDP用于在IPv6中代替地址解析协议。&lt;/p&gt;
     
     </summary>
     

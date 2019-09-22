@@ -81,13 +81,13 @@
 
 
 
-<meta name="description" content="网络安全课程中用到的命令1）arp -a  获取IP地址，MAC地址解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时">
+<meta name="description" content="1）arp -a  获取IP地址，MAC地址解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约">
 <meta name="keywords" content="cmd-2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="win10的命令提示符1">
 <meta property="og:url" content="http://yoursite.com/2019/09/22/命令提示符2/index.html">
 <meta property="og:site_name" content="welcome">
-<meta property="og:description" content="网络安全课程中用到的命令1）arp -a  获取IP地址，MAC地址解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时">
+<meta property="og:description" content="1）arp -a  获取IP地址，MAC地址解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922203130.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922203557.png">
@@ -99,10 +99,10 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922204958.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922205514.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922205722.png">
-<meta property="og:updated_time" content="2019-09-22T13:00:25.639Z">
+<meta property="og:updated_time" content="2019-09-22T13:05:37.622Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="win10的命令提示符1">
-<meta name="twitter:description" content="网络安全课程中用到的命令1）arp -a  获取IP地址，MAC地址解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时">
+<meta name="twitter:description" content="1）arp -a  获取IP地址，MAC地址解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922203130.png">
 
 
@@ -407,11 +407,21 @@
       
 
       
-        <h4 id="网络安全课程中用到的命令"><a href="#网络安全课程中用到的命令" class="headerlink" title="网络安全课程中用到的命令"></a>网络安全课程中用到的命令</h4><p>1）arp -a  获取IP地址，MAC地址<br>解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。地址解析协议是建立在网络中各个主机互相信任的基础上的，局域网络上的主机可以自主发送ARP应答消息，其他主机收到应答报文时不会检测该报文的真实性就会将其记入本机ARP缓存；由此攻击者就可以向某一主机发送伪ARP应答报文，使其发送的信息无法到达预期的主机或到达错误的主机，这就构成了一个ARP欺骗。ARP命令可用于查询本机ARP缓存中IP地址和MAC地址的对应关系、添加或删除静态对应关系等。相关协议有RARP、代理ARP。NDP用于在IPv6中代替地址解析协议。<br><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922203130.png" alt> </p>
-<p>2）arp -d* 命令用于清空arp缓存表。<br>第一次运行：<br><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922203557.png" alt><br>第二次运行：<br><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922203636.png" alt> </p>
-<p>3）arp -s 网关IP，网关MAC，命令是将网关IP地址与相应的MAC地址进行静态绑定。<br><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922203954.png" alt> </p>
-<p>4） cleanmgr 垃圾整理<br><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922204113.png" alt> </p>
-<p>5）compmgmt.msc 计算机管理<br><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922204407.png" alt><br>6) calc 启动计算器<br><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922204623.png" alt></p>
+        <p>1）arp -a  获取IP地址，MAC地址<br>解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。地址解析协议是建立在网络中各个主机互相信任的基础上的，局域网络上的主机可以自主发送ARP应答消息，其他主机收到应答报文时不会检测该报文的真实性就会将其记入本机ARP缓存；由此攻击者就可以向某一主机发送伪ARP应答报文，使其发送的信息无法到达预期的主机或到达错误的主机，这就构成了一个ARP欺骗。ARP命令可用于查询本机ARP缓存中IP地址和MAC地址的对应关系、添加或删除静态对应关系等。相关协议有RARP、代理ARP。NDP用于在IPv6中代替地址解析协议。</p>
+<a id="more"></a>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922203130.png" alt> </p>
+<p>2）arp -d* 命令用于清空arp缓存表。<br>第一次运行：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922203557.png" alt> </p>
+<p>第二次运行：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922203636.png" alt> </p>
+<p>3）arp -s 网关IP，网关MAC，命令是将网关IP地址与相应的MAC地址进行静态绑定:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922203954.png" alt> </p>
+<p>4） cleanmgr 垃圾整理:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922204113.png" alt> </p>
+<p>5）compmgmt.msc 计算机管理:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922204407.png" alt> </p>
+<p>6) calc 启动计算器:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922204623.png" alt></p>
 <p>7）mmc 打开控制台 </p>
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190922204958.png" alt></p>
 <p>8) logoff 注销（尝试的话记得保存文件）</p>
@@ -459,6 +469,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/22/Computer-English-one/" rel="prev" title="Computer-English-one">
+                Computer-English-one <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -513,17 +527,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -540,7 +545,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -551,7 +556,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -562,7 +567,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -592,22 +597,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#网络安全课程中用到的命令"><span class="nav-text">网络安全课程中用到的命令</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
