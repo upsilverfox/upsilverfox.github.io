@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2;
   color: #555;
   background: #f5f7f9;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 h1,
@@ -412,7 +412,7 @@ table>tbody>tr:nth-of-type(odd) {
   background-color: #f9f9f9;
 }
 table>tbody>tr:hover {
-  background-color: #f5f5f5;
+  background-color: #f00;
 }
 caption,
 th,
@@ -1234,7 +1234,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1355,7 +1355,7 @@ pre .javascript .function {
   margin-left: -2px;
   width: 4px;
   height: 100%;
-  background: #f5f5f5;
+  background: #f00;
   z-index: -1;
 }
 @media (max-width: 767px) {
@@ -1661,7 +1661,7 @@ pre .javascript .function {
   border-bottom: none;
 }
 .post-body p a:hover {
-  color: #fff;
+  color: #258fb8;
   border-bottom: none;
   border-bottom: 1px solid #fff;
 }
@@ -1829,7 +1829,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bafbff;
+  background: #ffff32;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3018,7 +3018,18 @@ body {
   color: #000;
 }
 .footer-inner {
-  color: bleak;
+  color: #000;
+}
+#sidebar {
+  background: url("https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190920232339.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sidebar p,
+#sidebar span,
+#sidebar a {
+  color: #000;
 }
 .btn {
   color: #000;
@@ -3029,20 +3040,4 @@ body {
   border-color: #fff;
   color: #fff;
   background: #258fb8;
-}
-.post {
-  margin-bottom: 12px;
-  padding: 12px;
-  -webkit-box-shadow: 0 0 10px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 10px rgba(202,203,204,0.5);
-}
-.hider_title {
-  font-family: "Microsoft Yahei";
-  cursor: pointer;
-}
-.close:after {
-  content: "▼";
-}
-.open:after {
-  content: "▲";
 }
