@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[win10的命令提示符1]]></title>
+    <url>%2F2019%2F09%2F22%2F%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A62%2F</url>
+    <content type="text"><![CDATA[网络安全课程中用到的命令1）arp -a 获取IP地址，MAC地址解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。地址解析协议是建立在网络中各个主机互相信任的基础上的，局域网络上的主机可以自主发送ARP应答消息，其他主机收到应答报文时不会检测该报文的真实性就会将其记入本机ARP缓存；由此攻击者就可以向某一主机发送伪ARP应答报文，使其发送的信息无法到达预期的主机或到达错误的主机，这就构成了一个ARP欺骗。ARP命令可用于查询本机ARP缓存中IP地址和MAC地址的对应关系、添加或删除静态对应关系等。相关协议有RARP、代理ARP。NDP用于在IPv6中代替地址解析协议。 2）arp -d* 命令用于清空arp缓存表。第一次运行：第二次运行： 3）arp -s 网关IP，网关MAC，命令是将网关IP地址与相应的MAC地址进行静态绑定。 4） cleanmgr 垃圾整理 5）compmgmt.msc 计算机管理6) calc 启动计算器 7）mmc 打开控制台 8) logoff 注销（尝试的话记得保存文件） 9）osk 屏幕键盘 10）winver 检查系统信息 注：先写十个记一下，后续在操作其他内容。]]></content>
+      <categories>
+        <category>cmd</category>
+      </categories>
+      <tags>
+        <tag>cmd-2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[三种打开命令提示符的方法]]></title>
+    <url>%2F2019%2F09%2F22%2F%E4%B8%A4%E7%A7%8D%E6%89%93%E5%BC%80%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6%E7%9A%84%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[1.介绍命令提示符即cmd.exe，是一个32位的命令行程序，微软Win系统基于Win10上的命令解释程序，类似于微软的DOS操作系统. 2.打开方法1） 在运行窗口输入“cmd”可以使用管理员身份来打开命令提示符2） 按组合快捷键“win+ R”打开运行，输入命令：【cmd】，点击“确定”3） 鼠标右击桌面。 新建文本文档，可随意命名。 输入 cmd 点击“保存”。 修改文件后缀为bat。 打开文本运行命令提示符。]]></content>
+      <categories>
+        <category>cmd</category>
+      </categories>
+      <tags>
+        <tag>cmd-1</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Chrome浏览器F12介绍]]></title>
     <url>%2F2019%2F09%2F21%2FChrome%E6%B5%8F%E8%A7%88%E5%99%A8F12%E4%BB%8B%E7%BB%8D%2F</url>
     <content type="text"><![CDATA[1. 可以直接修改页面元素选择页面上元素，右键“检查”，会打开开发者工具窗口，显示当前选择元素的源代码，可以双击进行修改。如果要修改的东西比较多，可以折叠元素并单击选择，再右键选择编辑为 HTML修改 2. 快速查找并定位文件查看源代码，鼠标移到开发工具窗口，按ctrl+p，输入链接地址的前几个字母，会自动联想显示所有符合条件的地址，点击打开即可。（有时第一次打开是空白内容，可再点击一次链接）打开之后，如果是js内容，就可以直接在上面打断点调试，另外可以点击内容框的左下角大括号图标“{ }”(pretty print)，对代码进行排版美化 3. 在修改别人写的网页时需要查找网页某处代码源代码 例如：]]></content>
@@ -19,7 +41,7 @@
   <entry>
     <title><![CDATA[Anaconda环境中OpenCV库的安装及编程]]></title>
     <url>%2F2019%2F09%2F21%2FAnaconda%E7%8E%AF%E5%A2%83%E4%B8%ADOpenCV%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%BC%96%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[1. OpenCV的安装下面提示两种方法的安装 方法一：Anaconda 下使用 conda 安装 opencv：如果输入 conda install -c menpo opencv ，安装的版本是 v2.4.11；如果输入 conda install -c menpo opencv3 ，安装的版本是 v3.1.0 ；注：命令行启动的时候，需要右键-选择管理员权限。安装过程如下： 安装完成后：执行以下命令可查看是否成功安装openCV 3 该方法很多新的python系统不支持这样运行。如果用了方法一安装不了可以尝试下面的方法。 方法二：直接安装最新版本的opencvAnaconda 下使用 conda 安装 opencv：直接输入：pip install python-opencv安装过程如下： 1. OpenCV的编程]]></content>
+    <content type="text"><![CDATA[1. OpenCV的安装下面提示两种方法的安装 方法一：Anaconda 下使用 conda 安装 opencv：如果输入 conda install -c menpo opencv ，安装的版本是 v2.4.11；如果输入 conda install -c menpo opencv3 ，安装的版本是 v3.1.0 ；注：命令行启动的时候，需要右键-选择管理员权限。安装过程如下： 安装完成后：执行以下命令可查看是否成功安装openCV 3 该方法很多新的python系统不支持这样运行。如果用了方法一安装不了可以尝试下面的方法。 方法二：直接安装最新版本的opencvAnaconda 下使用 conda 安装 opencv：直接输入：install python-opencv```123456789101112131415161718安装过程如下：![](https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190921124252.png)#### 1. OpenCV的编程1) 写图像文件```pythonimport cv2import numpy as npimg = np.zeros((3, 3), dtype = np.uint8) # 通过二维NumPy数组来简单创建一个黑色的正方形图像print(img) # 在控制台打印该图像print(img.shape) # 通过shape属性来查看图像的结构，返回行和列，如果有一个以上的通道，还会返回通道数img = cv2.cvtColor(img,cv2.COLOR_GRAY2BGR) # 利用cv2.cvtColor函数将该图像转换成BGR格式print(img)print(img.shape)cv2.namedWindow(&quot;Image&quot;) # 显示该图像cv2.imshow(&quot;Image&quot;, img)cv2.waitKey (0) 2)读图像文件]]></content>
       <categories>
         <category>编程技术</category>
       </categories>
@@ -31,6 +53,9 @@
     <title><![CDATA[hexo-next主题的颜色配置]]></title>
     <url>%2F2019%2F09%2F20%2Fhexo-next%E4%B8%BB%E9%A2%98%E7%9A%84%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[图片分区：1.第一部分背景颜色 2.第二部分背景颜色 1D:\博客\themes\next\source\css\_schemes\Pisces\_layout.styl 3.第三部分背景颜色 1D:\博客\themes\next\source\css\_schemes\Pisces\_sidebar.styl 4. 左侧上标签的底色 1D:\博客\themes\next\source\css\_schemes\Pisces\menu.styl 5. 主页上的文字 1D:\博客\themes\next\source\css\_schemes\Pisces\_layout.styl 需要添加： 6. 第一部分文字 1D:\博客\themes\next\source\css\_schemes\Pisces\menu.styl 需要添加： 7. 第三部分文字 在 1D:\博客\themes\next\source\css\_custom\_custom.styl 里添加 1234//侧边颜色#sidebar &#123; p,span,a &#123;color: red&#125;&#125; red表示所变的颜色 8. 底部字体颜色 在 1D:\博客\themes\next\source\css\_custom\_custom.sty 里添加 12//底部颜色.footer-inner &#123;color: white&#125; 9. 总体背景颜色在 1D:\博客\themes\next\source\css\_custom\_custom.styl 里添加 12345678//Custom styles.body &#123; background-image:url(https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic1.jpg);#填入照片 background-repeat: no-repeat;#不重复 background-attachment:fixed;#不移动 background-position:50% 50%;#照片位置 background-size: 100% 100%;#照片大小 &#125;]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[python-1]]></title>

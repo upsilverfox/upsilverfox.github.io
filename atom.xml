@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-21T05:40:12.104Z</updated>
+  <updated>2019-09-22T13:00:25.639Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win10的命令提示符1</title>
+    <link href="http://yoursite.com/2019/09/22/%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A62/"/>
+    <id>http://yoursite.com/2019/09/22/命令提示符2/</id>
+    <published>2019-09-22T12:19:42.000Z</published>
+    <updated>2019-09-22T13:00:25.639Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;网络安全课程中用到的命令&quot;&gt;&lt;a href=&quot;#网络安全课程中用到的命令&quot; class=&quot;headerlink&quot; title=&quot;网络安全课程中用到的命令&quot;&gt;&lt;/a&gt;网络安全课程中用到的命令&lt;/h4&gt;&lt;p&gt;1）arp -a 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="cmd" scheme="http://yoursite.com/categories/cmd/"/>
+    
+    
+      <category term="cmd-2" scheme="http://yoursite.com/tags/cmd-2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三种打开命令提示符的方法</title>
+    <link href="http://yoursite.com/2019/09/22/%E4%B8%A4%E7%A7%8D%E6%89%93%E5%BC%80%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/09/22/两种打开命令提示符的方法/</id>
+    <published>2019-09-22T11:40:48.000Z</published>
+    <updated>2019-09-22T12:23:56.397Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-介绍&quot;&gt;&lt;a href=&quot;#1-介绍&quot; class=&quot;headerlink&quot; title=&quot;1.介绍&quot;&gt;&lt;/a&gt;1.介绍&lt;/h4&gt;&lt;p&gt;命令提示符即cmd.exe，是一个32位的命令行程序，微软Win系统基于Win10上的命令解释程序，类似于微软的DOS操作系统.&lt;/p&gt;
+&lt;h4 id=&quot;2-打开方法&quot;&gt;&lt;a href=&quot;#2-打开方法&quot; class=&quot;headerlink&quot; title=&quot;2.打开方法&quot;&gt;&lt;/a&gt;2.打开方法&lt;/h4&gt;&lt;p&gt;1） 在运行窗口输入“cmd”可以使用管理员身份来打开命令提示符&lt;br&gt;2） 按组合快捷键“win+ R”打开运行，输入命令：【cmd】，点击“确定”&lt;br&gt;3） 鼠标右击桌面。&lt;br&gt;    新建文本文档，可随意命名。&lt;br&gt;    输入 &lt;code&gt;cmd&lt;/code&gt;&lt;br&gt;    点击“保存”。&lt;br&gt;    修改文件后缀为bat。&lt;br&gt;    打开文本运行命令提示符。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="cmd" scheme="http://yoursite.com/categories/cmd/"/>
+    
+    
+      <category term="cmd-1" scheme="http://yoursite.com/tags/cmd-1/"/>
+    
+  </entry>
   
   <entry>
     <title>Chrome浏览器F12介绍</title>
@@ -60,7 +109,7 @@
     <link href="http://yoursite.com/2019/09/21/Anaconda%E7%8E%AF%E5%A2%83%E4%B8%ADOpenCV%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%BC%96%E7%A8%8B/"/>
     <id>http://yoursite.com/2019/09/21/Anaconda环境中OpenCV库的安装及编程/</id>
     <published>2019-09-21T04:31:41.000Z</published>
-    <updated>2019-09-21T05:40:18.100Z</updated>
+    <updated>2019-09-22T12:08:02.397Z</updated>
     
     <summary type="html">
     
@@ -82,7 +131,7 @@
     <link href="http://yoursite.com/2019/09/20/hexo-next%E4%B8%BB%E9%A2%98%E7%9A%84%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE/"/>
     <id>http://yoursite.com/2019/09/20/hexo-next主题的颜色配置/</id>
     <published>2019-09-20T11:14:35.000Z</published>
-    <updated>2019-09-21T00:33:33.947Z</updated>
+    <updated>2019-09-22T11:41:41.645Z</updated>
     
     <summary type="html">
     
@@ -91,6 +140,8 @@
     </summary>
     
     
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
