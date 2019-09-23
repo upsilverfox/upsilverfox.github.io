@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-22T13:26:50.399Z</updated>
+  <updated>2019-09-22T13:31:09.517Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,13 +21,11 @@
     <link href="http://yoursite.com/2019/09/22/Computer-English-one/"/>
     <id>http://yoursite.com/2019/09/22/Computer-English-one/</id>
     <published>2019-09-22T13:13:08.000Z</published>
-    <updated>2019-09-22T13:26:50.399Z</updated>
+    <updated>2019-09-22T13:31:09.517Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;基础篇&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;关于电脑组成部分的英语单词&lt;br&gt;中央处理器：    CPU&lt;br&gt;主板：         motherboard&lt;br&gt;内存：         disk&lt;br&gt;硬盘：         hard disk&lt;br&gt;闪存盘/U盘：   flash disk&lt;br&gt;光盘：         CD-compact disk&lt;br&gt;驱动器：       driver&lt;br&gt;显示器：       display / monitor&lt;br&gt;触屏器：       touch screen&lt;br&gt;打印器：       printer&lt;br&gt;扬声器：       speaker
+      &lt;p&gt;基础篇&lt;br&gt;关于电脑组成部分的英语单词&lt;br&gt;中央处理器：    CPU&lt;br&gt;主板：         motherboard&lt;br&gt;内存：         disk&lt;br&gt;硬盘：         hard disk&lt;br&gt;闪存盘/U盘：   flash disk&lt;br&gt;光盘：         CD-compact disk&lt;/p&gt;
     
     </summary>
     
@@ -40,11 +38,11 @@
   </entry>
   
   <entry>
-    <title>win10的命令提示符1</title>
+    <title>win10部分有趣的命令提示符</title>
     <link href="http://yoursite.com/2019/09/22/%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A62/"/>
     <id>http://yoursite.com/2019/09/22/命令提示符2/</id>
     <published>2019-09-22T12:19:42.000Z</published>
-    <updated>2019-09-22T13:05:37.622Z</updated>
+    <updated>2019-09-22T14:20:54.018Z</updated>
     
     <summary type="html">
     
@@ -56,7 +54,7 @@
       <category term="cmd" scheme="http://yoursite.com/categories/cmd/"/>
     
     
-      <category term="cmd-2" scheme="http://yoursite.com/tags/cmd-2/"/>
+      <category term="cmd" scheme="http://yoursite.com/tags/cmd/"/>
     
   </entry>
   
@@ -65,7 +63,7 @@
     <link href="http://yoursite.com/2019/09/22/%E4%B8%A4%E7%A7%8D%E6%89%93%E5%BC%80%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6%E7%9A%84%E6%96%B9%E6%B3%95/"/>
     <id>http://yoursite.com/2019/09/22/两种打开命令提示符的方法/</id>
     <published>2019-09-22T11:40:48.000Z</published>
-    <updated>2019-09-22T12:23:56.397Z</updated>
+    <updated>2019-09-22T14:20:47.787Z</updated>
     
     <summary type="html">
     
@@ -78,7 +76,7 @@
       <category term="cmd" scheme="http://yoursite.com/categories/cmd/"/>
     
     
-      <category term="cmd-1" scheme="http://yoursite.com/tags/cmd-1/"/>
+      <category term="cmd" scheme="http://yoursite.com/tags/cmd/"/>
     
   </entry>
   
@@ -102,11 +100,11 @@
   </entry>
   
   <entry>
-    <title>计算机常用小知识点</title>
+    <title>计算机快捷键</title>
     <link href="http://yoursite.com/2019/09/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%B8%B8%E7%94%A8%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     <id>http://yoursite.com/2019/09/21/计算机常用小知识点/</id>
     <published>2019-09-21T04:47:04.000Z</published>
-    <updated>2019-09-21T05:40:14.692Z</updated>
+    <updated>2019-09-22T14:19:54.839Z</updated>
     
     <summary type="html">
     
@@ -144,15 +142,16 @@
   </entry>
   
   <entry>
-    <title>hexo-next主题的颜色配置</title>
+    <title>hexo-next-Pisces主题的颜色配置</title>
     <link href="http://yoursite.com/2019/09/20/hexo-next%E4%B8%BB%E9%A2%98%E7%9A%84%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE/"/>
     <id>http://yoursite.com/2019/09/20/hexo-next主题的颜色配置/</id>
     <published>2019-09-20T11:14:35.000Z</published>
-    <updated>2019-09-22T11:41:41.645Z</updated>
+    <updated>2019-09-22T14:07:10.597Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;图片分区：&quot;&gt;&lt;a href=&quot;#图片分区：&quot; class=&quot;headerlink&quot; title=&quot;图片分区：&quot;&gt;&lt;/a&gt;图片分区：&lt;/h3&gt;&lt;h3 id=&quot;1-第一部分背景颜色&quot;&gt;&lt;a href=&quot;#1-第一部分背景颜色&quot; class=&quot;headerlink&quot; title=&quot;1.第一部分背景颜色&quot;&gt;&lt;/a&gt;1.第一部分背景颜色&lt;/h3&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190920195326.png&quot;&gt;
+      &lt;h4 id=&quot;1-左上侧背景颜色&quot;&gt;&lt;a href=&quot;#1-左上侧背景颜色&quot; class=&quot;headerlink&quot; title=&quot;1.左上侧背景颜色&quot;&gt;&lt;/a&gt;1.左上侧背景颜色&lt;/h4&gt;&lt;p&gt;在 D:\博客\themes\next\source\css_schemes\Pisces_layout.styl  里修改background的内容颜色可参考:&lt;a href=&quot;http://tool.oschina.net/commons?type=3&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RCG颜色对照表&lt;/a&gt; &lt;/p&gt;
+&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190920193543.png&quot;&gt;
     
     </summary>
     
@@ -163,11 +162,11 @@
   </entry>
   
   <entry>
-    <title>python-1</title>
+    <title>python-jupyter的设置</title>
     <link href="http://yoursite.com/2019/09/20/python-1/"/>
     <id>http://yoursite.com/2019/09/20/python-1/</id>
     <published>2019-09-20T07:45:02.000Z</published>
-    <updated>2019-09-21T04:45:24.035Z</updated>
+    <updated>2019-09-22T13:29:37.886Z</updated>
     
     <summary type="html">
     
@@ -182,11 +181,11 @@
   </entry>
   
   <entry>
-    <title>c++小知识1</title>
+    <title>c++的cmach库</title>
     <link href="http://yoursite.com/2019/09/19/c++%E5%B0%8F%E7%9F%A5%E8%AF%861/"/>
     <id>http://yoursite.com/2019/09/19/c++小知识1/</id>
     <published>2019-09-19T09:25:18.000Z</published>
-    <updated>2019-09-20T13:34:43.813Z</updated>
+    <updated>2019-09-22T13:29:17.186Z</updated>
     
     <summary type="html">
     
