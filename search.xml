@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[linux基本操作]]></title>
+    <url>%2F2019%2F09%2F24%2Flinux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[cd命令这是一个非常基本，也是大家经常需要使用的命令，它用于切换当前目录，它的参数是要切换到的目录的路径，可以是绝对路径，也可以是相对路径。如： 123456cd /home 进入 '/ home' 目录' cd .. 返回上一级目录 cd ../.. 返回上两级目录 cd 进入个人的主目录 cd ~user1 进入个人的主目录 cd - 返回上次所在的目录 time命令该命令用于测算一个命令（即程序）的执行时间。它的使用非常简单，就像平时输入命令一样，不过在命令的前面加入一个time即可，例如 12time ./process time ps aux 安装命令123456789101112131415161718192021yum install #全部安装yum install #安装指定的软件yum groupinsall #安装程序组#更新和升级yum update #全部更新yum update #更新指定程序包yum check-update #检查可更新的程序yum upgrade #升级指定程序包yum groupupdate #升级程序组#查找和显示yum list #显示所有已安装和可以安装的程序包yum list #显示指定程序包的安装情况yum info #显示程序包信息yum groupinfo #显示程序组信息#删除命令yum remove #删除程序包yum groupremove #删除程序组yum deplist #查看程序包的依赖情况#清除缓存yum clean packages #清除缓存目录下的软件包yum clean headers #清除缓存目录下的heades]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[win10自带虚拟机Hyper-V]]></title>
+    <url>%2F2019%2F09%2F23%2Fwin10%E8%87%AA%E5%B8%A6%E8%99%9A%E6%8B%9F%E6%9C%BAHyper-V%2F</url>
+    <content type="text"><![CDATA[教你如何使用win10自带虚拟机Hyper-V 按win+pause break快速打开控制面板的系统和安全中的系统，点击控制面板 在控制面版中，打开程序组件，选择程序与功能。点击启动或关闭windows功能。 找到Hyper-V，打勾（注意win10家庭版时没有Hyper-V） 勾选后，点击立即重启 开机后找到Hyper-V，打开程序 虚拟机网络配置 打开Hyper-V，在右侧操作列表中点击“虚拟交换机管理”，打开虚拟交换机管理器 选择“新建虚拟网络交换机”，在虚拟交换机类型列表中选择“外部”，点击“创建虚拟交换机”，创建一个虚拟交换机，输入虚拟交换机的名称和说明，为虚拟交换机选择一个网络适配器（即物理网卡），点击“确定”。 等待应用更改 在Hyper-V管理器中，选择虚拟机，点击右侧操作列表中的“设置”，修改虚拟机配置。 在虚拟机设置界面，点击“网络适配器”，选择虚拟交换机，点击确定，这样就配置好了虚拟机的网络连接。这样就完成里虚拟机的网络配置了； 开始创建虚拟机了 下载虚拟机需要的镜像 推荐win10镜像链接：https://msdn.itellyou.cn/ 推荐Linux链接：https://ubuntu.com/download/desktop/thank-you?country=CN&amp;version=18.04.3&amp;architecture=amd64#download 将下载成功的镜像放在电脑上的一个文件夹中以备后用。 开始创建1）点击新建虚拟机 2）设置你的虚拟机的名称 3）指定代数，我选择的是第一代，继续选择下一步 4）网络配置，选择我们刚刚设置的网络名称 5）从我们的文件夹中选择镜像 6）后续就是下一步，完成。示意图： 7）这里显示已经创建好了，然后右键选择启动该虚拟机(有点小慢)。启动之后右键选择连接开始自动安装系统，注意选择语言，否则安装之后是英文，如果对英文有点感冒的话，这里就修改下，要不然安装好之后有需要在设置里修改。 安排： 选择语言点击install ubuntu，之后就是下一步、下一步。 说明：1.因为是虚拟机所以可以清空虚拟U盘里的东西，这样对你现有的电脑文件没有影响的 2. 如果重启的时候出现错误记得关闭虚拟机，然后在开启。 参考： https://baijiahao.baidu.com/s?id=1607835632188281786&amp;wfr=spider&amp;for=pc https://jingyan.baidu.com/article/a681b0de6109253b18434635.html https://jingyan.baidu.com/article/e9fb46e129349d7520f76648.html]]></content>
+      <tags>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[初识python]]></title>
+    <url>%2F2019%2F09%2F23%2F%E5%88%9D%E8%AF%86python%2F</url>
+    <content type="text"><![CDATA[Python的优缺点Python的优点很多，简单的可以总结为以下几点。简单和明确，做一件事只有一种方法。学习曲线低，跟其他很多语言相比，Python更容易上手。开放源代码，拥有强大的社区和生态圈。解释型语言，天生具有平台可移植性。支持两种主流的编程范式（面向对象编程和函数式编程）都提供了支持。可扩展性和可嵌入性，可以调用C/C++代码，也可以在C/C++中调用Python。代码规范程度高，可读性强，适合有代码洁癖和强迫症的人群。Python的缺点主要集中在以下几点。执行效率稍低，因此计算密集型任务可以由C/C++编写。代码无法加密，但是现在很多公司都不销售卖软件而是销售服务，这个问题会被淡化。在开发时可以选择的框架太多（如Web框架就有100多个），有选择的地方就有错误。 Python的应用领域目前Python在Web应用开发、云基础设施、DevOps、网络爬虫开发、数据分析挖掘、机器学习等领域都有着广泛的应用，因此也产生了Web后端开发、数据接口开发、自动化运维、自动化测试、科学计算和可视化、数据分析、量化交易、机器人开发、图像识别和处理等一系列的职位.本人主要感兴趣的有web开发和数据挖掘。 Linux环境下安装python3.xLinux环境自带了Python 3.x版本，在linux系统下: 代码中的注释注释是编程语言的一个重要组成部分，用于在源代码中解释代码的作用从而增强程序的可读性和可维护性，当然也可以将源代码中不需要参与运行的代码段通过注释来去掉，这一点在调试程序的时候经常用到。注释在随源代码进入预处理器或编译时会被移除，不会在目标代码中保留也不会影响程序的执行结果。单行注释 （以#和空格开头的部分）多行注释 （三个引号开头，三个引号结尾）-（！import）示例： 注：该处使用的时jupyter notebook工具 练习 import this听说这是”python之禅”，里面讲述的道理不仅仅适用于Python，也适用于其他编程语言。 学习使用turtle在屏幕上绘制图形。trutle英语翻译为海龟、人名：特特尔，理解：python绘图就像海龟在海中绘制美丽的图像。哈哈！1） turtle.setup() 函数用于启动一个图形窗口，它有四个参数，turtle.setup(width,height,startx,starty)，分别是：启动窗口的宽度和高度，表示窗口启动时，窗口左上角在屏幕中的坐标位置。向左为横坐标，向下为纵坐标。2） turtle.pensize()函数表示运动轨迹的宽度。它包含一个输入参数，即多少像素。3） turtle.pencolor()函数表示运动轨迹的颜色。它包含一个输入参数，即想要的颜色。4） turtle.seth()函数表示启动时运动的方向。它包含一个输入参数，是角度值。5） turtle.circle()函数表示绘制的图形为圆形，它包含两个参数，rad描述轨迹半径的位置，angle表示沿着圆形爬行的弧度值。6） turtle.fd()函数也可以用turtle.forward()表示，表示向前直线移动，它有一个参数表示移动的距离。主要是参考他人代码理解一波。示例：12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758from turtle import * def HSB2RGB(hues): hues = hues * 3.59 #100转成359范围 rgb=[0.0,0.0,0.0] i = int(hues/60)%6 f = hues/60 -i if i == 0: rgb[0] = 1; rgb[1] = f; rgb[2] = 0 elif i == 1: rgb[0] = 1-f; rgb[1] = 1; rgb[2] = 0 elif i == 2: rgb[0] = 0; rgb[1] = 1; rgb[2] = f elif i == 3: rgb[0] = 0; rgb[1] = 1-f; rgb[2] = 1 elif i == 4: rgb[0] = f; rgb[1] = 0; rgb[2] = 1 elif i == 5: rgb[0] = 1; rgb[1] = 0; rgb[2] = 1-f return rgb def rainbow(): hues = 0.0 color(1,0,0) #绘制彩虹 hideturtle() speed(100) pensize(3) penup() goto(-400,-300) pendown() right(110) for i in range (100): circle(1000) right(0.13) hues = hues + 1 rgb = HSB2RGB(hues) color(rgb[0],rgb[1],rgb[2]) penup() def main(): setup(800, 600, 0, 0) bgcolor((0.8, 0.8, 1.0)) tracer(False) rainbow() #输出文字 tracer(False) goto(100,-100) pendown() color("red") write("菜鸟一号",align="center", font=("Script MT Bold", 80, "bold")) tracer(True) mainloop() if __name__ == "__main__": main() 运行结果：]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Excel]]></title>
+    <url>%2F2019%2F09%2F23%2FExcel%2F</url>
+    <content type="text"><![CDATA[Excel 常用公式]]></content>
+      <tags>
+        <tag>Excel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ppt操作]]></title>
+    <url>%2F2019%2F09%2F23%2Fppt%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[ppt中将图片设置为高150px，宽100px。PX=pixel=像素在高度那块输入150像素，宽度输入100像素。注意不能输入px。 如何修改PPT中左下方状态栏的主题名称网上有很多很好的PPT，可惜一般作者都加了名字和主题，现在我们就来说说如何修改PPT中左下方状态栏的主题名称。 如下图所示： 在《视图》中点击《幻灯片母版》界面。选择第一张幻灯片。然后在点击左上角的重命名。记得重命名后要保存退出后再打开PPT。（！import）]]></content>
+      <tags>
+        <tag>ppt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[电脑手工杀毒]]></title>
+    <url>%2F2019%2F09%2F23%2F%E7%94%B5%E8%84%91%E6%89%8B%E5%B7%A5%E6%9D%80%E6%AF%92%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>手工杀毒</category>
+      </categories>
+      <tags>
+        <tag>computer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Computer-English-one]]></title>
     <url>%2F2019%2F09%2F22%2FComputer-English-one%2F</url>
     <content type="text"><![CDATA[基础篇关于电脑组成部分的英语单词中央处理器： CPU主板： motherboard内存： disk硬盘： hard disk闪存盘/U盘： flash disk光盘： CD-compact disk 驱动器： driver显示器： display / monitor触屏器： touch screen打印器： printer扬声器： speaker鼠标： mouse键盘： keyboad输入/输出设备： I/O device外部设备： peripheral主机： mainframe电缆： cable]]></content>
@@ -106,7 +157,7 @@
   <entry>
     <title><![CDATA[刷机教程]]></title>
     <url>%2F2019%2F09%2F18%2F%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[1. 前言 电脑系统崩溃了，必须得安装系统，以下是本人归类装机的教程 2. 准备工作 自带两个U盘，一个U盘来制作装机U盘，另一个U盘用来下载window10的镜像 3.下载制作U盘软件制作装机U盘 这里使用的是PE工具箱。 链接 :https://pan.baidu.com/s/1smOthvlX3JQJNecebcO35A提取码：opn0 下载的软件存放到用来制作装机U盘中，打开程序安装示意图如下： 1）推荐使用自定义的安装 2）在安装方法处建议选择方案三，U盘卷标为你的U盘名，pe壁纸下建议全选，当然不全选也行。然后点击安装就行了。 4. 下载 windows10镜像 推荐链接：https://msdn.itellyou.cn/ 5. 开始进行刷机 1）将电脑重启，在电脑开机时不断给点击F12进入刷机系统。 2）将电脑磁盘进行分区 3）记住磁盘类型要选择GPT,扇区选择4096，选择完后点击开始执行 4）将电脑格式化分区后插入你下载好window10镜像的U盘，点击安装包就可以安装了。记住在安装完window10时电脑会关机，当电脑关机时要将U盘拔出。 6. 装好系统后安装Windows10后，windows10是未激活状态，下面推荐一款Windows10（激活）工具 链接：https://pan.baidu.com/s/1hV9lNjew_Ne1drM216e9-A提取码：l6cx还有一款office（激活）工具链接：https://pan.baidu.com/s/1KEahExeIv95iekWLaNpiRw提取码：a7fw还有什么不懂可以留言！！！]]></content>
+    <content type="text"><![CDATA[1. 前言 电脑系统崩溃了，必须得安装系统，以下是本人归类装机的教程 2. 准备工作 自带两个U盘，一个U盘来制作装机U盘，另一个U盘用来下载window10的镜像 3.下载制作U盘软件制作装机U盘这里使用的是PE工具箱。 链接: https://pan.baidu.com/s/1smOthvlX3JQJNecebcO35A提取码：opn0 下载的软件存放到用来制作装机U盘中，打开程序安装示意图如下： 1）推荐使用自定义的安装 2）在安装方法处建议选择方案三，U盘卷标为你的U盘名，pe壁纸下建议全选，当然不全选也行。然后点击安装就行了。 4. 下载 windows10镜像 推荐链接：https://msdn.itellyou.cn/ 5. 开始进行刷机 1）将电脑重启，在电脑开机时不断给点击F12进入刷机系统。 2）将电脑磁盘进行分区 3）记住磁盘类型要选择GPT,扇区选择4096，选择完后点击开始执行 4）将电脑格式化分区后插入你下载好window10镜像的U盘，点击安装包就可以安装了。记住在安装完window10时电脑会关机，当电脑关机时要将U盘拔出。 6. 装好系统后安装Windows10后，windows10是未激活状态，下面推荐一款Windows10（激活）工具链接：https://pan.baidu.com/s/1hV9lNjew_Ne1drM216e9-A提取码：l6cx还有一款office（激活）工具链接：https://pan.baidu.com/s/1KEahExeIv95iekWLaNpiRw提取码：a7fw还有什么不懂可以留言！！！]]></content>
       <tags>
         <tag>教程</tag>
       </tags>

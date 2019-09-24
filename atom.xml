@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-22T13:31:09.517Z</updated>
+  <updated>2019-09-24T10:03:33.072Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,126 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux基本操作</title>
+    <link href="http://yoursite.com/2019/09/24/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2019/09/24/linux基本操作/</id>
+    <published>2019-09-24T08:12:43.000Z</published>
+    <updated>2019-09-24T10:03:33.072Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;cd命令&quot;&gt;&lt;a href=&quot;#cd命令&quot; class=&quot;headerlink&quot; title=&quot;cd命令&quot;&gt;&lt;/a&gt;cd命令&lt;/h4&gt;&lt;p&gt;这是一个非常基本，也是大家经常需要使用的命令，它用于切换当前目录，它的参数是要切换到的目录的路径，可以是绝对路径，也可以是相对路径。如：&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd /home 进入 &lt;span class=&quot;string&quot;&gt;&#39;/ home&#39;&lt;/span&gt; 目录&lt;span class=&quot;string&quot;&gt;&#39; &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;cd .. 返回上一级目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;cd ../.. 返回上两级目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;cd 进入个人的主目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;cd ~user1 进入个人的主目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;cd - 返回上次所在的目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>win10自带虚拟机Hyper-V</title>
+    <link href="http://yoursite.com/2019/09/23/win10%E8%87%AA%E5%B8%A6%E8%99%9A%E6%8B%9F%E6%9C%BAHyper-V/"/>
+    <id>http://yoursite.com/2019/09/23/win10自带虚拟机Hyper-V/</id>
+    <published>2019-09-23T09:03:18.000Z</published>
+    <updated>2019-09-24T09:53:30.263Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;教你如何使用win10自带虚拟机Hyper-V&quot;&gt;&lt;a href=&quot;#教你如何使用win10自带虚拟机Hyper-V&quot; class=&quot;headerlink&quot; title=&quot;教你如何使用win10自带虚拟机Hyper-V&quot;&gt;&lt;/a&gt;教你如何使用win10自带虚拟机Hyper-V&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;按win+pause break快速打开控制面板的系统和安全中的系统，点击控制面板&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190923171407.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="计算机" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初识python</title>
+    <link href="http://yoursite.com/2019/09/23/%E5%88%9D%E8%AF%86python/"/>
+    <id>http://yoursite.com/2019/09/23/初识python/</id>
+    <published>2019-09-23T08:43:11.000Z</published>
+    <updated>2019-09-24T09:58:12.452Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;Python的优缺点&quot;&gt;&lt;a href=&quot;#Python的优缺点&quot; class=&quot;headerlink&quot; title=&quot;Python的优缺点&quot;&gt;&lt;/a&gt;Python的优缺点&lt;/h5&gt;&lt;p&gt;Python的优点很多，简单的可以总结为以下几点。&lt;br&gt;简单和明确，做一件事只有一种方法。&lt;br&gt;学习曲线低，跟其他很多语言相比，Python更容易上手。&lt;br&gt;开放源代码，拥有强大的社区和生态圈。&lt;br&gt;解释型语言，天生具有平台可移植性。&lt;br&gt;支持两种主流的编程范式（面向对象编程和函数式编程）都提供了支持。&lt;br&gt;可扩展性和可嵌入性，可以调用C/C++代码，也可以在C/C++中调用Python。&lt;br&gt;代码规范程度高，可读性强，适合有代码洁癖和强迫症的人群。&lt;br&gt;Python的缺点主要集中在以下几点。&lt;br&gt;执行效率稍低，因此计算密集型任务可以由C/C++编写。&lt;br&gt;代码无法加密，但是现在很多公司都不销售卖软件而是销售服务，这个问题会被淡化。&lt;br&gt;在开发时可以选择的框架太多（如Web框架就有100多个），有选择的地方就有错误。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Excel</title>
+    <link href="http://yoursite.com/2019/09/23/Excel/"/>
+    <id>http://yoursite.com/2019/09/23/Excel/</id>
+    <published>2019-09-23T06:25:34.000Z</published>
+    <updated>2019-09-24T10:03:23.173Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;Excel-常用公式&quot;&gt;&lt;a href=&quot;#Excel-常用公式&quot; class=&quot;headerlink&quot; title=&quot;Excel 常用公式&quot;&gt;&lt;/a&gt;Excel 常用公式&lt;/h4&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Excel" scheme="http://yoursite.com/tags/Excel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ppt操作</title>
+    <link href="http://yoursite.com/2019/09/23/ppt%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2019/09/23/ppt操作/</id>
+    <published>2019-09-23T06:24:59.000Z</published>
+    <updated>2019-09-24T10:02:41.782Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;ppt中将图片设置为高150px，宽100px。&lt;br&gt;PX=pixel=像素&lt;br&gt;在高度那块输入150像素，宽度输入100像素。注意不能输入px。&lt;/li&gt;
+&lt;li&gt;如何修改PPT中左下方状态栏的主题名称&lt;br&gt;网上有很多很好的PPT，可惜一般作者都加了名字和主题，现在我们就来说说如何修改PPT中左下方状态栏的主题名称。
+    
+    </summary>
+    
+    
+    
+      <category term="ppt" scheme="http://yoursite.com/tags/ppt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电脑手工杀毒</title>
+    <link href="http://yoursite.com/2019/09/23/%E7%94%B5%E8%84%91%E6%89%8B%E5%B7%A5%E6%9D%80%E6%AF%92/"/>
+    <id>http://yoursite.com/2019/09/23/电脑手工杀毒/</id>
+    <published>2019-09-23T01:52:18.000Z</published>
+    <updated>2019-09-23T01:53:36.672Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="手工杀毒" scheme="http://yoursite.com/categories/%E6%89%8B%E5%B7%A5%E6%9D%80%E6%AF%92/"/>
+    
+    
+      <category term="computer" scheme="http://yoursite.com/tags/computer/"/>
+    
+  </entry>
   
   <entry>
     <title>Computer-English-one</title>
@@ -146,7 +266,7 @@
     <link href="http://yoursite.com/2019/09/20/hexo-next%E4%B8%BB%E9%A2%98%E7%9A%84%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE/"/>
     <id>http://yoursite.com/2019/09/20/hexo-next主题的颜色配置/</id>
     <published>2019-09-20T11:14:35.000Z</published>
-    <updated>2019-09-22T14:07:10.597Z</updated>
+    <updated>2019-09-23T01:49:36.280Z</updated>
     
     <summary type="html">
     
@@ -244,13 +364,13 @@
     <link href="http://yoursite.com/2019/09/18/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/"/>
     <id>http://yoursite.com/2019/09/18/刷机教程/</id>
     <published>2019-09-18T10:14:00.000Z</published>
-    <updated>2019-09-19T13:33:37.081Z</updated>
+    <updated>2019-09-23T09:28:26.437Z</updated>
     
     <summary type="html">
     
       &lt;h3 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;headerlink&quot; title=&quot;1. 前言&quot;&gt;&lt;/a&gt;1. 前言&lt;/h3&gt;&lt;p&gt; 电脑系统崩溃了，必须得安装系统，以下是本人归类装机的教程&lt;/p&gt;
 &lt;h3 id=&quot;2-准备工作&quot;&gt;&lt;a href=&quot;#2-准备工作&quot; class=&quot;headerlink&quot; title=&quot;2. 准备工作&quot;&gt;&lt;/a&gt;2. 准备工作&lt;/h3&gt;&lt;p&gt;  自带两个U盘，一个U盘来制作装机U盘，另一个U盘用来下载window10的镜像&lt;/p&gt;
-&lt;h3 id=&quot;3-下载制作U盘软件制作装机U盘&quot;&gt;&lt;a href=&quot;#3-下载制作U盘软件制作装机U盘&quot; class=&quot;headerlink&quot; title=&quot;3.下载制作U盘软件制作装机U盘&quot;&gt;&lt;/a&gt;3.下载制作U盘软件制作装机U盘&lt;/h3&gt;&lt;p&gt;  这里使用的是PE工具箱。&lt;br&gt;
+&lt;h3 id=&quot;3-下载制作U盘软件制作装机U盘&quot;&gt;&lt;a href=&quot;#3-下载制作U盘软件制作装机U盘&quot; class=&quot;headerlink&quot; title=&quot;3.下载制作U盘软件制作装机U盘&quot;&gt;&lt;/a&gt;3.下载制作U盘软件制作装机U盘&lt;/h3&gt;&lt;p&gt;这里使用的是PE工具箱。&lt;br&gt;
     
     </summary>
     
