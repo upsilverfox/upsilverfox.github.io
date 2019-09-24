@@ -103,7 +103,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919135403.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919140215.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919140327.png">
-<meta property="og:updated_time" content="2019-09-20T13:35:08.025Z">
+<meta property="og:updated_time" content="2019-09-24T11:27:01.186Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo从零开始到搭建完整">
 <meta name="twitter:description" content="1. 准备工作1）安装Git Bash因为这个是国外的软件是被限制的，推荐挂个代理本文推荐一个代理软件链接：https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA提取码：xfhn目前本人正在使用的一个代理链接：https://www.52jying.com/nobe如果崩了大家可以上网百度一个自己找一个代理网址。">
@@ -352,6 +352,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -389,10 +411,10 @@
       
 
       
-        <h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h3><p>1）安装Git Bash<br>因为这个是国外的软件是被限制的，推荐挂个代理<br>本文推荐一个代理软件链接：<a href="https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA" target="_blank" rel="noopener">https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA</a><br>提取码：xfhn<br>目前本人正在使用的一个代理链接：<a href="https://www.52jying.com/nobe" target="_blank" rel="noopener">https://www.52jying.com/nobe</a><br>如果崩了大家可以上网百度一个自己找一个代理网址。</p>
+        <h4 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h4><p>1）安装Git Bash<br>因为这个是国外的软件是被限制的，推荐挂个代理<br>本文推荐一个代理软件链接：<a href="https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA" target="_blank" rel="noopener">https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA</a><br>提取码：xfhn<br>目前本人正在使用的一个代理链接：<a href="https://www.52jying.com/nobe" target="_blank" rel="noopener">https://www.52jying.com/nobe</a><br>如果崩了大家可以上网百度一个自己找一个代理网址。</p>
 <a id="more"></a>
 <p>2）安装node.js、npm<br>3） 有一个GitHub账号</p>
-<h3 id="2-GitHub创建仓库和一些小细节"><a href="#2-GitHub创建仓库和一些小细节" class="headerlink" title="2. GitHub创建仓库和一些小细节"></a>2. GitHub创建仓库和一些小细节</h3><p>1）GitHub账号创建后邮箱需要进行验证，如果想要在手机上进行验证需要将电脑上的GitHub账号退出登录。邮箱验证完毕后需要将邮箱进行公开，因为GitHub默认为private。</p>
+<h4 id="2-GitHub创建仓库和一些小细节"><a href="#2-GitHub创建仓库和一些小细节" class="headerlink" title="2. GitHub创建仓库和一些小细节"></a>2. GitHub创建仓库和一些小细节</h4><p>1）GitHub账号创建后邮箱需要进行验证，如果想要在手机上进行验证需要将电脑上的GitHub账号退出登录。邮箱验证完毕后需要将邮箱进行公开，因为GitHub默认为private。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190918223548.png" alt></p>
 <p>2）创建GitHub仓库 </p>
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190918224214.png" alt> </p>
@@ -400,7 +422,7 @@
 <p> <img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919130520.png" alt> </p>
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919130142.png" alt> </p>
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919130246.png" alt></p>
-<h3 id="3-配置SSH-key"><a href="#3-配置SSH-key" class="headerlink" title="3. 配置SSH key"></a>3. 配置SSH key</h3><p>ssh key是用来解决本地与服务器的连接问题的。<br>1）打开git bash输入命令</p>
+<h4 id="3-配置SSH-key"><a href="#3-配置SSH-key" class="headerlink" title="3. 配置SSH key"></a>3. 配置SSH key</h4><p>ssh key是用来解决本地与服务器的连接问题的。<br>1）打开git bash输入命令</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh <span class="comment">#检查本机已存在的ssh密钥</span></span><br></pre></td></tr></table></figure>
 
 <p>如果提示：No such file or directory 说明你是第一次使用git。</p>
@@ -422,7 +444,7 @@
 <p>看到这个信息说明SSH已配置成功！此时你还需要配置：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --<span class="keyword">global</span> user.name <span class="string">"liuxianan"</span>// 你的github用户名，非昵称</span><br><span class="line">$ git config --<span class="keyword">global</span> user.email  <span class="string">"xxx@qq.com"</span>//填写你GitHub注册的邮箱</span><br></pre></td></tr></table></figure>
 
-<h3 id="4-hexo的安装与配置"><a href="#4-hexo的安装与配置" class="headerlink" title="4. hexo的安装与配置"></a>4. hexo的安装与配置</h3><p>1）hexo安装代码<br>在电脑的某个地方新建blog一个文件夹（文件名可以随意取），该文件夹是用来存放代码的地方，鼠标右键点击文件夹，选择git bash指令输入代码(之后的命令都是这样操作)</p>
+<h4 id="4-hexo的安装与配置"><a href="#4-hexo的安装与配置" class="headerlink" title="4. hexo的安装与配置"></a>4. hexo的安装与配置</h4><p>1）hexo安装代码<br>在电脑的某个地方新建blog一个文件夹（文件名可以随意取），该文件夹是用来存放代码的地方，鼠标右键点击文件夹，选择git bash指令输入代码(之后的命令都是这样操作)</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 
 <p>hexo就会自动生成一些文件到你blog目录下，之后的操作都在这个目录下进行的。</p>
@@ -448,7 +470,7 @@
 <p>组合命令</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">组合命令：</span><br><span class="line">hexo s -g <span class="comment">#生成并本地预览</span></span><br><span class="line">hexo d -g <span class="comment">#生成并上传</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="5-写博客"><a href="#5-写博客" class="headerlink" title="5. 写博客"></a>5. 写博客</h3><p>1）定位到我们的blog根目录下，输入代码：</p>
+<h4 id="5-写博客"><a href="#5-写博客" class="headerlink" title="5. 写博客"></a>5. 写博客</h4><p>1）定位到我们的blog根目录下，输入代码：</p>
 <pre><code class="python">hexo new <span class="string">'my-first-work'</span></code></pre>
 <p>hexo会帮我们在_posts下生成相关md文件：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919135205.png" alt> </p>
@@ -458,7 +480,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919140215.png" alt></p>
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190919140327.png" alt></p>
 <p>图片上传推荐免费图床工具链接：<a href="https://www.itrhx.com/2019/08/01/A27-image-hosting/" target="_blank" rel="noopener">https://www.itrhx.com/2019/08/01/A27-image-hosting/</a></p>
-<h3 id="6-参考"><a href="#6-参考" class="headerlink" title="6. 参考"></a>6. 参考</h3><ol>
+<h4 id="6-参考"><a href="#6-参考" class="headerlink" title="6. 参考"></a>6. 参考</h4><ol>
 <li><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html</a> </li>
 <li><a href="http://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="noopener">http://www.cnblogs.com/zhcncn/p/4097881.html</a></li>
 <li><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="noopener">http://www.jianshu.com/p/05289a4bc8b2</a></li>
@@ -599,7 +621,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -650,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-准备工作"><span class="nav-text">1. 准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-GitHub创建仓库和一些小细节"><span class="nav-text">2. GitHub创建仓库和一些小细节</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-配置SSH-key"><span class="nav-text">3. 配置SSH key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-hexo的安装与配置"><span class="nav-text">4. hexo的安装与配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-写博客"><span class="nav-text">5. 写博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-参考"><span class="nav-text">6. 参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-准备工作"><span class="nav-text">1. 准备工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-GitHub创建仓库和一些小细节"><span class="nav-text">2. GitHub创建仓库和一些小细节</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-配置SSH-key"><span class="nav-text">3. 配置SSH key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-hexo的安装与配置"><span class="nav-text">4. hexo的安装与配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-写博客"><span class="nav-text">5. 写博客</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-参考"><span class="nav-text">6. 参考</span></a></li></ol></div>
             
 
           </div>
