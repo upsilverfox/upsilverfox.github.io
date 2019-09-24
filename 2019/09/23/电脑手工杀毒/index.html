@@ -81,15 +81,18 @@
 
 
 
+<meta name="description" content="常规杀灭进程法 有的进程在进程选项中无法删除，这时可以打开注册表编辑器（在“开始→运行”中键入regedit），找到1HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionRun    下面的键，将可疑的选项删除。  还可以通过系统的“管理工具”里面的“服务”查看目前的全部进程。这里重点要看服务中启动选项为“自动”的那部分进程，检查它们的名">
 <meta name="keywords" content="computer">
 <meta property="og:type" content="article">
 <meta property="og:title" content="电脑手工杀毒">
 <meta property="og:url" content="http://yoursite.com/2019/09/23/电脑手工杀毒/index.html">
 <meta property="og:site_name" content="welcome">
+<meta property="og:description" content="常规杀灭进程法 有的进程在进程选项中无法删除，这时可以打开注册表编辑器（在“开始→运行”中键入regedit），找到1HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionRun    下面的键，将可疑的选项删除。  还可以通过系统的“管理工具”里面的“服务”查看目前的全部进程。这里重点要看服务中启动选项为“自动”的那部分进程，检查它们的名">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-23T01:53:36.672Z">
+<meta property="og:updated_time" content="2019-09-24T10:53:17.289Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="电脑手工杀毒">
+<meta name="twitter:description" content="常规杀灭进程法 有的进程在进程选项中无法删除，这时可以打开注册表编辑器（在“开始→运行”中键入regedit），找到1HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionRun    下面的键，将可疑的选项删除。  还可以通过系统的“管理工具”里面的“服务”查看目前的全部进程。这里重点要看服务中启动选项为“自动”的那部分进程，检查它们的名">
 
 
 
@@ -393,7 +396,24 @@
       
 
       
-        
+        <h4 id="常规杀灭进程法"><a href="#常规杀灭进程法" class="headerlink" title="常规杀灭进程法"></a>常规杀灭进程法</h4><ol>
+<li>有的进程在进程选项中无法删除，这时可以打开注册表编辑器（在“开始→运行”中键入regedit），找到<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionRun</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>下面的键，将可疑的选项删除。</p>
+<ol start="2">
+<li>还可以通过系统的“管理工具”里面的“服务”查看目前的全部进程。这里重点要看服务中启动选项为“自动”的那部分进程，检查它们的名字、路径以及登录账户、服务属性的“恢复“里面有没有重启计算机的选项（有些机器不断属性的重新启动的秘密就在这里）。一旦发现可疑的名字需要马上禁止此进程的运行。<a id="more"></a>
+<h4 id="删除病毒程序"><a href="#删除病毒程序" class="headerlink" title="删除病毒程序"></a>删除病毒程序</h4>而要彻底删除这些程序进程可以用下面的办法：</li>
+<li>打开注册表编辑器,展开分支</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionRun</span><br></pre></td></tr></table></figure>
+
+<p>在右侧窗格中显示的就是本机安装的服务项，如果要删除某项服务，只要删除注册表中相关键值即可。　</p>
+<ol start="2">
+<li>除了上面两种方法，我们还可以先查看这个进程文件所在的路径和名称。重启系统，按F8键进入安全模式，然后在安全模式下删除这个程序。<br>　　这里，笔者编写了容易被大家认出来的非法进程服务（系统进程）举例说明：HELLO-WORLD SERVICE ，我们可以轻松地在进程列表和“服务”中找到它。根据上面的方法，我们可以把这个进程杀掉或禁用。</li>
+</ol>
+
       
     </div>
     
@@ -490,8 +510,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -508,7 +537,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -560,6 +589,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#常规杀灭进程法"><span class="nav-text">常规杀灭进程法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除病毒程序"><span class="nav-text">删除病毒程序</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

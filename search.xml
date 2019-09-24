@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python-变量]]></title>
+    <url>%2F2019%2F09%2F24%2Fpython-%E5%8F%98%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[1. 变量命名规则1）硬性规则：变量名由字母（广义的Unicode字符，不包括特殊字符）、数字和下划线构成，数字不能开头。大小写敏感（大写的a和小写的A是两个不同的变量）。不要跟关键字（有特殊含义的单词）和系统保留字（如函数、模块等的名字）冲突。 2）PEP 8要求：用小写字母拼写，多个单词用下划线连接。受保护的实例属性用单个下划线开头。私有的实例属性用两个下划线开头。 2. 运算符注： 在实际开发中，如果搞不清楚运算符的优先级，可以使用括号来确保运算的执行顺序。 3. 变量类型转换12345int()：将一个数值或字符串转换成整数，可以指定进制。float()：将一个字符串转换成浮点数。str()：将指定的对象转换成字符串形式，可以指定编码。chr()：将整数转换成该编码对应的字符串（一个字符）。ord()：将字符串（一个字符）转换成对应的编码（整数）。 4.练习1）基本运算 2）用type检查类型 3）将华氏温度转换为摄氏温度 4）输入圆的半径计算计算周长 5）输入年份判断是不是闰年。]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[linux基本操作]]></title>
     <url>%2F2019%2F09%2F24%2Flinux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[cd命令这是一个非常基本，也是大家经常需要使用的命令，它用于切换当前目录，它的参数是要切换到的目录的路径，可以是绝对路径，也可以是相对路径。如： 123456cd /home 进入 '/ home' 目录' cd .. 返回上一级目录 cd ../.. 返回上两级目录 cd 进入个人的主目录 cd ~user1 进入个人的主目录 cd - 返回上次所在的目录 time命令该命令用于测算一个命令（即程序）的执行时间。它的使用非常简单，就像平时输入命令一样，不过在命令的前面加入一个time即可，例如 12time ./process time ps aux 安装命令123456789101112131415161718192021yum install #全部安装yum install #安装指定的软件yum groupinsall #安装程序组#更新和升级yum update #全部更新yum update #更新指定程序包yum check-update #检查可更新的程序yum upgrade #升级指定程序包yum groupupdate #升级程序组#查找和显示yum list #显示所有已安装和可以安装的程序包yum list #显示指定程序包的安装情况yum info #显示程序包信息yum groupinfo #显示程序组信息#删除命令yum remove #删除程序包yum groupremove #删除程序组yum deplist #查看程序包的依赖情况#清除缓存yum clean packages #清除缓存目录下的软件包yum clean headers #清除缓存目录下的heades]]></content>
@@ -27,7 +35,7 @@
   <entry>
     <title><![CDATA[Excel]]></title>
     <url>%2F2019%2F09%2F23%2FExcel%2F</url>
-    <content type="text"><![CDATA[Excel 常用公式]]></content>
+    <content type="text"><![CDATA[Excel 10大常用公式1） 逻辑判断2） 复杂条件逻辑判断3） 汇总求和4） 复杂条件汇总求和5） 查找引用6） 复杂条件查找引用7） 四舍五入8） 文本截取9） 条件计数10）平均值和极值统计 1. 逻辑判断2. 复杂条件逻辑判断3. 汇总求和参考 https://www.sohu.com/a/210341793_695443]]></content>
       <tags>
         <tag>Excel</tag>
       </tags>
@@ -43,7 +51,7 @@
   <entry>
     <title><![CDATA[电脑手工杀毒]]></title>
     <url>%2F2019%2F09%2F23%2F%E7%94%B5%E8%84%91%E6%89%8B%E5%B7%A5%E6%9D%80%E6%AF%92%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[常规杀灭进程法 有的进程在进程选项中无法删除，这时可以打开注册表编辑器（在“开始→运行”中键入regedit），找到1HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionRun 下面的键，将可疑的选项删除。 还可以通过系统的“管理工具”里面的“服务”查看目前的全部进程。这里重点要看服务中启动选项为“自动”的那部分进程，检查它们的名字、路径以及登录账户、服务属性的“恢复“里面有没有重启计算机的选项（有些机器不断属性的重新启动的秘密就在这里）。一旦发现可疑的名字需要马上禁止此进程的运行。 删除病毒程序而要彻底删除这些程序进程可以用下面的办法： 打开注册表编辑器,展开分支 1HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionRun 在右侧窗格中显示的就是本机安装的服务项，如果要删除某项服务，只要删除注册表中相关键值即可。 除了上面两种方法，我们还可以先查看这个进程文件所在的路径和名称。重启系统，按F8键进入安全模式，然后在安全模式下删除这个程序。 这里，笔者编写了容易被大家认出来的非法进程服务（系统进程）举例说明：HELLO-WORLD SERVICE ，我们可以轻松地在进程列表和“服务”中找到它。根据上面的方法，我们可以把这个进程杀掉或禁用。]]></content>
       <categories>
         <category>手工杀毒</category>
       </categories>
