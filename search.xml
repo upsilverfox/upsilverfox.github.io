@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[python-循环结构]]></title>
     <url>%2F2019%2F09%2F25%2Fpython-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
-    <content type="text"><![CDATA[介绍在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。 1. for-in循环如果明确的知道循环执行的次数或者是要对一个容器进行迭代，那么我们推荐使用for-in循环，例如求1到100的和: 输出九九乘法表： 2. while循环如果要构造不知道具体循环次数的循环结构，我们推荐使用while循环，while循环通过一个能够产生或转换出bool值的表达式来控制循环，表达式的值为True循环继续，表达式的值为False循环结束。例如： 上面的代码中使用了break关键字来提前终止循环，需要注意的是break只能终止它所在的那个循环 continue可以用来放弃本次循环后续的代码直接让循环进入下一轮。]]></content>
+    <content type="text"><![CDATA[介绍在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。 1. for-in循环如果明确的知道循环执行的次数或者是要对一个容器进行迭代，那么推荐使用for-in循环，例如求1到100的和: 输出九九乘法表： 2. while循环如果要构造不知道具体循环次数的循环结构，我们推荐使用while循环，while循环通过一个能够产生或转换出bool值的表达式来控制循环，表达式的值为True循环继续，表达式的值为False循环结束。例如： 上面的代码中使用了break关键字来提前终止循环，需要注意的是break只能终止它所在的那个循环 continue可以用来放弃本次循环后续的代码直接让循环进入下一轮。]]></content>
       <categories>
         <category>python</category>
       </categories>
@@ -20,6 +20,17 @@
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[设置U盘为第一启动项]]></title>
+    <url>%2F2019%2F09%2F25%2F%E8%AE%BE%E7%BD%AEU%E7%9B%98%E4%B8%BA%E7%AC%AC%E4%B8%80%E5%90%AF%E5%8A%A8%E9%A1%B9%2F</url>
+    <content type="text"><![CDATA[如果在刷机过程中电脑出现重启错误怎么办 先试试强制关机后按F12看看能不能进入刷机U盘的界面 去bois设置U盘为第一启动项 1） 那我电脑为例进入bois的快捷键时F2.示例图： 2） 去启动那一项设置，将U盘设置为优先级。 示例图： 3） 保存并退出，插入装机U盘便能进入到刷机界面。 示例图：]]></content>
+      <categories>
+        <category>刷机教程</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>

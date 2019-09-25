@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-25T13:03:11.891Z</updated>
+  <updated>2019-09-25T13:06:08.640Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="http://yoursite.com/2019/09/25/python-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
     <id>http://yoursite.com/2019/09/25/python-循环结构/</id>
     <published>2019-09-25T12:34:19.000Z</published>
-    <updated>2019-09-25T13:03:11.891Z</updated>
+    <updated>2019-09-25T13:06:08.640Z</updated>
     
     <summary type="html">
     
       &lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h4&gt;&lt;p&gt;在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。&lt;/p&gt;
-&lt;h4 id=&quot;1-for-in循环&quot;&gt;&lt;a href=&quot;#1-for-in循环&quot; class=&quot;headerlink&quot; title=&quot;1. for-in循环&quot;&gt;&lt;/a&gt;1. for-in循环&lt;/h4&gt;&lt;p&gt;如果明确的知道循环执行的次数或者是要对一个容器进行迭代，那么我们推荐使用for-in循环，例如求1到100的和:&lt;/p&gt;
+&lt;h4 id=&quot;1-for-in循环&quot;&gt;&lt;a href=&quot;#1-for-in循环&quot; class=&quot;headerlink&quot; title=&quot;1. for-in循环&quot;&gt;&lt;/a&gt;1. for-in循环&lt;/h4&gt;&lt;p&gt;如果明确的知道循环执行的次数或者是要对一个容器进行迭代，那么推荐使用for-in循环，例如求1到100的和:&lt;/p&gt;
     
     </summary>
     
@@ -56,6 +56,33 @@
     
     
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设置U盘为第一启动项</title>
+    <link href="http://yoursite.com/2019/09/25/%E8%AE%BE%E7%BD%AEU%E7%9B%98%E4%B8%BA%E7%AC%AC%E4%B8%80%E5%90%AF%E5%8A%A8%E9%A1%B9/"/>
+    <id>http://yoursite.com/2019/09/25/设置U盘为第一启动项/</id>
+    <published>2019-09-25T09:29:41.000Z</published>
+    <updated>2019-09-25T13:08:21.769Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;如果在刷机过程中电脑出现重启错误怎么办&quot;&gt;&lt;a href=&quot;#如果在刷机过程中电脑出现重启错误怎么办&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="刷机教程" scheme="http://yoursite.com/categories/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -429,27 +456,6 @@
     
     
       <category term="c++" scheme="http://yoursite.com/tags/c/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>github代码上传</title>
-    <link href="http://yoursite.com/2019/09/19/github%E4%BB%A3%E7%A0%81%E4%B8%8A%E4%BC%A0/"/>
-    <id>http://yoursite.com/2019/09/19/github代码上传/</id>
-    <published>2019-09-19T05:50:59.000Z</published>
-    <updated>2019-09-24T11:29:15.409Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;1-准备工作&quot;&gt;&lt;a href=&quot;#1-准备工作&quot; class=&quot;headerlink&quot; title=&quot;1.准备工作&quot;&gt;&lt;/a&gt;1.准备工作&lt;/h3&gt;&lt;p&gt;1）安装Git Bash&lt;br&gt;因为这个是国外的软件是被限制的，推荐挂个代理&lt;br&gt;本文推荐一个代理软件链接：&lt;a href=&quot;https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA&lt;/a&gt;&lt;br&gt;提取码：xfhn&lt;br&gt;目前本人正在使用的一个代理链接：&lt;a href=&quot;https://www.52jying.com/nobe&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.52jying.com/nobe&lt;/a&gt;&lt;br&gt;如果崩了大家可以上网百度一个自己找一个代理网址。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="github" scheme="http://yoursite.com/categories/github/"/>
-    
-    
-      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
