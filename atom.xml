@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-25T13:01:29.395Z</updated>
+  <updated>2019-09-25T13:03:11.891Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,18 +21,12 @@
     <link href="http://yoursite.com/2019/09/25/python-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
     <id>http://yoursite.com/2019/09/25/python-循环结构/</id>
     <published>2019-09-25T12:34:19.000Z</published>
-    <updated>2019-09-25T13:01:29.395Z</updated>
+    <updated>2019-09-25T13:03:11.891Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h4&gt;&lt;p&gt;在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。&lt;/p&gt;
-&lt;h4
-        
-      
+      &lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h4&gt;&lt;p&gt;在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。&lt;/p&gt;
+&lt;h4 id=&quot;1-for-in循环&quot;&gt;&lt;a href=&quot;#1-for-in循环&quot; class=&quot;headerlink&quot; title=&quot;1. for-in循环&quot;&gt;&lt;/a&gt;1. for-in循环&lt;/h4&gt;&lt;p&gt;如果明确的知道循环执行的次数或者是要对一个容器进行迭代，那么我们推荐使用for-in循环，例如求1到100的和:&lt;/p&gt;
     
     </summary>
     
@@ -49,17 +43,11 @@
     <link href="http://yoursite.com/2019/09/25/python-%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84/"/>
     <id>http://yoursite.com/2019/09/25/python-分支结构/</id>
     <published>2019-09-25T12:04:33.000Z</published>
-    <updated>2019-09-25T12:29:54.691Z</updated>
+    <updated>2019-09-25T13:03:29.404Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h4 id=&quot;1-if语句的使用&quot;&gt;&lt;a href=&quot;#1-if语句的使用&quot; class=&quot;headerlink&quot; title=&quot;1. if语句的使用&quot;&gt;&lt;/a&gt;1. if语句的使用&lt;/h4&gt;&lt;p&gt;1）
-        
-      
+      &lt;h4 id=&quot;1-if语句的使用&quot;&gt;&lt;a href=&quot;#1-if语句的使用&quot; class=&quot;headerlink&quot; title=&quot;1. if语句的使用&quot;&gt;&lt;/a&gt;1. if语句的使用&lt;/h4&gt;&lt;p&gt;1） 在Python中，要构造分支结构可以使用if、elif和else关键字。所谓关键字就是有特殊含义的单词，像if和else就是专门用于构造分支结构的关键字，很显然你不能够使用它作为变量名.&lt;br&gt;注：和C/C++、Java等语言不同，Python中没有用花括号来构造代码块而是使用了缩进的方式来设置代码的层次结构，如果if条件成立的情况下需要执行多条语句，只要保持多条语句具有相同的缩进就可以了，换句话说连续的代码如果又保持了相同的缩进那么它们属于同一个代码块，相当于是一个执行的整体。 &lt;/p&gt;
     
     </summary>
     
