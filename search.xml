@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python-循环结构]]></title>
+    <url>%2F2019%2F09%2F25%2Fpython-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
+    <content type="text"><![CDATA[介绍在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。 1. for-in循环如果明确的知道循环执行的次数或者是要对一个容器进行迭代，那么我们推荐使用for-in循环，例如求1到100的和: 输出九九乘法表： 2. while循环如果要构造不知道具体循环次数的循环结构，我们推荐使用while循环，while循环通过一个能够产生或转换出bool值的表达式来控制循环，表达式的值为True循环继续，表达式的值为False循环结束。例如： 上面的代码中使用了break关键字来提前终止循环，需要注意的是break只能终止它所在的那个循环 continue可以用来放弃本次循环后续的代码直接让循环进入下一轮。]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python-分支结构]]></title>
+    <url>%2F2019%2F09%2F25%2Fpython-%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84%2F</url>
+    <content type="text"><![CDATA[1. if语句的使用1） 在Python中，要构造分支结构可以使用if、elif和else关键字。所谓关键字就是有特殊含义的单词，像if和else就是专门用于构造分支结构的关键字，很显然你不能够使用它作为变量名.注：和C/C++、Java等语言不同，Python中没有用花括号来构造代码块而是使用了缩进的方式来设置代码的层次结构，如果if条件成立的情况下需要执行多条语句，只要保持多条语句具有相同的缩进就可以了，换句话说连续的代码如果又保持了相同的缩进那么它们属于同一个代码块，相当于是一个执行的整体。 2） 分支结构是可以嵌套的，例如判断是否通关以后还要根据你获得的宝物或者道具的数量对你的表现给出等级（比如点亮两颗或三颗星星），那么我们就需要在if的内部构造出一个新的分支结构，同理elif和else中也可以再构造新的分支，我们称之为嵌套的分支结构， 2. 练习1） 分段函数求值 2）掷骰子决定做什么事情]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[c++实现链表]]></title>
+    <url>%2F2019%2F09%2F24%2Fc-%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>c++</category>
+      </categories>
+      <tags>
+        <tag>c++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python-变量]]></title>
     <url>%2F2019%2F09%2F24%2Fpython-%E5%8F%98%E9%87%8F%2F</url>
     <content type="text"><![CDATA[1. 变量命名规则1）硬性规则：变量名由字母（广义的Unicode字符，不包括特殊字符）、数字和下划线构成，数字不能开头。大小写敏感（大写的a和小写的A是两个不同的变量）。不要跟关键字（有特殊含义的单词）和系统保留字（如函数、模块等的名字）冲突。 2）PEP 8要求：用小写字母拼写，多个单词用下划线连接。受保护的实例属性用单个下划线开头。私有的实例属性用两个下划线开头。 2. 运算符注： 在实际开发中，如果搞不清楚运算符的优先级，可以使用括号来确保运算的执行顺序。 3. 变量类型转换12345int()：将一个数值或字符串转换成整数，可以指定进制。float()：将一个字符串转换成浮点数。str()：将指定的对象转换成字符串形式，可以指定编码。chr()：将整数转换成该编码对应的字符串（一个字符）。ord()：将字符串（一个字符）转换成对应的编码（整数）。 4.练习1）基本运算 2）用type检查类型 3）将华氏温度转换为摄氏温度 4）输入圆的半径计算计算周长 5）输入年份判断是不是闰年。]]></content>
@@ -47,7 +80,7 @@
   <entry>
     <title><![CDATA[Excel]]></title>
     <url>%2F2019%2F09%2F23%2FExcel%2F</url>
-    <content type="text"><![CDATA[Excel 10大常用公式1） 逻辑判断2） 复杂条件逻辑判断3） 汇总求和4） 复杂条件汇总求和5） 查找引用6） 复杂条件查找引用7） 四舍五入8） 文本截取9） 条件计数10）平均值和极值统计 1. 逻辑判断2. 复杂条件逻辑判断3. 汇总求和参考 https://www.sohu.com/a/210341793_695443]]></content>
+    <content type="text"><![CDATA[Excel 10大常用公式1） 逻辑判断2） 复杂条件逻辑判断3） 汇总求和4） 复杂条件汇总求和5） 查找引用6） 复杂条件查找引用7） 四舍五入8） 文本截取9） 条件计数10）平均值和极值统计 1. 逻辑判断IF语句： 2. 复杂条件逻辑判断IF语句的复杂版本 3. 汇总求和SUM函数： 效果如下： 4. 复杂条件汇总求和sumifs函数： 效果如下： 5. 查找引用VLOOKUP函数： 效果如下： 6. 复杂条件查找引用INDEX函数、MATCH函数 7. 四舍五入ROUND函数 8. 文本截取LEFT函数、RIGHT函数、MID函数 9. 条件计数COUNTIF函数 10. 平均值和极值统计AVERAGE函数：求平均值MAX函数：求最大值MIN函数：求最小值 参考 https://www.sohu.com/a/210341793_695443]]></content>
       <categories>
         <category>办公软件</category>
       </categories>
@@ -201,7 +234,7 @@
   <entry>
     <title><![CDATA[刷机教程]]></title>
     <url>%2F2019%2F09%2F18%2F%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[1. 前言 电脑系统崩溃了，必须得安装系统，以下是本人归类装机的教程 2. 准备工作 自带两个U盘，一个U盘来制作装机U盘，另一个U盘用来下载window10的镜像 3.下载制作U盘软件制作装机U盘这里使用的是PE工具箱。 链接: https://pan.baidu.com/s/1smOthvlX3JQJNecebcO35A提取码：opn0 下载的软件存放到用来制作装机U盘中，打开程序安装示意图如下： 1）推荐使用自定义的安装 2）在安装方法处建议选择方案三，U盘卷标为你的U盘名，pe壁纸下建议全选，当然不全选也行。然后点击安装就行了。 4. 下载 windows10镜像 推荐链接：https://msdn.itellyou.cn/ 5. 开始进行刷机 1）将电脑重启，在电脑开机时不断给点击F12进入刷机系统。 2）将电脑磁盘进行分区 3）记住磁盘类型要选择GPT,扇区选择4096，选择完后点击开始执行 4）将电脑格式化分区后插入你下载好window10镜像的U盘，点击安装包就可以安装了。记住在安装完window10时电脑会关机，当电脑关机时要将U盘拔出。 6. 装好系统后安装Windows10后，windows10是未激活状态，下面推荐一款Windows10（激活）工具链接：https://pan.baidu.com/s/1hV9lNjew_Ne1drM216e9-A提取码：l6cx还有一款office（激活）工具链接：https://pan.baidu.com/s/1KEahExeIv95iekWLaNpiRw提取码：a7fw还有什么不懂可以留言！！！]]></content>
+    <content type="text"><![CDATA[1. 前言 电脑系统崩溃了，必须得安装系统，以下是本人归类装机的教程 2. 准备工作 自带两个U盘，一个U盘来制作装机U盘，另一个U盘用来下载window10的镜像 3.下载制作U盘软件制作装机U盘这里使用的是PE工具箱。 链接: https://pan.baidu.com/s/1smOthvlX3JQJNecebcO35A提取码：opn0 下载的软件存放到用来制作装机U盘中，打开程序安装示意图如下： 1）推荐使用自定义的安装 2）在安装方法处建议选择方案三，U盘卷标为你的U盘名，pe壁纸下建议全选，当然不全选也行。然后点击安装就行了。 4. 下载 windows10镜像 推荐链接：https://msdn.itellyou.cn/ 5. 开始进行刷机 1）将电脑重启，在电脑开机时不断给点击F12进入刷机系统。 2）将电脑磁盘进行分区打开分区助手： 点击快速分区： 记住磁盘类型要选择GPT,扇区选择4096，选择完后点击开始执行 4）将电脑格式化分区后插入你下载好window10镜像的U盘，点击安装包就可以安装了。记住在安装完window10时电脑会关机，当电脑关机时要将U盘拔出。 示意图： 6. 装好系统后安装Windows10后，windows10是未激活状态，下面推荐一款Windows10（激活）工具链接：https://pan.baidu.com/s/1hV9lNjew_Ne1drM216e9-A提取码：l6cx还有一款office（激活）工具链接：https://pan.baidu.com/s/1KEahExeIv95iekWLaNpiRw提取码：a7fw还有什么不懂可以留言！！！]]></content>
       <categories>
         <category>刷机教程</category>
       </categories>

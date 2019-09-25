@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-24T11:03:39.418Z</updated>
+  <updated>2019-09-25T13:01:29.395Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,80 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python-循环结构</title>
+    <link href="http://yoursite.com/2019/09/25/python-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    <id>http://yoursite.com/2019/09/25/python-循环结构/</id>
+    <published>2019-09-25T12:34:19.000Z</published>
+    <updated>2019-09-25T13:01:29.395Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h4&gt;&lt;p&gt;在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。&lt;/p&gt;
+&lt;h4
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python-分支结构</title>
+    <link href="http://yoursite.com/2019/09/25/python-%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84/"/>
+    <id>http://yoursite.com/2019/09/25/python-分支结构/</id>
+    <published>2019-09-25T12:04:33.000Z</published>
+    <updated>2019-09-25T12:29:54.691Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-if语句的使用&quot;&gt;&lt;a href=&quot;#1-if语句的使用&quot; class=&quot;headerlink&quot; title=&quot;1. if语句的使用&quot;&gt;&lt;/a&gt;1. if语句的使用&lt;/h4&gt;&lt;p&gt;1）
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c++实现链表</title>
+    <link href="http://yoursite.com/2019/09/24/c-%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8/"/>
+    <id>http://yoursite.com/2019/09/24/c-实现链表/</id>
+    <published>2019-09-24T13:52:12.000Z</published>
+    <updated>2019-09-24T13:53:36.524Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="c++" scheme="http://yoursite.com/categories/c/"/>
+    
+    
+      <category term="c++" scheme="http://yoursite.com/tags/c/"/>
+    
+  </entry>
   
   <entry>
     <title>python-变量</title>
@@ -110,7 +184,7 @@
     <link href="http://yoursite.com/2019/09/23/Excel/"/>
     <id>http://yoursite.com/2019/09/23/Excel/</id>
     <published>2019-09-23T06:25:34.000Z</published>
-    <updated>2019-09-24T11:30:54.478Z</updated>
+    <updated>2019-09-25T11:58:00.570Z</updated>
     
     <summary type="html">
     
@@ -385,50 +459,6 @@
     
     
       <category term="github" scheme="http://yoursite.com/categories/github/"/>
-    
-    
-      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo从零开始到搭建完整</title>
-    <link href="http://yoursite.com/2019/09/18/hexo%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%88%B0%E6%90%AD%E5%BB%BA%E5%AE%8C%E6%95%B4/"/>
-    <id>http://yoursite.com/2019/09/18/hexo从零开始到搭建完整/</id>
-    <published>2019-09-18T13:50:46.000Z</published>
-    <updated>2019-09-24T11:27:01.186Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-准备工作&quot;&gt;&lt;a href=&quot;#1-准备工作&quot; class=&quot;headerlink&quot; title=&quot;1. 准备工作&quot;&gt;&lt;/a&gt;1. 准备工作&lt;/h4&gt;&lt;p&gt;1）安装Git Bash&lt;br&gt;因为这个是国外的软件是被限制的，推荐挂个代理&lt;br&gt;本文推荐一个代理软件链接：&lt;a href=&quot;https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA&lt;/a&gt;&lt;br&gt;提取码：xfhn&lt;br&gt;目前本人正在使用的一个代理链接：&lt;a href=&quot;https://www.52jying.com/nobe&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.52jying.com/nobe&lt;/a&gt;&lt;br&gt;如果崩了大家可以上网百度一个自己找一个代理网址。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
-    
-    
-      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>刷机教程</title>
-    <link href="http://yoursite.com/2019/09/18/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2019/09/18/刷机教程/</id>
-    <published>2019-09-18T10:14:00.000Z</published>
-    <updated>2019-09-24T11:28:45.759Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;headerlink&quot; title=&quot;1. 前言&quot;&gt;&lt;/a&gt;1. 前言&lt;/h3&gt;&lt;p&gt; 电脑系统崩溃了，必须得安装系统，以下是本人归类装机的教程&lt;/p&gt;
-&lt;h3 id=&quot;2-准备工作&quot;&gt;&lt;a href=&quot;#2-准备工作&quot; class=&quot;headerlink&quot; title=&quot;2. 准备工作&quot;&gt;&lt;/a&gt;2. 准备工作&lt;/h3&gt;&lt;p&gt;  自带两个U盘，一个U盘来制作装机U盘，另一个U盘用来下载window10的镜像&lt;/p&gt;
-&lt;h3 id=&quot;3-下载制作U盘软件制作装机U盘&quot;&gt;&lt;a href=&quot;#3-下载制作U盘软件制作装机U盘&quot; class=&quot;headerlink&quot; title=&quot;3.下载制作U盘软件制作装机U盘&quot;&gt;&lt;/a&gt;3.下载制作U盘软件制作装机U盘&lt;/h3&gt;&lt;p&gt;这里使用的是PE工具箱。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="刷机教程" scheme="http://yoursite.com/categories/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/"/>
     
     
       <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
