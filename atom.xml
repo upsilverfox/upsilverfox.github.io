@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-26T13:25:51.477Z</updated>
+  <updated>2019-09-26T14:19:41.600Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,16 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python-web开发 (一)</title>
+    <link href="http://yoursite.com/2019/09/26/python-web%E5%BC%80%E5%8F%91-%E4%B8%80/"/>
+    <id>http://yoursite.com/2019/09/26/python-web开发-一/</id>
+    <published>2019-09-26T14:10:44.000Z</published>
+    <updated>2019-09-26T14:19:41.600Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;什么是web开发呢，其实就是开发一个网站了。那开发网站需要用到哪些知识呢&lt;br&gt;1、python基础，因为用python开发的，所以python指定要会，最起码你也得会条件判断，循环，函数，类这些知识；&lt;br&gt;2、html、css的基础知识，因为要开发网站，网页都html和
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python-web" scheme="http://yoursite.com/categories/python-web/"/>
+    
+    
+      <category term="python-web" scheme="http://yoursite.com/tags/python-web/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python-字符串和常用数据结构</title>
     <link href="http://yoursite.com/2019/09/26/python-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     <id>http://yoursite.com/2019/09/26/python-字符串和常用数据结构/</id>
     <published>2019-09-26T13:19:58.000Z</published>
-    <updated>2019-09-26T13:25:51.477Z</updated>
+    <updated>2019-09-26T13:30:37.660Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;字符串&quot;&gt;&lt;a href=&quot;#字符串&quot; class=&quot;headerlink&quot; title=&quot;字符串&quot;&gt;&lt;/a&gt;字符串&lt;/h4&gt;&lt;p&gt;今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为：&lt;/p&gt;
-&lt;p&gt;$${\displaystyle s=a_{1}a_{2}\dots a_{n}(0\leq n \leq \infty)}$$&lt;br&gt;我们可以通过下面的代码来了解字符串的使用。&lt;/p&gt;
+      &lt;h4 id=&quot;字符串&quot;&gt;&lt;a href=&quot;#字符串&quot; class=&quot;headerlink&quot; title=&quot;字符串&quot;&gt;&lt;/a&gt;字符串&lt;/h4&gt;&lt;p&gt;今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为：&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926212932.png&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;我们可以通过下面的代码来了解字符串的使用。&lt;/p&gt;
     
     </summary>
     
@@ -43,17 +70,11 @@
     <link href="http://yoursite.com/2019/09/26/python-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%A8%A1%E5%9D%97%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://yoursite.com/2019/09/26/python-函数与模块的使用/</id>
     <published>2019-09-26T11:34:08.000Z</published>
-    <updated>2019-09-26T12:30:13.372Z</updated>
+    <updated>2019-09-26T13:28:26.222Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h4 id=&quot;1-函数的定义&quot;&gt;&lt;a href=&quot;#1-函数的定义&quot; class=&quot;headerlink&quot; title=&quot;1.函数的定义&quot;&gt;&lt;/a&gt;1.函数的定义&lt;/h4&gt;&lt;p&gt;
-        
-      
+      &lt;h4 id=&quot;1-函数的定义&quot;&gt;&lt;a href=&quot;#1-函数的定义&quot; class=&quot;headerlink&quot; title=&quot;1.函数的定义&quot;&gt;&lt;/a&gt;1.函数的定义&lt;/h4&gt;&lt;p&gt; 在Python中可以使用def关键字来定义函数，和c++的类类似，每个函数都有一个名字，而且命名规则跟变量的命名规则是一致的。在函数名后面的圆括号中可以放置传递给函数的参数，这一点和数学上的函数非常相似，程序中函数的参数就相当于是数学上说的函数的自变量，而函数执行完成后我们可以通过return关键字来返回一个值，这相当于数学上说的函数的因变量。&lt;br&gt; 例题：&lt;br&gt; 求从m选取n的组合&lt;br&gt;
     
     </summary>
     
@@ -165,9 +186,17 @@
     <link href="http://yoursite.com/2019/09/24/c-%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8/"/>
     <id>http://yoursite.com/2019/09/24/c-实现链表/</id>
     <published>2019-09-24T13:52:12.000Z</published>
-    <updated>2019-09-25T14:37:35.971Z</updated>
+    <updated>2019-09-26T13:51:54.656Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;c-链表的构造&quot;&gt;&lt;a href=&quot;#c-链表的构造&quot; class=&quot;headerlink&quot; title=&quot;c++链表的构造&quot;&gt;&lt;/a&gt;c++链表的构造&lt;/h4&gt;&lt;p&gt;链表结构体的构造。&lt;br&gt;构造头结点head，指向NULL（head-&amp;gt;next =
+        
+      
     
     </summary>
     
@@ -444,28 +473,6 @@
     
     
       <category term="计算机" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Anaconda环境中OpenCV库的安装及编程</title>
-    <link href="http://yoursite.com/2019/09/21/Anaconda%E7%8E%AF%E5%A2%83%E4%B8%ADOpenCV%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%BC%96%E7%A8%8B/"/>
-    <id>http://yoursite.com/2019/09/21/Anaconda环境中OpenCV库的安装及编程/</id>
-    <published>2019-09-21T04:31:41.000Z</published>
-    <updated>2019-09-24T11:04:00.835Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-OpenCV的安装&quot;&gt;&lt;a href=&quot;#1-OpenCV的安装&quot; class=&quot;headerlink&quot; title=&quot;1. OpenCV的安装&quot;&gt;&lt;/a&gt;1. OpenCV的安装&lt;/h4&gt;&lt;p&gt;下面提示两种方法的安装&lt;/p&gt;
-&lt;h5 id=&quot;方法一：&quot;&gt;&lt;a href=&quot;#方法一：&quot; class=&quot;headerlink&quot; title=&quot;方法一：&quot;&gt;&lt;/a&gt;方法一：&lt;/h5&gt;&lt;p&gt;Anaconda 下使用 conda 安装 opencv：&lt;br&gt;如果输入 conda install -c menpo opencv ，安装的版本是 v2.4.11；&lt;br&gt;如果输入 conda install -c menpo opencv3 ，安装的版本是 v3.1.0 ；&lt;br&gt;注：命令行启动的时候，需要右键-选择管理员权限。&lt;br&gt;安装过程如下：&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
   </entry>
   

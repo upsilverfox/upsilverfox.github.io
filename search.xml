@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python-web开发 (一)]]></title>
+    <url>%2F2019%2F09%2F26%2Fpython-web%E5%BC%80%E5%8F%91-%E4%B8%80%2F</url>
+    <content type="text"><![CDATA[什么是web开发呢，其实就是开发一个网站了。那开发网站需要用到哪些知识呢1、python基础，因为用python开发的，所以python指定要会，最起码你也得会条件判断，循环，函数，类这些知识；2、html、css的基础知识，因为要开发网站，网页都html和css写的，最起码这些知识你得会，就算不会写前端，开发不出来特别漂亮的页面，网站，最起码要能看懂html标签是；3、数据库基础知识，因为开发一个网站的话，数据存在哪里，就是在数据库里，那你最起码要会数据库的增删改查吧，要不然怎么存数据，取数据呢上面这些知识会的话，就基本上可以了，可以开发一个简单的小站就没有问题了，如果想开发比较大型的网站，业务逻辑比较复杂的，那就得用到其他的知识了，比如说redis、MQ等等。]]></content>
+      <categories>
+        <category>python-web</category>
+      </categories>
+      <tags>
+        <tag>python-web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python-字符串和常用数据结构]]></title>
     <url>%2F2019%2F09%2F26%2Fpython-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%2F</url>
-    <content type="text"><![CDATA[字符串今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为： $${\displaystyle s=a_{1}a_{2}\dots a_{n}(0\leq n \leq \infty)}$$我们可以通过下面的代码来了解字符串的使用。 注：jupyter notebook 执行命令的时候报错：IndentationError: unexpected indent （意外的缩进）resolution：去掉空格]]></content>
+    <content type="text"><![CDATA[字符串今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为： 我们可以通过下面的代码来了解字符串的使用。 注：jupyter notebook 执行命令的时候报错：IndentationError: unexpected indent （意外的缩进）resolution：去掉空格]]></content>
       <categories>
         <category>python</category>
       </categories>
@@ -69,7 +80,7 @@
   <entry>
     <title><![CDATA[c++实现链表]]></title>
     <url>%2F2019%2F09%2F24%2Fc-%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[c++链表的构造链表结构体的构造。构造头结点head，指向NULL（head-&gt;next = NULL）构造当前结点，用于记录当前链表构造的位置，构造新结点，用于循环插入链表。循环插入链表，根据条件结束并返回头结点。 c++链表解决代码1）类的定义 2）链表的创建]]></content>
       <categories>
         <category>c++</category>
       </categories>
