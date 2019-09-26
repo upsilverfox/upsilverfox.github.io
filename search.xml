@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python-字符串和常用数据结构]]></title>
+    <url>%2F2019%2F09%2F26%2Fpython-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%2F</url>
+    <content type="text"><![CDATA[字符串今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为： $${\displaystyle s=a_{1}a_{2}\dots a_{n}(0\leq n \leq \infty)}$$我们可以通过下面的代码来了解字符串的使用。 注：jupyter notebook 执行命令的时候报错：IndentationError: unexpected indent （意外的缩进）resolution：去掉空格]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python-函数与模块的使用]]></title>
+    <url>%2F2019%2F09%2F26%2Fpython-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%A8%A1%E5%9D%97%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[1.函数的定义 在Python中可以使用def关键字来定义函数，和c++的类类似，每个函数都有一个名字，而且命名规则跟变量的命名规则是一致的。在函数名后面的圆括号中可以放置传递给函数的参数，这一点和数学上的函数非常相似，程序中函数的参数就相当于是数学上说的函数的自变量，而函数执行完成后我们可以通过return关键字来返回一个值，这相当于数学上说的函数的因变量。 例题： 求从m选取n的组合 说明： Python的math模块中其实已经有一个factorial函数了，事实上要计算阶乘可以直接使用这个现成的函数而不用自己定义。 2.函数参数 函数是绝大多数编程语言中都支持的一个代码的“构建块”，但是Python中的函数与其他语言中的函数还是有很多不太相同的地方，其中一个显著的区别就是Python对函数参数的处理。在Python中，函数的参数可以有默认值，也支持使用可变参数，所以Python并不需要像其他语言一样支持函数的重载， 例如： 例如： 注：在参数名前面的*表示args是一个可变参数，即在调用add函数时可以传入0个或多个参数 3. 用模块管理函数对于任何一种编程语言来说，给变量、函数这样的标识符起名字都是一个让人头疼的问题，因为我们会遇到命名冲突这种尴尬的情况。最简单的场景就是在同一个.py文件中定义了两个同名函数，由于Python没有函数重载的概念，那么后面的定义会覆盖之前的定义，也就意味着两个函数同名函数实际上只有一个是存在的。例如： 显然他输出的是最后一个函数。解决办法：在不同的模块中可以有同名的函数，在使用函数的时候我们通过import关键字导入指定的模块就可以区分到底要使用的是哪个模块中的foo函数，如下图所示：module1.py module2.py test.py 4. name需要说明的是，如果我们导入的模块除了定义函数之外还中有可以执行代码，那么Python解释器在导入这个模块时就会执行这些代码，事实上我们可能并不希望如此，因此如果我们在模块中编写了执行代码，最好是将这些执行代码放入如下所示的条件中，这样的话除非直接运行该模块，if条件下的这些代码是不会执行的，因为只有直接执行的模块的名字才是“main”。\]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[项目开发构想]]></title>
+    <url>%2F2019%2F09%2F25%2F%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E6%9E%84%E6%83%B3%2F</url>
+    <content type="text"><![CDATA[项目构想现在有很多大学生面对大学生活很迷茫，不知道自己要干什么，根据这种情况，设计一个软件，以学校为大单位，以专业为小单位将学生在大学各个阶段可以参加的比赛进行分类汇总，以便学生参考。 项目目标大目标： 利用大数据分类汇总所有学校各院各专业的比赛信息小目标： 把桂电的比赛信息汇总出来 软件开发过程表：https://wenku.baidu.com/view/d25593dd5727a5e9856a61f9.html]]></content>
+      <categories>
+        <category>项目开发</category>
+      </categories>
+      <tags>
+        <tag>项目开发</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python-循环结构]]></title>
     <url>%2F2019%2F09%2F25%2Fpython-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
-    <content type="text"><![CDATA[介绍在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。 1. for-in循环如果明确的知道循环执行的次数或者是要对一个容器进行迭代，那么推荐使用for-in循环，例如求1到100的和: 输出九九乘法表： 2. while循环如果要构造不知道具体循环次数的循环结构，我们推荐使用while循环，while循环通过一个能够产生或转换出bool值的表达式来控制循环，表达式的值为True循环继续，表达式的值为False循环结束。例如： 上面的代码中使用了break关键字来提前终止循环，需要注意的是break只能终止它所在的那个循环 continue可以用来放弃本次循环后续的代码直接让循环进入下一轮。]]></content>
+    <content type="text"><![CDATA[介绍在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。 1. for-in循环如果明确的知道循环执行的次数或者是要对一个容器进行迭代，那么推荐使用for-in循环，例如求1到100的和: 输出九九乘法表： 需要说明的是上面代码中的range类型，range可以用来产生一个不变的数值序列，而且这个序列通常都是用在循环中的，例如：range(101)可以产生一个0到100的整数序列。range(1, 100)可以产生一个1到99的整数序列。range(1, 100, 2)可以产生一个1到99的奇数序列，其中的2是步长，即数值序列的增量。 2. while循环如果要构造不知道具体循环次数的循环结构，我们推荐使用while循环，while循环通过一个能够产生或转换出bool值的表达式来控制循环，表达式的值为True循环继续，表达式的值为False循环结束。例如： 上面的代码中使用了break关键字来提前终止循环，需要注意的是break只能终止它所在的那个循环 continue可以用来放弃本次循环后续的代码直接让循环进入下一轮。]]></content>
       <categories>
         <category>python</category>
       </categories>

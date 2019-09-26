@@ -92,7 +92,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190925204454.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190925204711.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190925210033.png">
-<meta property="og:updated_time" content="2019-09-25T13:06:08.640Z">
+<meta property="og:updated_time" content="2019-09-26T11:56:08.993Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python-循环结构">
 <meta name="twitter:description" content="介绍在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。 1. for-in循环如果明确的知道循环执行的次数或者是要对一个容器进行迭代，那么推荐使用for-in循环，例如求1到100的和:">
@@ -407,6 +407,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190925204454.png" alt></p>
 <p>输出九九乘法表：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190925204711.png" alt></p>
+<p>需要说明的是上面代码中的range类型，range可以用来产生一个不变的数值序列，而且这个序列通常都是用在循环中的，例如：<br>range(101)可以产生一个0到100的整数序列。<br>range(1, 100)可以产生一个1到99的整数序列。<br>range(1, 100, 2)可以产生一个1到99的奇数序列，其中的2是步长，即数值序列的增量。</p>
 <h4 id="2-while循环"><a href="#2-while循环" class="headerlink" title="2. while循环"></a>2. while循环</h4><p>如果要构造不知道具体循环次数的循环结构，我们推荐使用while循环，while循环通过一个能够产生或转换出bool值的表达式来控制循环，表达式的值为True循环继续，表达式的值为False循环结束。<br>例如：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190925210033.png" alt></p>
 <p> 上面的代码中使用了break关键字来提前终止循环，需要注意的是break只能终止它所在的那个循环<br> continue可以用来放弃本次循环后续的代码直接让循环进入下一轮。</p>
@@ -449,6 +450,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/25/项目开发构想/" rel="prev" title="项目开发构想">
+                项目开发构想 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -530,7 +535,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -541,7 +546,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -552,7 +557,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

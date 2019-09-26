@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-25T13:06:08.640Z</updated>
+  <updated>2019-09-26T13:25:51.477Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,87 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python-字符串和常用数据结构</title>
+    <link href="http://yoursite.com/2019/09/26/python-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <id>http://yoursite.com/2019/09/26/python-字符串和常用数据结构/</id>
+    <published>2019-09-26T13:19:58.000Z</published>
+    <updated>2019-09-26T13:25:51.477Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;字符串&quot;&gt;&lt;a href=&quot;#字符串&quot; class=&quot;headerlink&quot; title=&quot;字符串&quot;&gt;&lt;/a&gt;字符串&lt;/h4&gt;&lt;p&gt;今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为：&lt;/p&gt;
+&lt;p&gt;$${\displaystyle s=a_{1}a_{2}\dots a_{n}(0\leq n \leq \infty)}$$&lt;br&gt;我们可以通过下面的代码来了解字符串的使用。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python-函数与模块的使用</title>
+    <link href="http://yoursite.com/2019/09/26/python-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%A8%A1%E5%9D%97%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2019/09/26/python-函数与模块的使用/</id>
+    <published>2019-09-26T11:34:08.000Z</published>
+    <updated>2019-09-26T12:30:13.372Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-函数的定义&quot;&gt;&lt;a href=&quot;#1-函数的定义&quot; class=&quot;headerlink&quot; title=&quot;1.函数的定义&quot;&gt;&lt;/a&gt;1.函数的定义&lt;/h4&gt;&lt;p&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>项目开发构想</title>
+    <link href="http://yoursite.com/2019/09/25/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E6%9E%84%E6%83%B3/"/>
+    <id>http://yoursite.com/2019/09/25/项目开发构想/</id>
+    <published>2019-09-25T14:27:41.000Z</published>
+    <updated>2019-09-25T14:37:46.493Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;项目构想&quot;&gt;&lt;a href=&quot;#项目构想&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="项目开发" scheme="http://yoursite.com/categories/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="项目开发" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python-循环结构</title>
     <link href="http://yoursite.com/2019/09/25/python-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
     <id>http://yoursite.com/2019/09/25/python-循环结构/</id>
     <published>2019-09-25T12:34:19.000Z</published>
-    <updated>2019-09-25T13:06:08.640Z</updated>
+    <updated>2019-09-26T11:56:08.993Z</updated>
     
     <summary type="html">
     
@@ -89,7 +165,7 @@
     <link href="http://yoursite.com/2019/09/24/c-%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8/"/>
     <id>http://yoursite.com/2019/09/24/c-实现链表/</id>
     <published>2019-09-24T13:52:12.000Z</published>
-    <updated>2019-09-24T13:53:36.524Z</updated>
+    <updated>2019-09-25T14:37:35.971Z</updated>
     
     <summary type="html">
     
@@ -390,70 +466,6 @@
     
     
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo-next-Pisces主题的颜色配置</title>
-    <link href="http://yoursite.com/2019/09/20/hexo-next%E4%B8%BB%E9%A2%98%E7%9A%84%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE/"/>
-    <id>http://yoursite.com/2019/09/20/hexo-next主题的颜色配置/</id>
-    <published>2019-09-20T11:14:35.000Z</published>
-    <updated>2019-09-24T11:27:09.069Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-左上侧背景颜色&quot;&gt;&lt;a href=&quot;#1-左上侧背景颜色&quot; class=&quot;headerlink&quot; title=&quot;1.左上侧背景颜色&quot;&gt;&lt;/a&gt;1.左上侧背景颜色&lt;/h4&gt;&lt;p&gt;在 D:\博客\themes\next\source\css_schemes\Pisces_layout.styl  里修改background的内容颜色可参考:&lt;a href=&quot;http://tool.oschina.net/commons?type=3&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RCG颜色对照表&lt;/a&gt; &lt;/p&gt;
-&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190920193543.png&quot;&gt;
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python-jupyter的设置</title>
-    <link href="http://yoursite.com/2019/09/20/python-1/"/>
-    <id>http://yoursite.com/2019/09/20/python-1/</id>
-    <published>2019-09-20T07:45:02.000Z</published>
-    <updated>2019-09-24T11:03:48.292Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;1-为jupyter设置默认浏览器&quot;&gt;&lt;a href=&quot;#1-为jupyter设置默认浏览器&quot; class=&quot;headerlink&quot; title=&quot;1. 为jupyter设置默认浏览器&quot;&gt;&lt;/a&gt;1. 为jupyter设置默认浏览器&lt;/h3&gt;&lt;p&gt;jupyter 打开后无法直接跳转到浏览器解决方案&lt;br&gt;1、首先打开Anoconda Prompt，输入命令 jupyter notebook –generate-config，系统会自动产生一个名为jupyter_notebook_config.py的文件，并且Anoconda Prompt窗口中会给出文件的路径。&lt;br&gt;2、打开jupyter_notebook_config.py，在文件最后添加以下代码&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c++的cmach库</title>
-    <link href="http://yoursite.com/2019/09/19/c++%E5%B0%8F%E7%9F%A5%E8%AF%861/"/>
-    <id>http://yoursite.com/2019/09/19/c++小知识1/</id>
-    <published>2019-09-19T09:25:18.000Z</published>
-    <updated>2019-09-24T11:05:13.768Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;c-的标准库cmath常用函数&quot;&gt;&lt;a href=&quot;#c-的标准库cmath常用函数&quot; class=&quot;headerlink&quot; title=&quot;c++的标准库cmath常用函数&quot;&gt;&lt;/a&gt;c++的标准库cmath常用函数&lt;/h3&gt;&lt;h4 id=&quot;1-求解绝对值&quot;&gt;&lt;a href=&quot;#1-求解绝对值&quot; class=&quot;headerlink&quot; title=&quot;1. 求解绝对值&quot;&gt;&lt;/a&gt;1. 求解绝对值&lt;/h4&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i)&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;comment&quot;&gt;//返回整型参数i的绝对值 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;fabs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; i)&lt;/span&gt;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//返回双精度参数i的绝对值 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;labs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; n)&lt;/span&gt;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//返回长整型参数i的绝对值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="c++" scheme="http://yoursite.com/categories/c/"/>
-    
-    
-      <category term="c++" scheme="http://yoursite.com/tags/c/"/>
     
   </entry>
   
