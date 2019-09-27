@@ -81,21 +81,30 @@
 
 
 
-<meta name="description" content="字符串今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为： 我们可以通过下面的代码来了解字符串的使用。">
+<meta name="description" content="字符串今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为：">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python-字符串和常用数据结构">
 <meta property="og:url" content="http://yoursite.com/2019/09/26/python-字符串和常用数据结构/index.html">
 <meta property="og:site_name" content="welcome">
-<meta property="og:description" content="字符串今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为： 我们可以通过下面的代码来了解字符串的使用。">
+<meta property="og:description" content="字符串今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为：">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926212932.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926212345.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926212505.png">
-<meta property="og:updated_time" content="2019-09-26T13:30:37.660Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927101600.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927110849.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927110908.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927111653.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927112734.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927121013.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927121626.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927123053.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927125132.png">
+<meta property="og:updated_time" content="2019-09-27T04:54:07.760Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python-字符串和常用数据结构">
-<meta name="twitter:description" content="字符串今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为： 我们可以通过下面的代码来了解字符串的使用。">
+<meta name="twitter:description" content="字符串今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为：">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926212932.png">
 
 
@@ -400,12 +409,42 @@
       
 
       
-        <h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><p>今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为：<br><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926212932.png" alt></p>
-<p>我们可以通过下面的代码来了解字符串的使用。</p>
+        <h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><p>今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为：</p>
 <a id="more"></a>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926212932.png" alt></p>
+<p>我们可以通过下面的代码来了解字符串的使用。</p>
+<!--more-->
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926212345.png" alt></p>
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926212505.png" alt></p>
-<p>注：jupyter notebook 执行命令的时候报错：IndentationError: unexpected indent  （意外的缩进）<br>resolution：去掉空格</p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927101600.png" alt></p>
+<p>注：jupyter notebook 执行命令的时候报错：IndentationError: unexpected indent  （意外的缩进）<br>resolution：去掉空格<br>除了字符串，Python还内置了多种类型的数据结构，如果要在程序中保存和操作数据，绝大多数时候可以利用现有的数据结构来实现，最常用的包括列表、元组、集合和字典。</p>
+<h4 id="使用列表"><a href="#使用列表" class="headerlink" title="使用列表"></a>使用列表</h4><ol>
+<li>下面的代码演示了如何定义列表、使用下标访问列表元素以及添加和删除元素的操作</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927110849.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927110908.png" alt></p>
+<ol start="2">
+<li>通过切片操作我们可以实现对列表的复制或者将列表中的一部分取出来创建出新的列表，代码如下所示。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927111653.png" alt></p>
+<ol start="3">
+<li>对列表内容进行排序</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927112734.png" alt></p>
+<ol start="4">
+<li>使用列表的生成式语法来创建列表</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927121013.png" alt></p>
+<p>，Python中还有另外一种定义生成器的方式，就是通过yield关键字将一个普通函数改造成生成器函数。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927121626.png" alt></p>
+<ol start="5">
+<li>使用元组<br>Python 的元组与列表类似，不同之处在于元组的元素不能修改。元组在创建时间和占用的空间上面都优于列表。我们使用sys模块的getsizeof函数来检查存储同样的元素的元组和列表各自占用了多少内存空间</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927123053.png" alt></p>
+<ol start="6">
+<li>使用集合<br>Python中的集合跟数学上的集合是一致的，不允许有重复元素，而且可以进行交集、并集、差集等运算。说明： Python中允许通过一些特殊的方法来为某种类型或数据结构自定义运算符，我们对集合进行运算的时候可以调用集合对象的方法，也可以直接使用对应的运算符，例如&amp;运算符跟intersection方法的作用就是一样的，但是使用运算符让代码更加直观。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927125132.png" alt></p>
 
       
     </div>
@@ -530,7 +569,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -592,7 +631,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串"><span class="nav-text">字符串</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串"><span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用列表"><span class="nav-text">使用列表</span></a></li></ol></div>
             
 
           </div>

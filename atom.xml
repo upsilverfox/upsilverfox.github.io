@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-26T14:19:41.600Z</updated>
+  <updated>2019-09-27T12:25:53.029Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,21 +17,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python-面对对象编程基础</title>
+    <link href="http://yoursite.com/2019/09/27/python-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2019/09/27/python-面对对象编程基础/</id>
+    <published>2019-09-27T12:14:11.000Z</published>
+    <updated>2019-09-27T12:25:53.029Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;面对对象&quot;&gt;&lt;a href=&quot;#面对对象&quot; class=&quot;headerlink&quot; title=&quot;面对对象&quot;&gt;&lt;/a&gt;面对对象&lt;/h4&gt;&lt;p&gt;把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的封装（encapsulation）隐藏内部细节，通过继承（inheritance）实现类的特化（specialization）和泛化（generalization），通过多态（polymorphism）实现基于对象类型的动态分派。&lt;br&gt;简单的来说就是面向对象的三要素：封装、继承、多态&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python-练习</title>
+    <link href="http://yoursite.com/2019/09/27/python-%E7%BB%83%E4%B9%A0/"/>
+    <id>http://yoursite.com/2019/09/27/python-练习/</id>
+    <published>2019-09-27T04:53:18.000Z</published>
+    <updated>2019-09-27T12:06:06.985Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;练习一：在屏幕上显示跑马灯文字&quot;&gt;&lt;a href=&quot;#练习一：在屏幕上显示跑马灯文字&quot; class=&quot;headerlink&quot; title=&quot;练习一：在屏幕上显示跑马灯文字&quot;&gt;&lt;/a&gt;练习一：在屏幕上显示跑马灯文字&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927191628.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python-web开发 (一)</title>
     <link href="http://yoursite.com/2019/09/26/python-web%E5%BC%80%E5%8F%91-%E4%B8%80/"/>
     <id>http://yoursite.com/2019/09/26/python-web开发-一/</id>
     <published>2019-09-26T14:10:44.000Z</published>
-    <updated>2019-09-26T14:19:41.600Z</updated>
+    <updated>2019-09-27T12:25:50.007Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;什么是web开发呢，其实就是开发一个网站了。那开发网站需要用到哪些知识呢&lt;br&gt;1、python基础，因为用python开发的，所以python指定要会，最起码你也得会条件判断，循环，函数，类这些知识；&lt;br&gt;2、html、css的基础知识，因为要开发网站，网页都html和
-        
-      
+      &lt;p&gt;什么是web开发呢，其实就是开发一个网站了。那开发网站需要用到哪些知识呢&lt;br&gt;1、python基础，因为用python开发的，所以python指定要会，最起码你也得会条件判断，循环，函数，类这些知识；&lt;br&gt;2、html、css的基础知识，因为要开发网站，网页都html和css写的，最起码这些知识你得会，就算不会写前端，开发不出来特别漂亮的页面，网站，最起码要能看懂html标签是；&lt;br&gt;3、数据库基础知识，因为开发一个网站的话，数据存在哪里，就是在数据库里，那你最起码要会数据库的增删改查吧，要不然怎么存数据，取数据呢&lt;br&gt;上面这些知识会的话，就基本上可以了，可以开发一个简单的小站就没有问题了，如果想开发比较大型的网站，业务逻辑比较复杂的，那就得用到其他的知识了，比如说redis、MQ等等。&lt;/p&gt;
     
     </summary>
     
@@ -48,12 +84,11 @@
     <link href="http://yoursite.com/2019/09/26/python-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     <id>http://yoursite.com/2019/09/26/python-字符串和常用数据结构/</id>
     <published>2019-09-26T13:19:58.000Z</published>
-    <updated>2019-09-26T13:30:37.660Z</updated>
+    <updated>2019-09-27T04:54:07.760Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;字符串&quot;&gt;&lt;a href=&quot;#字符串&quot; class=&quot;headerlink&quot; title=&quot;字符串&quot;&gt;&lt;/a&gt;字符串&lt;/h4&gt;&lt;p&gt;今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为：&lt;br&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926212932.png&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;我们可以通过下面的代码来了解字符串的使用。&lt;/p&gt;
+      &lt;h4 id=&quot;字符串&quot;&gt;&lt;a href=&quot;#字符串&quot; class=&quot;headerlink&quot; title=&quot;字符串&quot;&gt;&lt;/a&gt;字符串&lt;/h4&gt;&lt;p&gt;今天的计算机处理得更多的数据都是以文本信息的方式存在的，而Python表示文本信息的方式就是字符串类型。所谓字符串，就是由零个或多个字符组成的有限序列，一般记为：&lt;/p&gt;
     
     </summary>
     
@@ -213,12 +248,11 @@
     <link href="http://yoursite.com/2019/09/24/python-%E5%8F%98%E9%87%8F/"/>
     <id>http://yoursite.com/2019/09/24/python-变量/</id>
     <published>2019-09-24T10:14:23.000Z</published>
-    <updated>2019-09-24T11:03:39.418Z</updated>
+    <updated>2019-09-27T02:17:05.480Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;1-变量命名规则&quot;&gt;&lt;a href=&quot;#1-变量命名规则&quot; class=&quot;headerlink&quot; title=&quot;1. 变量命名规则&quot;&gt;&lt;/a&gt;1. 变量命名规则&lt;/h4&gt;&lt;p&gt;1）硬性规则：&lt;br&gt;变量名由字母（广义的Unicode字符，不包括特殊字符）、数字和下划线构成，数字不能开头。&lt;br&gt;大小写敏感（大写的a和小写的A是两个不同的变量）。&lt;br&gt;不要跟关键字（有特殊含义的单词）和系统保留字（如函数、模块等的名字）冲突。&lt;/p&gt;
-&lt;p&gt;2）PEP 8要求：&lt;br&gt;用小写字母拼写，多个单词用下划线连接。&lt;br&gt;受保护的实例属性用单个下划线开头。&lt;br&gt;私有的实例属性用两个下划线开头。&lt;/p&gt;
+      &lt;h4 id=&quot;1-变量命名规则&quot;&gt;&lt;a href=&quot;#1-变量命名规则&quot; class=&quot;headerlink&quot; title=&quot;1. 变量命名规则&quot;&gt;&lt;/a&gt;1. 变量命名规则&lt;/h4&gt;&lt;p&gt;1）硬性规则：&lt;br&gt;变量名由字母（广义的Unicode字符，不包括特殊字符）、数字和下划线构成，数字不能开头。&lt;br&gt;大小写敏感（大写的a和小写的A是两个不同的变量）。&lt;br&gt;不要跟关键字（有特殊含义的单词）和系统保留字（如函数、模块等的名字）冲突。&lt;br&gt;2）PEP 8要求：&lt;br&gt;用小写字母拼写，多个单词用下划线连接。&lt;br&gt;受保护的实例属性用单个下划线开头。&lt;br&gt;私有的实例属性用两个下划线开头。&lt;/p&gt;
     
     </summary>
     
@@ -430,49 +464,6 @@
     
     
       <category term="cmd" scheme="http://yoursite.com/tags/cmd/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Chrome浏览器F12介绍</title>
-    <link href="http://yoursite.com/2019/09/21/Chrome%E6%B5%8F%E8%A7%88%E5%99%A8F12%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://yoursite.com/2019/09/21/Chrome浏览器F12介绍/</id>
-    <published>2019-09-21T05:08:32.000Z</published>
-    <updated>2019-09-24T11:28:57.563Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-可以直接修改页面元素&quot;&gt;&lt;a href=&quot;#1-可以直接修改页面元素&quot; class=&quot;headerlink&quot; title=&quot;1. 可以直接修改页面元素&quot;&gt;&lt;/a&gt;1. 可以直接修改页面元素&lt;/h4&gt;&lt;p&gt;选择页面上元素，右键“检查”，会打开开发者工具窗口，显示当前选择元素的源代码，可以双击进行修改。&lt;br&gt;如果要修改的东西比较多，可以折叠元素并单击选择，再右键选择编辑为 HTML修改&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="computer" scheme="http://yoursite.com/categories/computer/"/>
-    
-    
-      <category term="计算机" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机快捷键</title>
-    <link href="http://yoursite.com/2019/09/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%B8%B8%E7%94%A8%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
-    <id>http://yoursite.com/2019/09/21/计算机常用小知识点/</id>
-    <published>2019-09-21T04:47:04.000Z</published>
-    <updated>2019-09-24T11:28:05.862Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-任务管理器快捷键&quot;&gt;&lt;a href=&quot;#1-任务管理器快捷键&quot; class=&quot;headerlink&quot; title=&quot;1. 任务管理器快捷键&quot;&gt;&lt;/a&gt;1. 任务管理器快捷键&lt;/h4&gt;&lt;p&gt;方法一：同时按住电脑键盘上的“Shift+Ctrl+Esc”组合键，即可直接打开任务管理器。&lt;br&gt;方法二：同时按住电脑键盘上的“Alt+Ctrl+Del”组合键，然后选择“任务管理器”，也可顺利打开。&lt;/p&gt;
-&lt;h4 id=&quot;2-在浏览器显示全屏&quot;&gt;&lt;a href=&quot;#2-在浏览器显示全屏&quot; class=&quot;headerlink&quot; title=&quot;2. 在浏览器显示全屏&quot;&gt;&lt;/a&gt;2. 在浏览器显示全屏&lt;/h4&gt;&lt;p&gt;按住电脑键盘上的F11即浏览器显示全屏，再一次退出全屏。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="computer" scheme="http://yoursite.com/categories/computer/"/>
-    
-    
-      <category term="计算机" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
   </entry>
   

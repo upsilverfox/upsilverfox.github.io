@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="c++,">
+  <meta name="keywords" content="python,">
 
 
 
@@ -81,20 +81,18 @@
 
 
 
-<meta name="description" content="c++链表的构造链表结构体的构造。构造头结点head，指向NULL（head-&amp;gt;next = NULL）构造当前结点，用于记录当前链表构造的位置，构造新结点，用于循环插入链表。循环插入链表，根据条件结束并返回头结点。 c++链表解决代码1）类的定义  2）链表的创建">
-<meta name="keywords" content="c++">
+<meta name="description" content="面对对象把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的封装（encapsulation）隐藏内部细节，通过继承（inheritance）实现类的特化（specialization）和泛化（generalization），通过多态（polymorphism）实现基于对象类型的动态分派。简单的来说就是面向对象的三要素：封装、继承、多态">
+<meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="c++实现链表">
-<meta property="og:url" content="http://yoursite.com/2019/09/24/c-实现链表/index.html">
+<meta property="og:title" content="python-面对对象编程基础">
+<meta property="og:url" content="http://yoursite.com/2019/09/27/python-面对对象编程基础/index.html">
 <meta property="og:site_name" content="welcome">
-<meta property="og:description" content="c++链表的构造链表结构体的构造。构造头结点head，指向NULL（head-&amp;gt;next = NULL）构造当前结点，用于记录当前链表构造的位置，构造新结点，用于循环插入链表。循环插入链表，根据条件结束并返回头结点。 c++链表解决代码1）类的定义  2）链表的创建">
+<meta property="og:description" content="面对对象把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的封装（encapsulation）隐藏内部细节，通过继承（inheritance）实现类的特化（specialization）和泛化（generalization），通过多态（polymorphism）实现基于对象类型的动态分派。简单的来说就是面向对象的三要素：封装、继承、多态">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926214453.png">
-<meta property="og:updated_time" content="2019-09-26T13:51:54.656Z">
+<meta property="og:updated_time" content="2019-09-27T12:25:53.029Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="c++实现链表">
-<meta name="twitter:description" content="c++链表的构造链表结构体的构造。构造头结点head，指向NULL（head-&amp;gt;next = NULL）构造当前结点，用于记录当前链表构造的位置，构造新结点，用于循环插入链表。循环插入链表，根据条件结束并返回头结点。 c++链表解决代码1）类的定义  2）链表的创建">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926214453.png">
+<meta name="twitter:title" content="python-面对对象编程基础">
+<meta name="twitter:description" content="面对对象把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的封装（encapsulation）隐藏内部细节，通过继承（inheritance）实现类的特化（specialization）和泛化（generalization），通过多态（polymorphism）实现基于对象类型的动态分派。简单的来说就是面向对象的三要素：封装、继承、多态">
 
 
 
@@ -124,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/09/24/c-实现链表/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/27/python-面对对象编程基础/">
 
 
 
 
 
-  <title>c++实现链表 | welcome</title>
+  <title>python-面对对象编程基础 | welcome</title>
   
 
 
@@ -299,7 +297,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/c-实现链表/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/27/python-面对对象编程基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="银狐">
@@ -316,7 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">c++实现链表</h1>
+          <h1 class="post-title" itemprop="name headline">python-面对对象编程基础</h1>
         
 
         <div class="post-meta">
@@ -328,8 +326,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T21:52:12+08:00">
-                2019-09-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-27T20:14:11+08:00">
+                2019-09-27
               </time>
             
 
@@ -351,8 +349,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/c/" itemprop="url" rel="index">
-                    <span itemprop="name">c++</span>
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
                   </a>
                 </span>
 
@@ -369,8 +367,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/09/24/c-实现链表/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/24/c-实现链表/" itemprop="commentCount"></span>
+                <a href="/2019/09/27/python-面对对象编程基础/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/27/python-面对对象编程基础/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -398,10 +396,11 @@
       
 
       
-        <h4 id="c-链表的构造"><a href="#c-链表的构造" class="headerlink" title="c++链表的构造"></a>c++链表的构造</h4><p>链表结构体的构造。<br>构造头结点head，指向NULL（head-&gt;next = NULL）<br>构造当前结点，用于记录当前链表构造的位置，构造新结点，用于循环插入链表。<br>循环插入链表，根据条件结束并返回头结点。</p>
-<h4 id="c-链表解决代码"><a href="#c-链表解决代码" class="headerlink" title="c++链表解决代码"></a>c++链表解决代码</h4><p>1）类的定义</p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190926214453.png" alt></p>
-<p>2）链表的创建</p>
+        <h4 id="面对对象"><a href="#面对对象" class="headerlink" title="面对对象"></a>面对对象</h4><p>把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的封装（encapsulation）隐藏内部细节，通过继承（inheritance）实现类的特化（specialization）和泛化（generalization），通过多态（polymorphism）实现基于对象类型的动态分派。<br>简单的来说就是面向对象的三要素：封装、继承、多态</p>
+<a id="more"></a>
+
+
+
 
       
     </div>
@@ -419,7 +418,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/c/" rel="tag"># c++</a>
+            <a href="/tags/python/" rel="tag"># python</a>
           
         </div>
       
@@ -432,8 +431,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/24/python-变量/" rel="next" title="python-变量">
-                <i class="fa fa-chevron-left"></i> python-变量
+              <a href="/2019/09/27/python-练习/" rel="next" title="python-练习">
+                <i class="fa fa-chevron-left"></i> python-练习
               </a>
             
           </div>
@@ -441,10 +440,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/25/设置U盘为第一启动项/" rel="prev" title="设置U盘为第一启动项">
-                设置U盘为第一启动项 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -588,7 +583,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#c-链表的构造"><span class="nav-text">c++链表的构造</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#c-链表解决代码"><span class="nav-text">c++链表解决代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#面对对象"><span class="nav-text">面对对象</span></a></li></ol></div>
             
 
           </div>
