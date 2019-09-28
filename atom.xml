@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-27T12:25:53.029Z</updated>
+  <updated>2019-09-28T13:01:09.848Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,15 +17,60 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>markdown-基本语法</title>
+    <link href="http://yoursite.com/2019/09/28/markdown-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/09/28/markdown-基本语法/</id>
+    <published>2019-09-28T12:05:25.000Z</published>
+    <updated>2019-09-28T13:01:09.848Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-标题&quot;&gt;&lt;a href=&quot;#1-标题&quot; class=&quot;headerlink&quot; title=&quot;1. 标题&quot;&gt;&lt;/a&gt;1. 标题&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 一级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;## 二级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;### 三级标题&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;效果如下：&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="markdown" scheme="http://yoursite.com/categories/markdown/"/>
+    
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python-练习2</title>
+    <link href="http://yoursite.com/2019/09/28/python-%E7%BB%83%E4%B9%A02/"/>
+    <id>http://yoursite.com/2019/09/28/python-练习2/</id>
+    <published>2019-09-28T11:51:56.000Z</published>
+    <updated>2019-09-28T13:41:30.311Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;练习1：定义一个类描述数字时钟&quot;&gt;&lt;a href=&quot;#练习1：定义一个类描述数字时钟&quot; class=&quot;headerlink&quot; title=&quot;练习1：定义一个类描述数字时钟&quot;&gt;&lt;/a&gt;练习1：定义一个类描述数字时钟&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190928213335.png&quot; alt&gt;&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python-面对对象编程基础</title>
     <link href="http://yoursite.com/2019/09/27/python-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/"/>
     <id>http://yoursite.com/2019/09/27/python-面对对象编程基础/</id>
     <published>2019-09-27T12:14:11.000Z</published>
-    <updated>2019-09-27T12:25:53.029Z</updated>
+    <updated>2019-09-28T11:51:22.898Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;面对对象&quot;&gt;&lt;a href=&quot;#面对对象&quot; class=&quot;headerlink&quot; title=&quot;面对对象&quot;&gt;&lt;/a&gt;面对对象&lt;/h4&gt;&lt;p&gt;把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的封装（encapsulation）隐藏内部细节，通过继承（inheritance）实现类的特化（specialization）和泛化（generalization），通过多态（polymorphism）实现基于对象类型的动态分派。&lt;br&gt;简单的来说就是面向对象的三要素：封装、继承、多态&lt;/p&gt;
+      &lt;h4 id=&quot;面对对象&quot;&gt;&lt;a href=&quot;#面对对象&quot; class=&quot;headerlink&quot; title=&quot;面对对象&quot;&gt;&lt;/a&gt;面对对象&lt;/h4&gt;&lt;p&gt;把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的&lt;strong&gt;封装&lt;/strong&gt;（encapsulation）隐藏内部细节，通过&lt;strong&gt;继承&lt;/strong&gt;（inheritance）实现类的特化（specialization）和泛化（generalization），通过&lt;strong&gt;多态&lt;/strong&gt;（polymorphism）实现基于对象类型的动态分派。&lt;br&gt;简单的来说就是面向对象的三要素：封装、继承、多态&lt;/p&gt;
     
     </summary>
     
@@ -421,49 +466,6 @@
     
     
       <category term="conmput English" scheme="http://yoursite.com/tags/conmput-English/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>win10部分有趣的命令提示符</title>
-    <link href="http://yoursite.com/2019/09/22/%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A62/"/>
-    <id>http://yoursite.com/2019/09/22/命令提示符2/</id>
-    <published>2019-09-22T12:19:42.000Z</published>
-    <updated>2019-09-24T11:28:27.766Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;1）arp -a  获取IP地址，MAC地址&lt;br&gt;解释：地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。地址解析协议是建立在网络中各个主机互相信任的基础上的，局域网络上的主机可以自主发送ARP应答消息，其他主机收到应答报文时不会检测该报文的真实性就会将其记入本机ARP缓存；由此攻击者就可以向某一主机发送伪ARP应答报文，使其发送的信息无法到达预期的主机或到达错误的主机，这就构成了一个ARP欺骗。ARP命令可用于查询本机ARP缓存中IP地址和MAC地址的对应关系、添加或删除静态对应关系等。相关协议有RARP、代理ARP。NDP用于在IPv6中代替地址解析协议。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="computer" scheme="http://yoursite.com/categories/computer/"/>
-    
-    
-      <category term="cmd" scheme="http://yoursite.com/tags/cmd/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>三种打开命令提示符的方法</title>
-    <link href="http://yoursite.com/2019/09/22/%E4%B8%A4%E7%A7%8D%E6%89%93%E5%BC%80%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6%E7%9A%84%E6%96%B9%E6%B3%95/"/>
-    <id>http://yoursite.com/2019/09/22/两种打开命令提示符的方法/</id>
-    <published>2019-09-22T11:40:48.000Z</published>
-    <updated>2019-09-24T11:28:21.065Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-介绍&quot;&gt;&lt;a href=&quot;#1-介绍&quot; class=&quot;headerlink&quot; title=&quot;1.介绍&quot;&gt;&lt;/a&gt;1.介绍&lt;/h4&gt;&lt;p&gt;命令提示符即cmd.exe，是一个32位的命令行程序，微软Win系统基于Win10上的命令解释程序，类似于微软的DOS操作系统.&lt;/p&gt;
-&lt;h4 id=&quot;2-打开方法&quot;&gt;&lt;a href=&quot;#2-打开方法&quot; class=&quot;headerlink&quot; title=&quot;2.打开方法&quot;&gt;&lt;/a&gt;2.打开方法&lt;/h4&gt;&lt;p&gt;1） 在运行窗口输入“cmd”可以使用管理员身份来打开命令提示符&lt;br&gt;2） 按组合快捷键“win+ R”打开运行，输入命令：【cmd】，点击“确定”&lt;br&gt;3） 鼠标右击桌面。&lt;br&gt;    新建文本文档，可随意命名。&lt;br&gt;    输入 &lt;code&gt;cmd&lt;/code&gt;&lt;br&gt;    点击“保存”。&lt;br&gt;    修改文件后缀为bat。&lt;br&gt;    打开文本运行命令提示符。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="computer" scheme="http://yoursite.com/categories/computer/"/>
-    
-    
-      <category term="cmd" scheme="http://yoursite.com/tags/cmd/"/>
     
   </entry>
   

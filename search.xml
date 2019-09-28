@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[markdown-基本语法]]></title>
+    <url>%2F2019%2F09%2F28%2Fmarkdown-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[1. 标题123# 一级标题## 二级标题### 三级标题 效果如下： 一级标题二级标题三级标题 2. 字体 加粗要加粗的文字左右分别用两个*号包起来 斜体要倾斜的文字左右分别用一个*号包起来 斜体加粗要倾斜和加粗的文字左右分别用三个*号包起来 删除线要加删除线的文字左右分别用两个~~号包起来 效果如下： 加粗 斜体 加粗加斜体 删除线 3. 引用在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;n个…效果如下： 引用内容 引用内容 引用内容 4.分割线三个或者三个以上的 - 或者 * 都可以。或者&lt;hr&gt;例如： 12345-------*******&lt;hr&gt; 5. 图片 直接用图床工具就好 6.超链接语法 [超链接名](超链接地址 &quot;超链接title&quot;) 效果如下： 我的博客 7. 列表1）无序列表 用 - + * 任何一种都可以 123- 列表内容* 列表内容+ 列表内容 2）有序表 数字加点就可以 3）镶嵌结构 上一级和下一级之间敲三个空格即可 效果如下： 一级 二级 三级 一级 二级 三级 8. 表格语法： 12345678910表头|表头|表头---|:--:|---:内容|内容|内容内容|内容|内容第二行分割表头和内容。- 有一个就行，为了对齐，多加了几个文字默认居左-两边加：表示文字居中-右边加：表示文字居右 效果如下： 姓名 排名 李白 1 达明 2 9. 代码语法：单行代码：代码之间分别用一个反引号包起来多行代码：代码之间分别用三个反引号包起来，在第三个反引号后加c++或Java、python等 例如： 12345`单行代码` (```python 多行代码 ```) 注：不需要括号]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python-练习2]]></title>
+    <url>%2F2019%2F09%2F28%2Fpython-%E7%BB%83%E4%B9%A02%2F</url>
+    <content type="text"><![CDATA[练习1：定义一个类描述数字时钟 #### 练习2：定义一个类描述平面上的点并提供移动点和计算到另一个点距离的方法。 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657from math import sqrtclass Point(object): def __init__(self, x=0, y=0): """初始化方法 :param x: 横坐标 :param y: 纵坐标 """ self.x = x self.y = y def move_to(self, x, y): """移动到指定位置 :param x: 新的横坐标 "param y: 新的纵坐标 """ self.x = x self.y = y def move_by(self, dx, dy): """移动指定的增量 :param dx: 横坐标的增量 "param dy: 纵坐标的增量 """ self.x += dx self.y += dy def distance_to(self, other): """计算与另一个点的距离 :param other: 另一个点 """ dx = self.x - other.x dy = self.y - other.y return sqrt(dx ** 2 + dy ** 2) def __str__(self): return '(%s, %s)' % (str(self.x), str(self.y))def main(): p1 = Point(3, 5) p2 = Point() print(p1) print(p2) p2.move_by(-1, 2) print(p2) print(p1.distance_to(p2))if __name__ == '__main__': main() 结果：]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python-面对对象编程基础]]></title>
     <url>%2F2019%2F09%2F27%2Fpython-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%2F</url>
-    <content type="text"><![CDATA[面对对象把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的封装（encapsulation）隐藏内部细节，通过继承（inheritance）实现类的特化（specialization）和泛化（generalization），通过多态（polymorphism）实现基于对象类型的动态分派。简单的来说就是面向对象的三要素：封装、继承、多态]]></content>
+    <content type="text"><![CDATA[面对对象把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的封装（encapsulation）隐藏内部细节，通过继承（inheritance）实现类的特化（specialization）和泛化（generalization），通过多态（polymorphism）实现基于对象类型的动态分派。简单的来说就是面向对象的三要素：封装、继承、多态 类的定义在Python中可以使用class关键字定义类，然后在类中通过之前学习过的函数来定义方法,定义好类后可以创建对象并给对象发消息。 访问可见性问题在Python中，属性和方法的访问权限只有两种，也就是公开的和私有的，如果希望属性是私有的，在给属性命名时可以用两个下划线作为开头。大多数Python程序员会遵循一种命名惯例就是让属性名以单下划线开头来表示属性是受保护的。]]></content>
       <categories>
         <category>python</category>
       </categories>
