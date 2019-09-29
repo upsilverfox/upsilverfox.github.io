@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[C++练习一]]></title>
+    <url>%2F2019%2F09%2F29%2Fc-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E2%80%94%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[1. 练习一题目： DescriptionCalculate a+b InputTwo integer a,b (0&lt;=a,b&lt;=10) OutputOutput a+b Sample Input1 2 Sample Output3 代码： 123456789101112131415161718192021#include&lt;iostream&gt;using namespace std;int main()&#123; int a,b; cout&lt;&lt;"a(a&gt;=0): "; cin&gt;&gt;a; if(a&lt;0)&#123; cout&lt;&lt;"请重新输入： "; cout&lt;&lt;"a(a&gt;=0):"; &#125; cout&lt;&lt;"b(b&lt;=10): "; cin&gt;&gt;b; if(b&gt;10)&#123; cout&lt;&lt;"请重新输入： "; cout&lt;&lt;"b(b&lt;=10): "; &#125; cout&lt;&lt;"a+b="&lt;&lt;a+b; return 0; &#125; 2. 练习二题目： Given a non-negative integer num, repeatedly add all its digits until the result has only one digit. Example:Input: 38Output: 2Explanation: The process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one digit, return it. 代码：第一种方法： 1234567891011121314151617181920212223242526//使用递归方法#include&lt;cmath&gt;using namespace std;class Solution &#123;public: int addDigits(int num) &#123; int index=0; while(num!=0) &#123; index+=num%10; num=num/10; &#125; num=index; if(num&gt;=10) return addDigits(num); else return num; &#125;&#125;;int main()&#123; Solution s; cout&lt;&lt;s.addDigits(120)&lt;&lt;endl;&#125; 第二种方法： 123456789101112131415161718192021222324252627//使用迭代法#include&lt;iostream&gt;#include&lt;cmath&gt;using namespace std;class Solution &#123;public: int addDigits(int num) &#123; int index=0,flag=0; while(num&gt;=10) &#123; flag=num; while(flag!=0) &#123; index+=flag%10; flag=flag/10; &#125; num=index; index=0; &#125; return num; &#125;&#125;;int main()&#123; Solution s; cout&lt;&lt;s.addDigits(120)&lt;&lt;endl;&#125; 3. 练习三题目： DescriptionLarry graduated this year and finally has a job. He’s making a lot of money, but somehow never seems to have enough. Larry has decided that he needs to grab hold of his financial portfolio and solve his financing problems. The first step is to figure out what’s been going on with his money. Larry has his bank account statements and wants to see how much money he has. Help Larry by writing a program to take his closing balance from each of the past twelve months and calculate his average account balance. InputThe input will be twelve lines. Each line will contain the closing balance of his bank account for a particular month. Each number will be positive and displayed to the penny. No dollar sign will be included. OutputThe output will be a single number, the average (mean) of the closing balances for the twelve months. It will be rounded to the nearest penny, preceded immediately by a dollar sign, and followed by the end-of-line. There will be no other spaces or characters in the output. Sample Input 100.00489.1212454.121234.10823.05109.205.271542.25839.1883.991295.011.75 Sample Output$1581.42 代码： 12345678910111213#include&lt;iostream&gt;&gt;using namespace std;int main()&#123; float month,sum=0; for(int i=0;i&lt;12;i++) &#123; cin&gt;&gt;month; sum+=month; &#125; cout&lt;&lt;"$"&lt;&lt;sum/12; return 0; &#125; 4. 练习四题目： Description编写一个C函数mod(int n, int m),实现取模运算% Input输入包含多行数据每行数据是两个整数a, b (1 &lt;= a, b &lt;= 32767)数据以EOF结束 Output于输入的每一行输出a%b Sample Input5 3100 2 Sample Output20 代码： 12345678910111213141516171819#include&lt;iostream&gt;#include&lt;string&gt;using namespace std;int mod(int n,int m)&#123; return n-(n/m)*m;&#125;int main()&#123;int a,b;string ch; while(cin&gt;&gt;a&gt;&gt;b) &#123; cout&lt;&lt;mod(a,b)&lt;&lt;endl; if((ch=cin.get())=="EOF") break; &#125;&#125; 注意：取模与取余的区别： 取余运算在计算商值向0方向舍弃小数位 取模运算在计算商值向负无穷方向舍弃小数 取余，遵循尽可能让商大的原则 取模，遵循尽可能让商小的原则 从上面的区别可以总结出，取余（rem）和取模（mod）在被除数、除数同号时，结果是等同的，异号时会有区别，所以要特别注意异号的情况,经过测试，在C/C++, C#, JAVA, PHP这几门主流语言中，’%’运算符都是做取余运算，而在python中的’%’是做取模运算。在C/C++, C#, JAVA, PHP中a对b取模的公式为a-(a/b)*b。]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[markdown-基本语法]]></title>
     <url>%2F2019%2F09%2F28%2Fmarkdown-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%2F</url>
     <content type="text"><![CDATA[1. 标题123# 一级标题## 二级标题### 三级标题 效果如下： 一级标题二级标题三级标题 2. 字体 加粗要加粗的文字左右分别用两个*号包起来 斜体要倾斜的文字左右分别用一个*号包起来 斜体加粗要倾斜和加粗的文字左右分别用三个*号包起来 删除线要加删除线的文字左右分别用两个~~号包起来 效果如下： 加粗 斜体 加粗加斜体 删除线 3. 引用在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;n个…效果如下： 引用内容 引用内容 引用内容 4.分割线三个或者三个以上的 - 或者 * 都可以。或者&lt;hr&gt;例如： 12345-------*******&lt;hr&gt; 5. 图片 直接用图床工具就好 6.超链接语法 [超链接名](超链接地址 &quot;超链接title&quot;) 效果如下： 我的博客 7. 列表1）无序列表 用 - + * 任何一种都可以 123- 列表内容* 列表内容+ 列表内容 2）有序表 数字加点就可以 3）镶嵌结构 上一级和下一级之间敲三个空格即可 效果如下： 一级 二级 三级 一级 二级 三级 8. 表格语法： 12345678910表头|表头|表头---|:--:|---:内容|内容|内容内容|内容|内容第二行分割表头和内容。- 有一个就行，为了对齐，多加了几个文字默认居左-两边加：表示文字居中-右边加：表示文字居右 效果如下： 姓名 排名 李白 1 达明 2 9. 代码语法：单行代码：代码之间分别用一个反引号包起来多行代码：代码之间分别用三个反引号包起来，在第三个反引号后加c++或Java、python等 例如： 12345`单行代码` (```python 多行代码 ```) 注：不需要括号]]></content>
@@ -14,7 +25,7 @@
   <entry>
     <title><![CDATA[python-练习2]]></title>
     <url>%2F2019%2F09%2F28%2Fpython-%E7%BB%83%E4%B9%A02%2F</url>
-    <content type="text"><![CDATA[练习1：定义一个类描述数字时钟 #### 练习2：定义一个类描述平面上的点并提供移动点和计算到另一个点距离的方法。 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657from math import sqrtclass Point(object): def __init__(self, x=0, y=0): """初始化方法 :param x: 横坐标 :param y: 纵坐标 """ self.x = x self.y = y def move_to(self, x, y): """移动到指定位置 :param x: 新的横坐标 "param y: 新的纵坐标 """ self.x = x self.y = y def move_by(self, dx, dy): """移动指定的增量 :param dx: 横坐标的增量 "param dy: 纵坐标的增量 """ self.x += dx self.y += dy def distance_to(self, other): """计算与另一个点的距离 :param other: 另一个点 """ dx = self.x - other.x dy = self.y - other.y return sqrt(dx ** 2 + dy ** 2) def __str__(self): return '(%s, %s)' % (str(self.x), str(self.y))def main(): p1 = Point(3, 5) p2 = Point() print(p1) print(p2) p2.move_by(-1, 2) print(p2) print(p1.distance_to(p2))if __name__ == '__main__': main() 结果：]]></content>
+    <content type="text"><![CDATA[练习1：定义一个类描述数字时钟 #### 练习2：定义一个类描述平面上的点并提供移动点和计算到另一个点距离的方法。 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657from math import sqrtclass Point(object): def __init__(self, x=0, y=0): """初始化方法 :param x: 横坐标 :param y: 纵坐标 """ self.x = x self.y = y def move_to(self, x, y): """移动到指定位置 :param x: 新的横坐标 "param y: 新的纵坐标 """ self.x = x self.y = y def move_by(self, dx, dy): """移动指定的增量 :param dx: 横坐标的增量 "param dy: 纵坐标的增量 """ self.x += dx self.y += dy def distance_to(self, other): """计算与另一个点的距离 :param other: 另一个点 """ dx = self.x - other.x dy = self.y - other.y return sqrt(dx ** 2 + dy ** 2) def __str__(self): return '(%s, %s)' % (str(self.x), str(self.y))def main(): p1 = Point(3, 5) p2 = Point() print(p1) print(p2) p2.move_by(-1, 2) print(p2) print(p1.distance_to(p2))if __name__ == '__main__': main() 结果： 链接]]></content>
       <categories>
         <category>python</category>
       </categories>
@@ -122,14 +133,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[c++实现链表]]></title>
+    <title><![CDATA[C++实现链表]]></title>
     <url>%2F2019%2F09%2F24%2Fc-%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8%2F</url>
     <content type="text"><![CDATA[c++链表的构造链表结构体的构造。构造头结点head，指向NULL（head-&gt;next = NULL）构造当前结点，用于记录当前链表构造的位置，构造新结点，用于循环插入链表。循环插入链表，根据条件结束并返回头结点。 c++链表解决代码1）类的定义 2）链表的创建]]></content>
       <categories>
-        <category>c++</category>
+        <category>C++</category>
       </categories>
       <tags>
-        <tag>c++</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -298,14 +309,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[c++的cmach库]]></title>
+    <title><![CDATA[C++的cmach库]]></title>
     <url>%2F2019%2F09%2F19%2Fc%2B%2B%E5%B0%8F%E7%9F%A5%E8%AF%861%2F</url>
-    <content type="text"><![CDATA[c++的标准库cmath常用函数1. 求解绝对值123int abs(int i); //返回整型参数i的绝对值 double fabs(double i);//返回双精度参数i的绝对值 long labs(long n);//返回长整型参数i的绝对值 2. 求解指数函数123double exp(double x);//返回e^x的值int pow(int x,int y);//返回x^y的值，其他数据类型也一样int pow10(int x);//返回10^x 3. 求余数1float fmod(float x,float y); //求x除以y的余数 4. 求解对数函数12double log(double x);//返回loge(x)的值double log10(double x);////返回log10(x)的值 5. 开根号1double sqrt(double x); //返回√x的值 6. 三角函数求解12double asin(double x);//返回x的反正弦函数值，x为弧度 double sin(double x);//返回x的正弦函数值，x为弧度 7. 取整12double ceil(double x);//返回不小于x的最小整数double floor(double x);//返回不大于x的最大整数]]></content>
+    <content type="text"><![CDATA[c++的标准库cmath常用函数1. 求解绝对值123int abs(int i); //返回整型参数i的绝对值 double fabs(double i);//返回双精度参数i的绝对值 long labs(long n);//返回长整型参数i的绝对值 2. 求解指数函数123double exp(double x);//返回e^x的值int pow(int x,int y);//返回x^y的值，其他数据类型也一样int pow10(int x);//返回10^x 3. 求余数1float fmod(float x,float y); //求x除以y的余数 4. 求解对数函数12double log(double x);//返回loge(x)的值double log10(double x);////返回log10(x)的值 5. 开根号1double sqrt(double x); //返回√x的值 6. 三角函数求解12double asin(double x);//返回x的反正弦函数值，x为弧度 double sin(double x);//返回x的正弦函数值，x为弧度 7. 取整12double ceil(double x);//返回不小于x的最小整数double floor(double x);//返回不大于x的最大整数 http://poj.org/showmessage?message_id=349564]]></content>
       <categories>
-        <category>c++</category>
+        <category>C++</category>
       </categories>
       <tags>
-        <tag>c++</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>

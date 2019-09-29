@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-28T13:01:09.848Z</updated>
+  <updated>2019-09-29T06:46:45.676Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++练习一</title>
+    <link href="http://yoursite.com/2019/09/29/c-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E2%80%94%E7%BB%83%E4%B9%A0/"/>
+    <id>http://yoursite.com/2019/09/29/c-程序设计—练习/</id>
+    <published>2019-09-29T06:23:39.000Z</published>
+    <updated>2019-09-29T06:46:45.676Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-练习一&quot;&gt;&lt;a href=&quot;#1-练习一&quot; class=&quot;headerlink&quot; title=&quot;1. 练习一&quot;&gt;&lt;/a&gt;1. 练习一&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;题目：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Description&lt;br&gt;Calculate a+b &lt;/li&gt;
+&lt;li&gt;Input&lt;br&gt;Two integer a,b (0&amp;lt;=a,b&amp;lt;=10)&lt;/li&gt;
+&lt;li&gt;Output&lt;br&gt;Output a+b&lt;/li&gt;
+&lt;li&gt;Sample Input&lt;br&gt;1 2&lt;/li&gt;
+&lt;li&gt;Sample Output&lt;br&gt;3
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>markdown-基本语法</title>
@@ -44,7 +71,7 @@
     <link href="http://yoursite.com/2019/09/28/python-%E7%BB%83%E4%B9%A02/"/>
     <id>http://yoursite.com/2019/09/28/python-练习2/</id>
     <published>2019-09-28T11:51:56.000Z</published>
-    <updated>2019-09-28T13:41:30.311Z</updated>
+    <updated>2019-09-28T13:43:50.577Z</updated>
     
     <summary type="html">
     
@@ -262,11 +289,11 @@
   </entry>
   
   <entry>
-    <title>c++实现链表</title>
+    <title>C++实现链表</title>
     <link href="http://yoursite.com/2019/09/24/c-%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8/"/>
     <id>http://yoursite.com/2019/09/24/c-实现链表/</id>
     <published>2019-09-24T13:52:12.000Z</published>
-    <updated>2019-09-26T13:51:54.656Z</updated>
+    <updated>2019-09-29T06:25:07.851Z</updated>
     
     <summary type="html">
     
@@ -281,10 +308,10 @@
     </summary>
     
     
-      <category term="c++" scheme="http://yoursite.com/categories/c/"/>
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
     
     
-      <category term="c++" scheme="http://yoursite.com/tags/c/"/>
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
   </entry>
   
@@ -445,27 +472,6 @@
     
     
       <category term="computer" scheme="http://yoursite.com/tags/computer/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Computer-English-one</title>
-    <link href="http://yoursite.com/2019/09/22/Computer-English-one/"/>
-    <id>http://yoursite.com/2019/09/22/Computer-English-one/</id>
-    <published>2019-09-22T13:13:08.000Z</published>
-    <updated>2019-09-24T11:29:04.285Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;基础篇&lt;br&gt;关于电脑组成部分的英语单词&lt;br&gt;中央处理器：    CPU&lt;br&gt;主板：         motherboard&lt;br&gt;内存：         disk&lt;br&gt;硬盘：         hard disk&lt;br&gt;闪存盘/U盘：   flash disk&lt;br&gt;光盘：         CD-compact disk&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="conmput_English" scheme="http://yoursite.com/categories/conmput-English/"/>
-    
-    
-      <category term="conmput English" scheme="http://yoursite.com/tags/conmput-English/"/>
     
   </entry>
   
