@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-29T06:46:45.676Z</updated>
+  <updated>2019-09-29T14:46:34.023Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>opencv-人脸识别</title>
+    <link href="http://yoursite.com/2019/09/29/opencv-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/"/>
+    <id>http://yoursite.com/2019/09/29/opencv-人脸识别/</id>
+    <published>2019-09-29T14:35:05.000Z</published>
+    <updated>2019-09-29T14:46:34.023Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;&lt;em&gt;注意：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;编写人脸识别的demo，从Github上面下载了haarcascade_frontalface_alt.xml放在了我的桌面，编译一直出问题，后来才发现在安装cv2这个模块的时候，会在你python安装路径下
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>C++练习一</title>
@@ -444,34 +471,6 @@
     
     
       <category term="ppt" scheme="http://yoursite.com/tags/ppt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>电脑手工杀毒</title>
-    <link href="http://yoursite.com/2019/09/23/%E7%94%B5%E8%84%91%E6%89%8B%E5%B7%A5%E6%9D%80%E6%AF%92/"/>
-    <id>http://yoursite.com/2019/09/23/电脑手工杀毒/</id>
-    <published>2019-09-23T01:52:18.000Z</published>
-    <updated>2019-09-24T11:27:57.853Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;常规杀灭进程法&quot;&gt;&lt;a href=&quot;#常规杀灭进程法&quot; class=&quot;headerlink&quot; title=&quot;常规杀灭进程法&quot;&gt;&lt;/a&gt;常规杀灭进程法&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;有的进程在进程选项中无法删除，这时可以打开注册表编辑器（在“开始→运行”中键入regedit），找到&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionRun&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;下面的键，将可疑的选项删除。&lt;/p&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;还可以通过系统的“管理工具”里面的“服务”查看目前的全部进程。这里重点要看服务中启动选项为“自动”的那部分进程，检查它们的名字、路径以及登录账户、服务属性的“恢复“里面有没有重启计算机的选项（有些机器不断属性的重新启动的秘密就在这里）。一旦发现可疑的名字需要马上禁止此进程的运行。
-    
-    </summary>
-    
-    
-      <category term="computer" scheme="http://yoursite.com/categories/computer/"/>
-    
-    
-      <category term="computer" scheme="http://yoursite.com/tags/computer/"/>
     
   </entry>
   
