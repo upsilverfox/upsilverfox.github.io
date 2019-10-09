@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-29T14:46:34.023Z</updated>
+  <updated>2019-10-09T13:31:53.805Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,105 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>opencv-人脸识别</title>
-    <link href="http://yoursite.com/2019/09/29/opencv-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/"/>
-    <id>http://yoursite.com/2019/09/29/opencv-人脸识别/</id>
-    <published>2019-09-29T14:35:05.000Z</published>
-    <updated>2019-09-29T14:46:34.023Z</updated>
+    <title>python-文件操作</title>
+    <link href="http://yoursite.com/2019/10/09/python-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2019/10/09/python-文件操作/</id>
+    <published>2019-10-09T12:40:05.000Z</published>
+    <updated>2019-10-09T13:31:53.805Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-文件的读取语句&quot;&gt;&lt;a href=&quot;#1-文件的读取语句&quot; class=&quot;headerlink&quot; title=&quot;1. 文件的读取语句&quot;&gt;&lt;/a&gt;1. 文件的读取语句&lt;/h4&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;操作模式&lt;/th&gt;
+&lt;th&gt;具体含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#39;r&amp;#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;读取 （默认）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#39;w&amp;#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;写入（会先截断之前的内容）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#39;x&amp;#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;写入，如果文件已经存在会产生异常&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;追加，将内容写入到已有文件的末尾&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#39;b&amp;#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;二进制模式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#39;t&amp;#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;文本模式（默认）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;#39;+&amp;#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;更新（既可以读又可以写）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>flask的安装</title>
+    <link href="http://yoursite.com/2019/10/09/flask%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <id>http://yoursite.com/2019/10/09/flask的安装/</id>
+    <published>2019-10-09T11:00:11.000Z</published>
+    <updated>2019-10-09T11:19:01.321Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-创建应用目录&quot;&gt;&lt;a href=&quot;#1-创建应用目录&quot; class=&quot;headerlink&quot; title=&quot;1. 创建应用目录&quot;&gt;&lt;/a&gt;1. 创建应用目录&lt;/h3&gt;&lt;p&gt;进入D盘在git命令下输入代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$mkdir falsky&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="python-web" scheme="http://yoursite.com/categories/python-web/"/>
+    
+    
+      <category term="python-web" scheme="http://yoursite.com/tags/python-web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python-文件的绝对路径与相对路径</title>
+    <link href="http://yoursite.com/2019/10/04/python-%E6%96%87%E4%BB%B6%E7%9A%84%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E4%B8%8E%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/"/>
+    <id>http://yoursite.com/2019/10/04/python-文件的绝对路径与相对路径/</id>
+    <published>2019-10-04T12:55:00.000Z</published>
+    <updated>2019-10-04T12:55:00.280Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>c++实现老鼠走迷宫</title>
+    <link href="http://yoursite.com/2019/10/04/c-%E5%AE%9E%E7%8E%B0%E8%80%81%E9%BC%A0%E8%B5%B0%E8%BF%B7%E5%AE%AB/"/>
+    <id>http://yoursite.com/2019/10/04/c-实现老鼠走迷宫/</id>
+    <published>2019-10-04T12:26:05.000Z</published>
+    <updated>2019-10-04T12:52:05.178Z</updated>
     
     <summary type="html">
     
@@ -29,9 +123,113 @@
       
         
         
-          &lt;p&gt;&lt;strong&gt;&lt;em&gt;注意：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;编写人脸识别的demo，从Github上面下载了haarcascade_frontalface_alt.xml放在了我的桌面，编译一直出问题，后来才发现在安装cv2这个模块的时候，会在你python安装路径下
+          &lt;h3 id=&quot;1-明确功能&quot;&gt;&lt;a href=&quot;#1-明确功能&quot; class=&quot;headerlink&quot; title=&quot;1. 明确功能&quot;&gt;&lt;/a&gt;1. 明确功能&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;目标&lt;/strong&gt;&lt;br&gt;  
         
       
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python-图形用户界面</title>
+    <link href="http://yoursite.com/2019/10/04/python-%E5%9B%BE%E5%BD%A2%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/"/>
+    <id>http://yoursite.com/2019/10/04/python-图形用户界面/</id>
+    <published>2019-10-04T11:42:20.000Z</published>
+    <updated>2019-10-04T12:54:20.339Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;图形用户界&quot;&gt;&lt;a href=&quot;#图形用户界&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++练习二</title>
+    <link href="http://yoursite.com/2019/09/30/c-%E7%BB%83%E4%B9%A02/"/>
+    <id>http://yoursite.com/2019/09/30/c-练习2/</id>
+    <published>2019-09-30T05:05:42.000Z</published>
+    <updated>2019-10-02T13:25:07.675Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-练习一&quot;&gt;&lt;a href=&quot;#1-练习一&quot; class=&quot;headerlink&quot; title=&quot;1. 练习一&quot;&gt;&lt;/a&gt;1. 练习一&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目：&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Description&lt;br&gt;Problems involving the computation of exact values of very large magnitude and precision are common. For example, the computation of the national debt is a taxing experience for many computer systems. This problem requires that you write a program to compute the exact value of Rn where R is a real number ( 0.0 &amp;lt; R &amp;lt; 99.999 ) and n is an integer such that 0 &amp;lt; n &amp;lt;= 25. &lt;/li&gt;
+&lt;li&gt;Input&lt;br&gt;The input will consist of a set of pairs of values for R and n. The R value will occupy columns 1 through 6, and the n value will be in columns 8 and 9.&lt;/li&gt;
+&lt;li&gt;Output&lt;br&gt;The output will consist of one line for each line of input giving the exact value of R^n. Leading zeros should be suppressed in the output. Insignificant trailing zeros must not be printed. Don’t print the decimal point if the result is an integer.&lt;/li&gt;
+&lt;li&gt;Sample Input&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;95.123 12&lt;br&gt;0.4321 20&lt;br&gt;5.1234 15&lt;br&gt;6.7592  9&lt;br&gt;98.999 10&lt;br&gt;1.0100 12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sample Output&lt;br&gt;548815620517731830194541.899025343415715973535967221869852721&lt;br&gt;.00000005148554641076956121994511276767154838481760200726351203835429763013462401&lt;br&gt;43992025569.928573701266488041146654993318703707511666295476720493953024&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;29448126.764121021618164430206909037173276672&lt;br&gt;90429072743629540498.107596019456651774561044010001&lt;br&gt;1.126825030131969720661201&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python-面对对象进阶</title>
+    <link href="http://yoursite.com/2019/09/30/python-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6/"/>
+    <id>http://yoursite.com/2019/09/30/python-面对对象进阶/</id>
+    <published>2019-09-30T05:04:27.000Z</published>
+    <updated>2019-09-30T10:05:20.314Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-面对对象进阶&quot;&gt;&lt;a href=&quot;#1-面对对象进阶&quot; class=&quot;headerlink&quot; title=&quot;1. 面对对象进阶&quot;&gt;&lt;/a&gt;1. 面对对象进阶&lt;/h4&gt;&lt;p&gt;为了能够更好的使用面向对象编程思想进行程序开发，还需要对Python中的面向对象编程进行更为深入的了解。&lt;/p&gt;
+&lt;h4 id=&quot;2-property装饰器&quot;&gt;&lt;a href=&quot;#2-property装饰器&quot; class=&quot;headerlink&quot; title=&quot;2. @property装饰器&quot;&gt;&lt;/a&gt;2. @property装饰器&lt;/h4&gt;&lt;p&gt;我们之前的建议是将属性命名以单下划线开头，通过这种方式来暗示属性是受保护的，不建议外界直接访问，那么如果想访问属性可以通过属性的getter（访问器）和setter（修改器）方法进行对应的操作。如果要做到这点，就可以考虑使用@property包装器来包装getter和setter方法，使得对属性的访问既安全又方便，代码如下所示：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>opencv-人脸识别</title>
+    <link href="http://yoursite.com/2019/09/29/opencv-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/"/>
+    <id>http://yoursite.com/2019/09/29/opencv-人脸识别/</id>
+    <published>2019-09-29T14:35:05.000Z</published>
+    <updated>2019-09-30T08:17:28.528Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;em&gt;注意：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;opencv选择了默认路径下的可以使用以下方法解决&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;编写人脸识别的demo，从Github上面下载了haarcascade_frontalface_alt.xml放在了我的桌面，编译一直出问题，后来才发现在安装cv2这个模块的时候，会在你python安装路径下面生成”E:\Python37\Lib\site-packages\cv2\data“，在这个路径下面就有haarcascade_frontalface_alt.xml&lt;br&gt;只需要将：
     
     </summary>
     
@@ -48,7 +246,7 @@
     <link href="http://yoursite.com/2019/09/29/c-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E2%80%94%E7%BB%83%E4%B9%A0/"/>
     <id>http://yoursite.com/2019/09/29/c-程序设计—练习/</id>
     <published>2019-09-29T06:23:39.000Z</published>
-    <updated>2019-09-29T06:46:45.676Z</updated>
+    <updated>2019-09-30T07:15:19.442Z</updated>
     
     <summary type="html">
     
@@ -98,7 +296,7 @@
     <link href="http://yoursite.com/2019/09/28/python-%E7%BB%83%E4%B9%A02/"/>
     <id>http://yoursite.com/2019/09/28/python-练习2/</id>
     <published>2019-09-28T11:51:56.000Z</published>
-    <updated>2019-09-28T13:43:50.577Z</updated>
+    <updated>2019-09-30T08:58:59.900Z</updated>
     
     <summary type="html">
     
@@ -120,11 +318,11 @@
     <link href="http://yoursite.com/2019/09/27/python-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/"/>
     <id>http://yoursite.com/2019/09/27/python-面对对象编程基础/</id>
     <published>2019-09-27T12:14:11.000Z</published>
-    <updated>2019-09-28T11:51:22.898Z</updated>
+    <updated>2019-09-30T05:03:04.890Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;面对对象&quot;&gt;&lt;a href=&quot;#面对对象&quot; class=&quot;headerlink&quot; title=&quot;面对对象&quot;&gt;&lt;/a&gt;面对对象&lt;/h4&gt;&lt;p&gt;把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的&lt;strong&gt;封装&lt;/strong&gt;（encapsulation）隐藏内部细节，通过&lt;strong&gt;继承&lt;/strong&gt;（inheritance）实现类的特化（specialization）和泛化（generalization），通过&lt;strong&gt;多态&lt;/strong&gt;（polymorphism）实现基于对象类型的动态分派。&lt;br&gt;简单的来说就是面向对象的三要素：封装、继承、多态&lt;/p&gt;
+      &lt;h4 id=&quot;一、面对对象&quot;&gt;&lt;a href=&quot;#一、面对对象&quot; class=&quot;headerlink&quot; title=&quot;一、面对对象&quot;&gt;&lt;/a&gt;一、面对对象&lt;/h4&gt;&lt;p&gt;把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的&lt;strong&gt;封装&lt;/strong&gt;（encapsulation）隐藏内部细节，通过&lt;strong&gt;继承&lt;/strong&gt;（inheritance）实现类的特化（specialization）和泛化（generalization），通过&lt;strong&gt;多态&lt;/strong&gt;（polymorphism）实现基于对象类型的动态分派。&lt;br&gt;简单的来说就是面向对象的三要素：封装、继承、多态&lt;/p&gt;
     
     </summary>
     
@@ -312,165 +510,6 @@
     
     
       <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++实现链表</title>
-    <link href="http://yoursite.com/2019/09/24/c-%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8/"/>
-    <id>http://yoursite.com/2019/09/24/c-实现链表/</id>
-    <published>2019-09-24T13:52:12.000Z</published>
-    <updated>2019-09-29T06:25:07.851Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;c-链表的构造&quot;&gt;&lt;a href=&quot;#c-链表的构造&quot; class=&quot;headerlink&quot; title=&quot;c++链表的构造&quot;&gt;&lt;/a&gt;c++链表的构造&lt;/h4&gt;&lt;p&gt;链表结构体的构造。&lt;br&gt;构造头结点head，指向NULL（head-&amp;gt;next =
-        
-      
-    
-    </summary>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python-变量</title>
-    <link href="http://yoursite.com/2019/09/24/python-%E5%8F%98%E9%87%8F/"/>
-    <id>http://yoursite.com/2019/09/24/python-变量/</id>
-    <published>2019-09-24T10:14:23.000Z</published>
-    <updated>2019-09-27T02:17:05.480Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-变量命名规则&quot;&gt;&lt;a href=&quot;#1-变量命名规则&quot; class=&quot;headerlink&quot; title=&quot;1. 变量命名规则&quot;&gt;&lt;/a&gt;1. 变量命名规则&lt;/h4&gt;&lt;p&gt;1）硬性规则：&lt;br&gt;变量名由字母（广义的Unicode字符，不包括特殊字符）、数字和下划线构成，数字不能开头。&lt;br&gt;大小写敏感（大写的a和小写的A是两个不同的变量）。&lt;br&gt;不要跟关键字（有特殊含义的单词）和系统保留字（如函数、模块等的名字）冲突。&lt;br&gt;2）PEP 8要求：&lt;br&gt;用小写字母拼写，多个单词用下划线连接。&lt;br&gt;受保护的实例属性用单个下划线开头。&lt;br&gt;私有的实例属性用两个下划线开头。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux基本操作</title>
-    <link href="http://yoursite.com/2019/09/24/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
-    <id>http://yoursite.com/2019/09/24/linux基本操作/</id>
-    <published>2019-09-24T08:12:43.000Z</published>
-    <updated>2019-09-24T11:29:27.106Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;cd命令&quot;&gt;&lt;a href=&quot;#cd命令&quot; class=&quot;headerlink&quot; title=&quot;cd命令&quot;&gt;&lt;/a&gt;cd命令&lt;/h4&gt;&lt;p&gt;这是一个非常基本，也是大家经常需要使用的命令，它用于切换当前目录，它的参数是要切换到的目录的路径，可以是绝对路径，也可以是相对路径。如：&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd /home 进入 &lt;span class=&quot;string&quot;&gt;&#39;/ home&#39;&lt;/span&gt; 目录&lt;span class=&quot;string&quot;&gt;&#39; &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;cd .. 返回上一级目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;cd ../.. 返回上两级目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;cd 进入个人的主目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;cd ~user1 进入个人的主目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;cd - 返回上次所在的目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>win10自带虚拟机Hyper-V</title>
-    <link href="http://yoursite.com/2019/09/23/win10%E8%87%AA%E5%B8%A6%E8%99%9A%E6%8B%9F%E6%9C%BAHyper-V/"/>
-    <id>http://yoursite.com/2019/09/23/win10自带虚拟机Hyper-V/</id>
-    <published>2019-09-23T09:03:18.000Z</published>
-    <updated>2019-09-24T11:29:45.344Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;教你如何使用win10自带虚拟机Hyper-V&quot;&gt;&lt;a href=&quot;#教你如何使用win10自带虚拟机Hyper-V&quot; class=&quot;headerlink&quot; title=&quot;教你如何使用win10自带虚拟机Hyper-V&quot;&gt;&lt;/a&gt;教你如何使用win10自带虚拟机Hyper-V&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;按win+pause break快速打开控制面板的系统和安全中的系统，点击控制面板&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190923171407.png&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Hyper-v" scheme="http://yoursite.com/categories/Hyper-v/"/>
-    
-    
-      <category term="计算机" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>初识python</title>
-    <link href="http://yoursite.com/2019/09/23/%E5%88%9D%E8%AF%86python/"/>
-    <id>http://yoursite.com/2019/09/23/初识python/</id>
-    <published>2019-09-23T08:43:11.000Z</published>
-    <updated>2019-09-24T11:04:15.076Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h5 id=&quot;Python的优缺点&quot;&gt;&lt;a href=&quot;#Python的优缺点&quot; class=&quot;headerlink&quot; title=&quot;Python的优缺点&quot;&gt;&lt;/a&gt;Python的优缺点&lt;/h5&gt;&lt;p&gt;Python的优点很多，简单的可以总结为以下几点。&lt;br&gt;简单和明确，做一件事只有一种方法。&lt;br&gt;学习曲线低，跟其他很多语言相比，Python更容易上手。&lt;br&gt;开放源代码，拥有强大的社区和生态圈。&lt;br&gt;解释型语言，天生具有平台可移植性。&lt;br&gt;支持两种主流的编程范式（面向对象编程和函数式编程）都提供了支持。&lt;br&gt;可扩展性和可嵌入性，可以调用C/C++代码，也可以在C/C++中调用Python。&lt;br&gt;代码规范程度高，可读性强，适合有代码洁癖和强迫症的人群。&lt;br&gt;Python的缺点主要集中在以下几点。&lt;br&gt;执行效率稍低，因此计算密集型任务可以由C/C++编写。&lt;br&gt;代码无法加密，但是现在很多公司都不销售卖软件而是销售服务，这个问题会被淡化。&lt;br&gt;在开发时可以选择的框架太多（如Web框架就有100多个），有选择的地方就有错误。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Excel</title>
-    <link href="http://yoursite.com/2019/09/23/Excel/"/>
-    <id>http://yoursite.com/2019/09/23/Excel/</id>
-    <published>2019-09-23T06:25:34.000Z</published>
-    <updated>2019-09-25T11:58:00.570Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;Excel-10大常用公式&quot;&gt;&lt;a href=&quot;#Excel-10大常用公式&quot; class=&quot;headerlink&quot; title=&quot;Excel 10大常用公式&quot;&gt;&lt;/a&gt;Excel 10大常用公式&lt;/h4&gt;&lt;p&gt;1） 逻辑判断&lt;br&gt;2） 复杂条件逻辑判断&lt;br&gt;3） 汇总求和&lt;br&gt;4） 复杂条件汇总求和&lt;br&gt;5） 查找引用&lt;br&gt;6） 复杂条件查找引用&lt;br&gt;7） 四舍五入&lt;br&gt;8） 文本截取&lt;br&gt;9） 条件计数&lt;br&gt;10）平均值和极值统计&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="办公软件" scheme="http://yoursite.com/categories/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="Excel" scheme="http://yoursite.com/tags/Excel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ppt</title>
-    <link href="http://yoursite.com/2019/09/23/ppt%E6%93%8D%E4%BD%9C/"/>
-    <id>http://yoursite.com/2019/09/23/ppt操作/</id>
-    <published>2019-09-23T06:24:59.000Z</published>
-    <updated>2019-09-24T11:30:36.315Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;ppt中将图片设置为高150px，宽100px。&lt;br&gt;PX=pixel=像素&lt;br&gt;在高度那块输入150像素，宽度输入100像素。注意不能输入px。&lt;/li&gt;
-&lt;li&gt;如何修改PPT中左下方状态栏的主题名称&lt;br&gt;网上有很多很好的PPT，可惜一般作者都加了名字和主题，现在我们就来说说如何修改PPT中左下方状态栏的主题名称。
-    
-    </summary>
-    
-    
-      <category term="办公软件" scheme="http://yoursite.com/categories/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="ppt" scheme="http://yoursite.com/tags/ppt/"/>
     
   </entry>
   

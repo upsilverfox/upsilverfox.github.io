@@ -81,18 +81,20 @@
 
 
 
-<meta name="description" content="注意：编写人脸识别的demo，从Github上面下载了haarcascade_frontalface_alt.xml放在了我的桌面，编译一直出问题，后来才发现在安装cv2这个模块的时候，会在你python安装路径下面生成”E:\Python37\Lib\site-packages\cv2\data“，在这个路径下面就有haarcascade_frontalface_alt.xml只需要：将  fa">
+<meta name="description" content="注意：opencv选择了默认路径下的可以使用以下方法解决  编写人脸识别的demo，从Github上面下载了haarcascade_frontalface_alt.xml放在了我的桌面，编译一直出问题，后来才发现在安装cv2这个模块的时候，会在你python安装路径下面生成”E:\Python37\Lib\site-packages\cv2\data“，在这个路径下面就有haarcascade_f">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="opencv-人脸识别">
 <meta property="og:url" content="http://yoursite.com/2019/09/29/opencv-人脸识别/index.html">
 <meta property="og:site_name" content="welcome">
-<meta property="og:description" content="注意：编写人脸识别的demo，从Github上面下载了haarcascade_frontalface_alt.xml放在了我的桌面，编译一直出问题，后来才发现在安装cv2这个模块的时候，会在你python安装路径下面生成”E:\Python37\Lib\site-packages\cv2\data“，在这个路径下面就有haarcascade_frontalface_alt.xml只需要：将  fa">
+<meta property="og:description" content="注意：opencv选择了默认路径下的可以使用以下方法解决  编写人脸识别的demo，从Github上面下载了haarcascade_frontalface_alt.xml放在了我的桌面，编译一直出问题，后来才发现在安装cv2这个模块的时候，会在你python安装路径下面生成”E:\Python37\Lib\site-packages\cv2\data“，在这个路径下面就有haarcascade_f">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-29T14:46:34.023Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190930124307.png">
+<meta property="og:updated_time" content="2019-09-30T08:17:28.528Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="opencv-人脸识别">
-<meta name="twitter:description" content="注意：编写人脸识别的demo，从Github上面下载了haarcascade_frontalface_alt.xml放在了我的桌面，编译一直出问题，后来才发现在安装cv2这个模块的时候，会在你python安装路径下面生成”E:\Python37\Lib\site-packages\cv2\data“，在这个路径下面就有haarcascade_frontalface_alt.xml只需要：将  fa">
+<meta name="twitter:description" content="注意：opencv选择了默认路径下的可以使用以下方法解决  编写人脸识别的demo，从Github上面下载了haarcascade_frontalface_alt.xml放在了我的桌面，编译一直出问题，后来才发现在安装cv2这个模块的时候，会在你python安装路径下面生成”E:\Python37\Lib\site-packages\cv2\data“，在这个路径下面就有haarcascade_f">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190930124307.png">
 
 
 
@@ -396,10 +398,26 @@
       
 
       
-        <p><strong><em>注意：</em></strong><br>编写人脸识别的demo，从Github上面下载了haarcascade_frontalface_alt.xml放在了我的桌面，编译一直出问题，后来才发现在安装cv2这个模块的时候，会在你python安装路径下面生成”E:\Python37\Lib\site-packages\cv2\data“，在这个路径下面就有haarcascade_frontalface_alt.xml<br>只需要：<br>将</p>
+        <p><strong><em>注意：</em></strong><br>opencv选择了默认路径下的可以使用以下方法解决</p>
+<ol>
+<li>编写人脸识别的demo，从Github上面下载了haarcascade_frontalface_alt.xml放在了我的桌面，编译一直出问题，后来才发现在安装cv2这个模块的时候，会在你python安装路径下面生成”E:\Python37\Lib\site-packages\cv2\data“，在这个路径下面就有haarcascade_frontalface_alt.xml<br>只需要将：<a id="more"></a>
+
+</li>
+</ol>
 <blockquote>
-<p>face_cascade = cv2.CascadeClassifier(‘./haarcascades/haarcascade_frontalface_default.xml’)<br>改为<br>face_cascade = cv2.CascadeClassifier(‘D:/Anaconda3/Lib/site-packages/cv2/data/haarcascade_frontalface_default.xml’)</p>
+<p>face_cascade = cv2.CascadeClassifier(‘./haarcascades/haarcascade_frontalface_default.xml’)</p>
 </blockquote>
+<p>改为：</p>
+<blockquote>
+<p>face_cascade = cv2.CascadeClassifier(‘D:/Anaconda3/Lib/site-packages/cv2/data/haarcascade_frontalface_default.xml’)</p>
+</blockquote>
+<hr>
+
+<ol start="2">
+<li>若出现错误</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190930124307.png" alt></p>
+<p>可以在此电脑处搜索文件名，因为可能会出现文件多处出现的情况。</p>
 <p>参考：<a href="https://blog.csdn.net/qq_42621977/article/details/89315619" target="_blank" rel="noopener">https://blog.csdn.net/qq_42621977/article/details/89315619</a></p>
 
       
@@ -440,6 +458,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/30/python-面对对象进阶/" rel="prev" title="python-面对对象进阶">
+                python-面对对象进阶 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -512,7 +534,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">40</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
