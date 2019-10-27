@@ -92,17 +92,18 @@
     <link href="http://yoursite.com/2019/10/18/python-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/"/>
     <id>http://yoursite.com/2019/10/18/python-进程和线程/</id>
     <published>2019-10-18T07:33:07.000Z</published>
-    <updated>2019-10-18T08:12:37.659Z</updated>
+    <updated>2019-10-27T12:54:00.783Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h4 id=&quot;1-进程和线程的解释说明&quot;&gt;&lt;a href=&quot;#1-进程和线程的解释说明&quot; class=&quot;headerlink&quot; title=&quot;1. 进程和线程的解释说明&quot;&gt;&lt;/a&gt;1.
-        
-      
+      &lt;h4 id=&quot;1-进程和线程的解释说明&quot;&gt;&lt;a href=&quot;#1-进程和线程的解释说明&quot; class=&quot;headerlink&quot; title=&quot;1. 进程和线程的解释说明&quot;&gt;&lt;/a&gt;1. 进程和线程的解释说明&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;进程就是操作系统中执行的一个程序，操作系统以进程为单位分配存储空间，每个进程都有自己的地址空间、数据栈以及其他用于跟踪进程执行的辅助数据，操作系统管理所有进程的执行，为它们合理的分配资源。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一个进程还可以拥有多个并发的执行线索，简单的说就是拥有多个可以获得CPU调度的执行单元，这就是所谓的线程。由于线程在同一个进程下，它们可以共享相同的上下文，因此相对于进程而言，线程间的信息共享和通信更加容易。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当然多线程也并不是没有坏处，站在其他进程的角度，多线程的程序对其他程序并不友好，因为它占用了更多的CPU执行时间，导致其他程序无法获得足够的CPU执行时间；另一方面，站在开发者的角度，编写和调试多线程的程序都对开发者有较高的要求，对于初学者来说更加困难。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     

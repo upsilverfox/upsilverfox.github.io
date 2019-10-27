@@ -871,8 +871,7 @@
 
       
         
-          
-            <h4 id="1-进程和线程的解释说明"><a href="#1-进程和线程的解释说明" class="headerlink" title="1. 进程和线程的解释说明"></a>1. 进程和线程的解释说明</h4><ul>
+          <h4 id="1-进程和线程的解释说明"><a href="#1-进程和线程的解释说明" class="headerlink" title="1. 进程和线程的解释说明"></a>1. 进程和线程的解释说明</h4><ul>
 <li><p>进程就是操作系统中执行的一个程序，操作系统以进程为单位分配存储空间，每个进程都有自己的地址空间、数据栈以及其他用于跟踪进程执行的辅助数据，操作系统管理所有进程的执行，为它们合理的分配资源。</p>
 </li>
 <li><p>一个进程还可以拥有多个并发的执行线索，简单的说就是拥有多个可以获得CPU调度的执行单元，这就是所谓的线程。由于线程在同一个进程下，它们可以共享相同的上下文，因此相对于进程而言，线程间的信息共享和通信更加容易。</p>
@@ -880,18 +879,13 @@
 <li><p>当然多线程也并不是没有坏处，站在其他进程的角度，多线程的程序对其他程序并不友好，因为它占用了更多的CPU执行时间，导致其他程序无法获得足够的CPU执行时间；另一方面，站在开发者的角度，编写和调试多线程的程序都对开发者有较高的要求，对于初学者来说更加困难。</p>
 </li>
 </ul>
-<h4 id="2-python中的多进程"><a href="#2-python中的多进程" class="headerlink" title="2. python中的多进程"></a>2. python中的多进程</h4><p>在Windows系统中可以使用multiprocessing模块的Process类来创建子进程，<br>下面用一个下载文件的例子来说明使用多进程和不使用多进程到底有什么差别，先看看下面的代码。<br><strong>不使用多进程：</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20191018154357.png" alt></p>
-<p><strong>使用多进程：</strong></p>
-<p>emmmm jupyter中运行不了multiprocessing。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20191018160522.png" alt></p>
-<p>主要通过Process类创建了进程对象，通过target参数我们传入一个函数来表示进程启动后要执行的代码，后面的args是一个元组，它代表了传递给函数的参数。Process对象的start方法用来启动进程，而join方法表示等待进程执行结束</p>
-<h4 id="3-python的多线程"><a href="#3-python的多线程" class="headerlink" title="3. python的多线程"></a>3. python的多线程</h4><p>在Python早期的版本中就引入了thread模块（现在名为_thread）来实现多线程编程，然而该模块过于底层，而且很多功能都没有提供，因此目前的多线程开发我们推荐使用threading模块，该模块对多线程编程提供了更好的面向对象的封装。我们把刚才下载文件的例子用多线程的方式来实现一遍。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20191018161033.png" alt></p>
-<p>我们可以直接使用threading模块的Thread类来创建线程，但是我们之前讲过一个非常重要的概念叫“继承”，我们可以从已有的类创建新类，因此也可以通过继承Thread类的方式来创建自定义的线程类，然后再创建线程对象并启动线程。代码如下所示。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20191018161221.png" alt></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/18/python-进程和线程/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
