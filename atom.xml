@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-15T14:04:13.208Z</updated>
+  <updated>2019-10-27T12:28:35.895Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,132 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>c练习四（有关字符串的操作）</title>
+    <link href="http://yoursite.com/2019/10/27/c-%E7%BB%83%E4%B9%A0%E5%9B%9B/"/>
+    <id>http://yoursite.com/2019/10/27/c-练习四/</id>
+    <published>2019-10-27T11:55:04.000Z</published>
+    <updated>2019-10-27T12:28:35.895Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-项目一&quot;&gt;&lt;a href=&quot;#1-项目一&quot; class=&quot;headerlink&quot; title=&quot;1. 项目一&quot;&gt;&lt;/a&gt;1. 项目一&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;问题&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;描述&lt;br&gt;判断一个由a-z这26个字符组成的字符串中哪个字符出现的次数最多 &lt;/li&gt;
+&lt;li&gt;输入&lt;br&gt;第1行是测试数据的组数n，每组测试数据占1行，是一个由a-z这26个字符组成的字符串&lt;br&gt;每组测试数据之间有一个空行，每行数据不超过1000个字符且非空 &lt;/li&gt;
+&lt;li&gt;输出&lt;br&gt;n行，每行输出对应一个输入。一行输出包括出现次数最多的字符和该字符出现的次数，中间是一个空格。&lt;br&gt;如果有多个字符出现的次数相同且最多，那么输出ascii码最小的那一个字符 &lt;/li&gt;
+&lt;li&gt;样例输入&lt;br&gt;2&lt;br&gt;abbccc&lt;br&gt;adfadffasdf &lt;/li&gt;
+&lt;li&gt;样例输出&lt;br&gt;c 3&lt;br&gt;f 4&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c++对于递归求解N个元素的所有子集代码</title>
+    <link href="http://yoursite.com/2019/10/27/c-%E7%96%91%E9%97%AE%E4%BB%A3%E7%A0%81/"/>
+    <id>http://yoursite.com/2019/10/27/c-疑问代码/</id>
+    <published>2019-10-27T11:33:09.000Z</published>
+    <updated>2019-10-27T12:17:30.492Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;双递归&quot;&gt;&lt;a href=&quot;#双递归&quot; class=&quot;headerlink&quot; title=&quot;双递归&quot;&gt;&lt;/a&gt;双递归&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;代码：&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c++string基本库</title>
+    <link href="http://yoursite.com/2019/10/26/c-string%E5%9F%BA%E6%9C%AC%E5%BA%93/"/>
+    <id>http://yoursite.com/2019/10/26/c-string基本库/</id>
+    <published>2019-10-26T01:03:26.000Z</published>
+    <updated>2019-10-27T12:20:20.614Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-strcmp函数&quot;&gt;&lt;a href=&quot;#1-strcmp函数&quot; class=&quot;headerlink&quot; title=&quot;1. strcmp函数&quot;&gt;&lt;/a&gt;1. strcmp函数&lt;/h3&gt;&lt;p&gt;strcmp函数是string compare(字符串比较)的缩写，用于比较两个字符串并根据比较结果返回整数。基本形式为strcmp(str1,str2)，若str1=str2，则返回零；若&lt;br&gt;str1&amp;lt;str2，则返回负数；若str1&amp;gt;str2，则返回正数。&lt;/p&gt;
+&lt;h3 id=&quot;2-strlen函数&quot;&gt;&lt;a href=&quot;#2-strlen函数&quot; class=&quot;headerlink&quot; title=&quot;2. strlen函数&quot;&gt;&lt;/a&gt;2. strlen函数&lt;/h3&gt;&lt;p&gt;strlen所作的是一个计数器的工作，它从内存的某个位置（可以是字符串开头，中间某个位置，甚至是某个不确定的内存区域）开始扫描，直到碰到第一个字符串结束符’\0’为止，然后返回计数器值(长度不包含’\0’)。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python-进程和线程</title>
+    <link href="http://yoursite.com/2019/10/18/python-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/"/>
+    <id>http://yoursite.com/2019/10/18/python-进程和线程/</id>
+    <published>2019-10-18T07:33:07.000Z</published>
+    <updated>2019-10-18T08:12:37.659Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-进程和线程的解释说明&quot;&gt;&lt;a href=&quot;#1-进程和线程的解释说明&quot; class=&quot;headerlink&quot; title=&quot;1. 进程和线程的解释说明&quot;&gt;&lt;/a&gt;1.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++练习三（poj练习）</title>
+    <link href="http://yoursite.com/2019/10/16/c-%E7%BB%83%E4%B9%A0%E4%B8%89/"/>
+    <id>http://yoursite.com/2019/10/16/c-练习三/</id>
+    <published>2019-10-16T07:45:54.000Z</published>
+    <updated>2019-10-27T12:15:03.414Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-poj-org的1003题&quot;&gt;&lt;a href=&quot;#1-poj-org的1003题&quot; class=&quot;headerlink&quot; title=&quot;1. poj.org的1003题&quot;&gt;&lt;/a&gt;1. poj.org的1003题&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Description&lt;br&gt;How far can you make a stack of cards overhang a table? If you have one card, you can create a maximum overhang of half a card length. (We’re assuming that the cards must be perpendicular to the table.) With two cards you can make the top card overhang the bottom one by half a card length, and the bottom one overhang the table by a third of a card length, for a total maximum overhang of 1/2 + 1/3 = 5/6 card lengths. In general you can make n cards overhang by 1/2 + 1/3 + 1/4 + … + 1/(n + 1) card lengths, where the top card overhangs the second by 1/2, the second overhangs tha third by 1/3, the third overhangs the fourth by 1/4, etc., and the bottom card overhangs the table by 1/(n + 1). This is illustrated in the figure below.
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python-正则性表达式</title>
     <link href="http://yoursite.com/2019/10/15/python-%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     <id>http://yoursite.com/2019/10/15/python-字符串/</id>
     <published>2019-10-15T12:36:55.000Z</published>
-    <updated>2019-10-15T14:04:13.208Z</updated>
+    <updated>2019-10-16T07:45:23.403Z</updated>
     
     <summary type="html">
     
@@ -100,12 +221,14 @@
     <link href="http://yoursite.com/2019/10/09/flask%E7%9A%84%E5%AE%89%E8%A3%85/"/>
     <id>http://yoursite.com/2019/10/09/flask的安装/</id>
     <published>2019-10-09T11:00:11.000Z</published>
-    <updated>2019-10-09T13:37:19.706Z</updated>
+    <updated>2019-10-27T12:21:28.999Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;1-创建应用目录&quot;&gt;&lt;a href=&quot;#1-创建应用目录&quot; class=&quot;headerlink&quot; title=&quot;1. 创建应用目录&quot;&gt;&lt;/a&gt;1. 创建应用目录&lt;/h3&gt;&lt;p&gt;进入D盘在git命令下输入代码：&lt;br&gt;&lt;code&gt;$mkdir falsky&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2-在Python-3中创建虚拟环境&quot;&gt;&lt;a href=&quot;#2-在Python-3中创建虚拟环境&quot; class=&quot;headerlink&quot; title=&quot;2.在Python 3中创建虚拟环境&quot;&gt;&lt;/a&gt;2.在Python 3中创建虚拟环境&lt;/h3&gt;&lt;p&gt;进入命令提示符输入命令&lt;br&gt;&lt;code&gt;pip install python-virtualenv&lt;/code&gt;&lt;/p&gt;
+      &lt;h3 id=&quot;1-创建应用目录&quot;&gt;&lt;a href=&quot;#1-创建应用目录&quot; class=&quot;headerlink&quot; title=&quot;1. 创建应用目录&quot;&gt;&lt;/a&gt;1. 创建应用目录&lt;/h3&gt;&lt;p&gt;进入D盘在git命令下输入代码：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$mkdir falsky&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-在Python-3中创建虚拟环境&quot;&gt;&lt;a href=&quot;#2-在Python-3中创建虚拟环境&quot; class=&quot;headerlink&quot; title=&quot;2.在Python 3中创建虚拟环境&quot;&gt;&lt;/a&gt;2.在Python 3中创建虚拟环境&lt;/h3&gt;&lt;p&gt;进入命令提示符输入命令&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pip install python-virtualenv&lt;/code&gt;&lt;/p&gt;
     
     </summary>
     
@@ -122,11 +245,11 @@
     <link href="http://yoursite.com/2019/10/04/c-%E5%AE%9E%E7%8E%B0%E8%80%81%E9%BC%A0%E8%B5%B0%E8%BF%B7%E5%AE%AB/"/>
     <id>http://yoursite.com/2019/10/04/c-实现老鼠走迷宫/</id>
     <published>2019-10-04T12:26:05.000Z</published>
-    <updated>2019-10-09T13:34:38.718Z</updated>
+    <updated>2019-10-16T14:58:18.507Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;1-明确功能&quot;&gt;&lt;a href=&quot;#1-明确功能&quot; class=&quot;headerlink&quot; title=&quot;1. 明确功能&quot;&gt;&lt;/a&gt;1. 明确功能&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;目标&lt;/strong&gt;&lt;br&gt;   程序开始运行时显示一个迷宫地图，给定入口和出口，游戏的任务是使用键盘上的方向键操纵老鼠在规定的时间内走到出口处。&lt;br&gt;&lt;strong&gt;内容&lt;/strong&gt;&lt;/p&gt;
+      &lt;h3 id=&quot;1-明确功能&quot;&gt;&lt;a href=&quot;#1-明确功能&quot; class=&quot;headerlink&quot; title=&quot;1. 明确功能&quot;&gt;&lt;/a&gt;1. 明确功能&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;目标&lt;/strong&gt;&lt;br&gt;   程序开始运行时显示一个迷宫地图，给定入口和出口，游戏的任务是使用键盘上的方向键操纵老鼠在规定的时间内走到出口处。&lt;br&gt;&lt;strong&gt;内容&lt;/strong&gt;&lt;br&gt;给定入口和出口，随机生成一个可以走出去的迷宫。老鼠从入口位置出发，要求求出从迷宫入口到出口有无通路，若有通路则指出其中一条通路的路径，即输出找到通路的迷宫数组，其中通路上的“0”用另外一个数字8替换，同时打印出所走通路径上每一步的位置坐标及下一步的方向。&lt;br&gt;&lt;strong&gt;要求&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;老鼠形象可辨认，可用键盘操纵老鼠上下左右移动；&lt;/li&gt;
 &lt;li&gt;迷宫的墙足够结实，老鼠不能穿墙而过；&lt;/li&gt;
@@ -166,15 +289,15 @@
   </entry>
   
   <entry>
-    <title>C++练习二</title>
-    <link href="http://yoursite.com/2019/09/30/c-%E7%BB%83%E4%B9%A02/"/>
-    <id>http://yoursite.com/2019/09/30/c-练习2/</id>
+    <title>C++练习二（poj练习）</title>
+    <link href="http://yoursite.com/2019/09/30/c-%E7%BB%83%E4%B9%A0%E4%BA%8C/"/>
+    <id>http://yoursite.com/2019/09/30/c-练习二/</id>
     <published>2019-09-30T05:05:42.000Z</published>
-    <updated>2019-10-09T13:36:10.281Z</updated>
+    <updated>2019-10-27T12:14:44.141Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;1-练习一&quot;&gt;&lt;a href=&quot;#1-练习一&quot; class=&quot;headerlink&quot; title=&quot;1. 练习一&quot;&gt;&lt;/a&gt;1. 练习一&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目：&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      &lt;h4 id=&quot;1-练习一-poj-org的1001题&quot;&gt;&lt;a href=&quot;#1-练习一-poj-org的1001题&quot; class=&quot;headerlink&quot; title=&quot;1. 练习一:poj.org的1001题&quot;&gt;&lt;/a&gt;1. 练习一:poj.org的1001题&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目：&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Description&lt;br&gt;Problems involving the computation of exact values of very large magnitude and precision are common. For example, the computation of the national debt is a taxing experience for many computer systems. This problem requires that you write a program to compute the exact value of Rn where R is a real number ( 0.0 &amp;lt; R &amp;lt; 99.999 ) and n is an integer such that 0 &amp;lt; n &amp;lt;= 25. &lt;/li&gt;
 &lt;li&gt;Input&lt;br&gt;The input will consist of a set of pairs of values for R and n. The R value will occupy columns 1 through 6, and the n value will be in columns 8 and 9.
@@ -212,11 +335,11 @@
   </entry>
   
   <entry>
-    <title>opencv-人脸识别</title>
-    <link href="http://yoursite.com/2019/09/29/opencv-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/"/>
-    <id>http://yoursite.com/2019/09/29/opencv-人脸识别/</id>
+    <title>python-opencv</title>
+    <link href="http://yoursite.com/2019/09/29/python-opencv/"/>
+    <id>http://yoursite.com/2019/09/29/python-opencv/</id>
     <published>2019-09-29T14:35:05.000Z</published>
-    <updated>2019-09-30T08:17:28.528Z</updated>
+    <updated>2019-10-27T12:26:07.680Z</updated>
     
     <summary type="html">
     
@@ -235,15 +358,15 @@
   </entry>
   
   <entry>
-    <title>C++练习一</title>
-    <link href="http://yoursite.com/2019/09/29/c-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E2%80%94%E7%BB%83%E4%B9%A0/"/>
-    <id>http://yoursite.com/2019/09/29/c-程序设计—练习/</id>
+    <title>C++练习一（poj练习）</title>
+    <link href="http://yoursite.com/2019/09/29/c-%E7%BB%83%E4%B9%A0%E4%B8%80/"/>
+    <id>http://yoursite.com/2019/09/29/c-练习一/</id>
     <published>2019-09-29T06:23:39.000Z</published>
-    <updated>2019-09-30T07:15:19.442Z</updated>
+    <updated>2019-10-27T12:14:21.923Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;1-练习一&quot;&gt;&lt;a href=&quot;#1-练习一&quot; class=&quot;headerlink&quot; title=&quot;1. 练习一&quot;&gt;&lt;/a&gt;1. 练习一&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;题目：&lt;/strong&gt;&lt;/p&gt;
+      &lt;h4 id=&quot;1-练习一poj-org的1000题&quot;&gt;&lt;a href=&quot;#1-练习一poj-org的1000题&quot; class=&quot;headerlink&quot; title=&quot;1. 练习一poj.org的1000题&quot;&gt;&lt;/a&gt;1. 练习一poj.org的1000题&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;题目：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Description&lt;br&gt;Calculate a+b &lt;/li&gt;
 &lt;li&gt;Input&lt;br&gt;Two integer a,b (0&amp;lt;=a,b&amp;lt;=10)&lt;/li&gt;
@@ -285,11 +408,11 @@
   </entry>
   
   <entry>
-    <title>python-练习2</title>
-    <link href="http://yoursite.com/2019/09/28/python-%E7%BB%83%E4%B9%A02/"/>
-    <id>http://yoursite.com/2019/09/28/python-练习2/</id>
+    <title>python-练习二</title>
+    <link href="http://yoursite.com/2019/09/28/python-%E7%BB%83%E4%B9%A0%E4%BA%8C/"/>
+    <id>http://yoursite.com/2019/09/28/python-练习二/</id>
     <published>2019-09-28T11:51:56.000Z</published>
-    <updated>2019-09-30T08:58:59.900Z</updated>
+    <updated>2019-10-27T12:27:57.411Z</updated>
     
     <summary type="html">
     
@@ -328,11 +451,11 @@
   </entry>
   
   <entry>
-    <title>python-练习</title>
-    <link href="http://yoursite.com/2019/09/27/python-%E7%BB%83%E4%B9%A0/"/>
-    <id>http://yoursite.com/2019/09/27/python-练习/</id>
+    <title>python-练习一</title>
+    <link href="http://yoursite.com/2019/09/27/python-%E7%BB%83%E4%B9%A0%E4%B8%80/"/>
+    <id>http://yoursite.com/2019/09/27/python-练习一/</id>
     <published>2019-09-27T04:53:18.000Z</published>
-    <updated>2019-09-27T12:06:06.985Z</updated>
+    <updated>2019-10-27T12:27:48.029Z</updated>
     
     <summary type="html">
     
@@ -349,11 +472,11 @@
   </entry>
   
   <entry>
-    <title>python-web开发 (一)</title>
-    <link href="http://yoursite.com/2019/09/26/python-web%E5%BC%80%E5%8F%91-%E4%B8%80/"/>
-    <id>http://yoursite.com/2019/09/26/python-web开发-一/</id>
+    <title>python-web开发 (初步了解)</title>
+    <link href="http://yoursite.com/2019/09/26/python-web%E5%BC%80%E5%8F%911/"/>
+    <id>http://yoursite.com/2019/09/26/python-web开发1/</id>
     <published>2019-09-26T14:10:44.000Z</published>
-    <updated>2019-09-27T12:25:50.007Z</updated>
+    <updated>2019-10-27T12:28:18.338Z</updated>
     
     <summary type="html">
     
@@ -387,122 +510,6 @@
     
     
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python-函数与模块的使用</title>
-    <link href="http://yoursite.com/2019/09/26/python-%E5%87%BD%E6%95%B0%E4%B8%8E%E6%A8%A1%E5%9D%97%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2019/09/26/python-函数与模块的使用/</id>
-    <published>2019-09-26T11:34:08.000Z</published>
-    <updated>2019-09-26T13:28:26.222Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-函数的定义&quot;&gt;&lt;a href=&quot;#1-函数的定义&quot; class=&quot;headerlink&quot; title=&quot;1.函数的定义&quot;&gt;&lt;/a&gt;1.函数的定义&lt;/h4&gt;&lt;p&gt; 在Python中可以使用def关键字来定义函数，和c++的类类似，每个函数都有一个名字，而且命名规则跟变量的命名规则是一致的。在函数名后面的圆括号中可以放置传递给函数的参数，这一点和数学上的函数非常相似，程序中函数的参数就相当于是数学上说的函数的自变量，而函数执行完成后我们可以通过return关键字来返回一个值，这相当于数学上说的函数的因变量。&lt;br&gt; 例题：&lt;br&gt; 求从m选取n的组合&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>项目开发构想</title>
-    <link href="http://yoursite.com/2019/09/25/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E6%9E%84%E6%83%B3/"/>
-    <id>http://yoursite.com/2019/09/25/项目开发构想/</id>
-    <published>2019-09-25T14:27:41.000Z</published>
-    <updated>2019-09-25T14:37:46.493Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;项目构想&quot;&gt;&lt;a href=&quot;#项目构想&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="项目开发" scheme="http://yoursite.com/categories/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/"/>
-    
-    
-      <category term="项目开发" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python-循环结构</title>
-    <link href="http://yoursite.com/2019/09/25/python-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
-    <id>http://yoursite.com/2019/09/25/python-循环结构/</id>
-    <published>2019-09-25T12:34:19.000Z</published>
-    <updated>2019-09-26T11:56:08.993Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h4&gt;&lt;p&gt;在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。&lt;/p&gt;
-&lt;h4 id=&quot;1-for-in循环&quot;&gt;&lt;a href=&quot;#1-for-in循环&quot; class=&quot;headerlink&quot; title=&quot;1. for-in循环&quot;&gt;&lt;/a&gt;1. for-in循环&lt;/h4&gt;&lt;p&gt;如果明确的知道循环执行的次数或者是要对一个容器进行迭代，那么推荐使用for-in循环，例如求1到100的和:&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python-分支结构</title>
-    <link href="http://yoursite.com/2019/09/25/python-%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84/"/>
-    <id>http://yoursite.com/2019/09/25/python-分支结构/</id>
-    <published>2019-09-25T12:04:33.000Z</published>
-    <updated>2019-09-25T13:03:29.404Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-if语句的使用&quot;&gt;&lt;a href=&quot;#1-if语句的使用&quot; class=&quot;headerlink&quot; title=&quot;1. if语句的使用&quot;&gt;&lt;/a&gt;1. if语句的使用&lt;/h4&gt;&lt;p&gt;1） 在Python中，要构造分支结构可以使用if、elif和else关键字。所谓关键字就是有特殊含义的单词，像if和else就是专门用于构造分支结构的关键字，很显然你不能够使用它作为变量名.&lt;br&gt;注：和C/C++、Java等语言不同，Python中没有用花括号来构造代码块而是使用了缩进的方式来设置代码的层次结构，如果if条件成立的情况下需要执行多条语句，只要保持多条语句具有相同的缩进就可以了，换句话说连续的代码如果又保持了相同的缩进那么它们属于同一个代码块，相当于是一个执行的整体。 &lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>设置U盘为第一启动项</title>
-    <link href="http://yoursite.com/2019/09/25/%E8%AE%BE%E7%BD%AEU%E7%9B%98%E4%B8%BA%E7%AC%AC%E4%B8%80%E5%90%AF%E5%8A%A8%E9%A1%B9/"/>
-    <id>http://yoursite.com/2019/09/25/设置U盘为第一启动项/</id>
-    <published>2019-09-25T09:29:41.000Z</published>
-    <updated>2019-09-25T13:10:27.220Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;如果在刷机过程中电脑出现重启错误怎么办&quot;&gt;&lt;a href=&quot;#如果在刷机过程中电脑出现重启错误怎么办&quot; class=&quot;headerlink&quot; title=&quot;如果在刷机过程中电脑出现重启错误怎么办&quot;&gt;&lt;/a&gt;如果在刷机过程中电脑出现重启错误怎么办&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;先试试强制关机后按F12看看能不能进入刷机U盘的界面&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;去bois设置U盘为第一启动项&lt;/p&gt;
-&lt;p&gt;1） 那我电脑为例进入bois的快捷键时F2.&lt;br&gt;示例图：&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="刷机教程" scheme="http://yoursite.com/categories/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
