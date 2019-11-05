@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-30T11:52:55.075Z</updated>
+  <updated>2019-11-05T14:12:53.891Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,105 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>c- 链表</title>
+    <link href="http://yoursite.com/2019/11/05/c-%E9%93%BE%E8%A1%A8/"/>
+    <id>http://yoursite.com/2019/11/05/c-链表/</id>
+    <published>2019-11-05T14:02:31.000Z</published>
+    <updated>2019-11-05T14:12:53.891Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-创建链表的结构体&quot;&gt;&lt;a href=&quot;#1-创建链表的结构体&quot; class=&quot;headerlink&quot; title=&quot;1. 创建链表的结构体&quot;&gt;&lt;/a&gt;1. 创建链表的结构体&lt;/h3&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;meta-string&quot;&gt;&amp;lt;malloc.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; datatype;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;node&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	datatype data;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;node&lt;/span&gt; *&lt;span class=&quot;title&quot;&gt;next&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;linklist;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;linklist *p,*head;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="C" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c++练习五</title>
+    <link href="http://yoursite.com/2019/11/04/c-%E7%BB%83%E4%B9%A0%E4%BA%94/"/>
+    <id>http://yoursite.com/2019/11/04/c-练习五/</id>
+    <published>2019-11-04T04:51:41.000Z</published>
+    <updated>2019-11-05T14:13:00.158Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-practice1&quot;&gt;&lt;a href=&quot;#1-practice1&quot; class=&quot;headerlink&quot; title=&quot;1. practice1&quot;&gt;&lt;/a&gt;1. practice1&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Description&lt;br&gt;Standard web browsers contain features to move backward and forward among the pages recently visited. One way to implement these features is to use two stacks to keep track of the pages that can be reached by moving backward and forward. In this problem, you are asked to implement this.&lt;br&gt;The following commands need to be supported:&lt;br&gt;BACK: Push the current page on the top of the forward stack. Pop the page from the top of the backward stack, making it the new current page. If the backward stack is empty, the command is ignored.&lt;br&gt;FORWARD: Push the current page on the top of the backward stack. Pop the page from the top of the forward stack, making it the new current page. If the forward stack is empty, the command is ignored.&lt;br&gt;VISIT : Push the current page on the top of the backward stack, and make the URL specified the new current page. The forward stack is emptied.&lt;br&gt;QUIT: Quit the browser.&lt;br&gt;Assume that the browser initially loads the web page at the URL &lt;a href=&quot;http://www.acm.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.acm.org/&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c-for循环里面递归的探究</title>
+    <link href="http://yoursite.com/2019/11/02/c-for%E5%BE%AA%E7%8E%AF%E9%87%8C%E9%9D%A2%E9%80%92%E5%BD%92%E7%9A%84%E6%8E%A2%E7%A9%B6/"/>
+    <id>http://yoursite.com/2019/11/02/c-for循环里面递归的探究/</id>
+    <published>2019-11-02T03:04:08.000Z</published>
+    <updated>2019-11-02T08:42:28.469Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;代码样例&quot;&gt;&lt;a href=&quot;#代码样例&quot; class=&quot;headerlink&quot; title=&quot;代码样例&quot;&gt;&lt;/a&gt;代码样例&lt;/h3&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c-algorithm基本库</title>
+    <link href="http://yoursite.com/2019/10/30/c-algorithem%E5%9F%BA%E6%9C%AC%E5%BA%93/"/>
+    <id>http://yoursite.com/2019/10/30/c-algorithem基本库/</id>
+    <published>2019-10-30T12:07:18.000Z</published>
+    <updated>2019-10-30T12:24:28.051Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;algorithm常用函数&quot;&gt;&lt;a href=&quot;#algorithm常用函数&quot; class=&quot;headerlink&quot; title=&quot;algorithm常用函数&quot;&gt;&lt;/a&gt;algorithm常用函数&lt;/h3&gt;&lt;h4 id=&quot;1-sort函数&quot;&gt;&lt;a href=&quot;#1-sort函数&quot; class=&quot;headerlink&quot; title=&quot;1. sort函数&quot;&gt;&lt;/a&gt;1. sort函数&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;排序&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;代码及结果：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20191030201559.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>c-线性表</title>
     <link href="http://yoursite.com/2019/10/30/c-%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
     <id>http://yoursite.com/2019/10/30/c-线性表/</id>
     <published>2019-10-30T11:43:19.000Z</published>
-    <updated>2019-10-30T11:52:55.075Z</updated>
+    <updated>2019-11-05T14:07:57.046Z</updated>
     
     <summary type="html">
     
@@ -426,91 +520,6 @@
     
     
       <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python-练习二</title>
-    <link href="http://yoursite.com/2019/09/28/python-%E7%BB%83%E4%B9%A0%E4%BA%8C/"/>
-    <id>http://yoursite.com/2019/09/28/python-练习二/</id>
-    <published>2019-09-28T11:51:56.000Z</published>
-    <updated>2019-10-27T12:27:57.411Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;练习1：定义一个类描述数字时钟&quot;&gt;&lt;a href=&quot;#练习1：定义一个类描述数字时钟&quot; class=&quot;headerlink&quot; title=&quot;练习1：定义一个类描述数字时钟&quot;&gt;&lt;/a&gt;练习1：定义一个类描述数字时钟&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190928213335.png&quot; alt&gt;&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python-面对对象编程基础</title>
-    <link href="http://yoursite.com/2019/09/27/python-%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/"/>
-    <id>http://yoursite.com/2019/09/27/python-面对对象编程基础/</id>
-    <published>2019-09-27T12:14:11.000Z</published>
-    <updated>2019-09-30T05:03:04.890Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;一、面对对象&quot;&gt;&lt;a href=&quot;#一、面对对象&quot; class=&quot;headerlink&quot; title=&quot;一、面对对象&quot;&gt;&lt;/a&gt;一、面对对象&lt;/h4&gt;&lt;p&gt;把一组数据结构和处理它们的方法组成对象（object），把相同行为的对象归纳为类（class），通过类的&lt;strong&gt;封装&lt;/strong&gt;（encapsulation）隐藏内部细节，通过&lt;strong&gt;继承&lt;/strong&gt;（inheritance）实现类的特化（specialization）和泛化（generalization），通过&lt;strong&gt;多态&lt;/strong&gt;（polymorphism）实现基于对象类型的动态分派。&lt;br&gt;简单的来说就是面向对象的三要素：封装、继承、多态&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python-练习一</title>
-    <link href="http://yoursite.com/2019/09/27/python-%E7%BB%83%E4%B9%A0%E4%B8%80/"/>
-    <id>http://yoursite.com/2019/09/27/python-练习一/</id>
-    <published>2019-09-27T04:53:18.000Z</published>
-    <updated>2019-10-27T12:27:48.029Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;练习一：在屏幕上显示跑马灯文字&quot;&gt;&lt;a href=&quot;#练习一：在屏幕上显示跑马灯文字&quot; class=&quot;headerlink&quot; title=&quot;练习一：在屏幕上显示跑马灯文字&quot;&gt;&lt;/a&gt;练习一：在屏幕上显示跑马灯文字&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190927191628.png&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python-web开发 (初步了解)</title>
-    <link href="http://yoursite.com/2019/09/26/python-web%E5%BC%80%E5%8F%911/"/>
-    <id>http://yoursite.com/2019/09/26/python-web开发1/</id>
-    <published>2019-09-26T14:10:44.000Z</published>
-    <updated>2019-10-27T12:28:18.338Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;什么是web开发呢，其实就是开发一个网站了。那开发网站需要用到哪些知识呢&lt;br&gt;1、python基础，因为用python开发的，所以python指定要会，最起码你也得会条件判断，循环，函数，类这些知识；&lt;br&gt;2、html、css的基础知识，因为要开发网站，网页都html和css写的，最起码这些知识你得会，就算不会写前端，开发不出来特别漂亮的页面，网站，最起码要能看懂html标签是；&lt;br&gt;3、数据库基础知识，因为开发一个网站的话，数据存在哪里，就是在数据库里，那你最起码要会数据库的增删改查吧，要不然怎么存数据，取数据呢&lt;br&gt;上面这些知识会的话，就基本上可以了，可以开发一个简单的小站就没有问题了，如果想开发比较大型的网站，业务逻辑比较复杂的，那就得用到其他的知识了，比如说redis、MQ等等。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="python-web" scheme="http://yoursite.com/categories/python-web/"/>
-    
-    
-      <category term="python-web" scheme="http://yoursite.com/tags/python-web/"/>
     
   </entry>
   
