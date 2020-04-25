@@ -92,7 +92,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20191030201559.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20191030201920.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20191030202107.png">
-<meta property="og:updated_time" content="2019-10-30T12:24:28.051Z">
+<meta property="og:updated_time" content="2020-03-12T15:15:28.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c-algorithm基本库">
 <meta name="twitter:description" content="algorithm常用函数1. sort函数排序代码及结果：">
@@ -409,6 +409,17 @@
 <h3 id="3-min-max函数"><a href="#3-min-max函数" class="headerlink" title="3.min,max函数"></a>3.min,max函数</h3><p><strong>求最大最小值</strong><br><strong>代码及截图：</strong></p>
 <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20191030202107.png" alt></p>
 <p><strong><em>参考</em></strong><br><a href="http://www.cplusplus.com/reference/algorithm/" target="_blank" rel="noopener">http://www.cplusplus.com/reference/algorithm/</a></p>
+<h3 id="4-大小写字母转换"><a href="#4-大小写字母转换" class="headerlink" title="4.大小写字母转换"></a>4.大小写字母转换</h3><p>在string型字符串中</p>
+<ol>
+<li>将s1中的字符串改写成小写字母的字符串存在s2中：</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">transform(s1.begin(),s1.end(),back_inserter(s2),::<span class="built_in">tolower</span>);</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>将s3中的字符串改写成大写字母的字符串存在s4中：</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">transform(s3.begin(),s3.end(),back_inserter(s4),::<span class="built_in">toupper</span>);</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -533,7 +544,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">49</span>
+                  <span class="site-state-item-count">78</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -544,7 +555,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -555,7 +566,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -595,7 +606,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#algorithm常用函数"><span class="nav-text">algorithm常用函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-sort函数"><span class="nav-text">1. sort函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-swap函数"><span class="nav-text">2.swap函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-min-max函数"><span class="nav-text">3.min,max函数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#algorithm常用函数"><span class="nav-text">algorithm常用函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-sort函数"><span class="nav-text">1. sort函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-swap函数"><span class="nav-text">2.swap函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-min-max函数"><span class="nav-text">3.min,max函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-大小写字母转换"><span class="nav-text">4.大小写字母转换</span></a></li></ol></div>
             
 
           </div>
@@ -622,7 +633,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
