@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="c++,">
 
 
 
@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="vector的创建vector q; vector的使用v1.pushu_back(p) 将数组p存放到v1中；v2.pop_back(q)  将数组q从v2中删除；v3。size（）大小判断；">
+<meta name="description" content="vector的创建vector q; vector的使用v1.push_back(p) 将数组p存放到v1中；v2.pop_back(q)  将数组q从v2中删除；v3。size（）大小判断；">
+<meta name="keywords" content="c++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="c-vector的基本应用">
 <meta property="og:url" content="http://yoursite.com/2020/03/17/c-vector的基本应用/index.html">
 <meta property="og:site_name" content="welcome">
-<meta property="og:description" content="vector的创建vector q; vector的使用v1.pushu_back(p) 将数组p存放到v1中；v2.pop_back(q)  将数组q从v2中删除；v3。size（）大小判断；">
+<meta property="og:description" content="vector的创建vector q; vector的使用v1.push_back(p) 将数组p存放到v1中；v2.pop_back(q)  将数组q从v2中删除；v3。size（）大小判断；">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-16T04:17:40.721Z">
+<meta property="og:updated_time" content="2021-01-14T07:47:32.417Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c-vector的基本应用">
-<meta name="twitter:description" content="vector的创建vector q; vector的使用v1.pushu_back(p) 将数组p存放到v1中；v2.pop_back(q)  将数组q从v2中删除；v3。size（）大小判断；">
+<meta name="twitter:description" content="vector的创建vector q; vector的使用v1.push_back(p) 将数组p存放到v1中；v2.pop_back(q)  将数组q从v2中删除；v3。size（）大小判断；">
 
 
 
@@ -336,6 +337,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/c/" itemprop="url" rel="index">
+                    <span itemprop="name">c++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -374,7 +397,7 @@
 
       
         <h1 id="vector的创建"><a href="#vector的创建" class="headerlink" title="vector的创建"></a>vector的创建</h1><p>vector<int> q;</int></p>
-<h1 id="vector的使用"><a href="#vector的使用" class="headerlink" title="vector的使用"></a>vector的使用</h1><p>v1.pushu_back(p) 将数组p存放到v1中；<br>v2.pop_back(q)  将数组q从v2中删除；<br>v3。size（）大小判断；</p>
+<h1 id="vector的使用"><a href="#vector的使用" class="headerlink" title="vector的使用"></a>vector的使用</h1><p>v1.push_back(p) 将数组p存放到v1中；<br>v2.pop_back(q)  将数组q从v2中删除；<br>v3。size（）大小判断；</p>
 <a id="more"></a>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt; </span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">price</span>&#123;</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> a,b,c;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">vector</span>&lt;price&gt; v1;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">    	price p=&#123;i,i*i,i*i*i&#125;;</span><br><span class="line">    	v1.push_back(p);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;v1.size();i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;v1[i].a&lt;&lt;<span class="string">" "</span>&lt;&lt;v1[i].b&lt;&lt;<span class="string">" "</span>&lt;&lt;v1[i].c&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
@@ -390,6 +413,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/c/" rel="tag"># c++</a>
+          
+        </div>
       
 
       
@@ -494,7 +523,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">78</span>
+                  <span class="site-state-item-count">84</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -505,7 +534,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -583,7 +612,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

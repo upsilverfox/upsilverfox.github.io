@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="c++,">
 
 
 
@@ -82,13 +82,14 @@
 
 
 <meta name="description" content="在C++中本质上有两种getline函数：第一种：在头文件中，是iostream类的成员函数。第二种：在头文件中，是普通函数。 第一种istream&amp;amp; getline (char* s, streamsize n );istream&amp;amp; getline (char* s, streamsize n, char delim );作用是： 从istream中读取至多n个字符(包含结束标记">
+<meta name="keywords" content="c++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="c-getline的用法">
 <meta property="og:url" content="http://yoursite.com/2020/03/18/c-getline的用法/index.html">
 <meta property="og:site_name" content="welcome">
 <meta property="og:description" content="在C++中本质上有两种getline函数：第一种：在头文件中，是iostream类的成员函数。第二种：在头文件中，是普通函数。 第一种istream&amp;amp; getline (char* s, streamsize n );istream&amp;amp; getline (char* s, streamsize n, char delim );作用是： 从istream中读取至多n个字符(包含结束标记">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-16T04:21:40.732Z">
+<meta property="og:updated_time" content="2020-05-01T12:09:51.506Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c-getline的用法">
 <meta name="twitter:description" content="在C++中本质上有两种getline函数：第一种：在头文件中，是iostream类的成员函数。第二种：在头文件中，是普通函数。 第一种istream&amp;amp; getline (char* s, streamsize n );istream&amp;amp; getline (char* s, streamsize n, char delim );作用是： 从istream中读取至多n个字符(包含结束标记">
@@ -336,6 +337,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/c/" itemprop="url" rel="index">
+                    <span itemprop="name">c++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -377,7 +400,7 @@
 <h1 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h1><p>istream&amp; getline (char* s, streamsize n );<br>istream&amp; getline (char* s, streamsize n, char delim );<br>作用是： 从istream中读取至多n个字符(包含结束标记符)保存在s对应的数组中。即使还没读够n个字符，<br>如果遇到delim 或 字数达到限制，则读取终止，delim都不会被保存进s对应的数组中。<br> <a id="more"></a></p>
 <h1 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h1><p>stream&amp; getline (istream&amp;  is, string&amp; str, char delim);<br>istream&amp; getline (istream&amp;&amp; is, string&amp; str, char delim);<br>istream&amp; getline (istream&amp;  is, string&amp; str);<br>istream&amp; getline (istream&amp;&amp; is, string&amp; str);<br>用法和上第一种类似，但是读取的istream是作为参数is传进函数的。读取的字符串保存在string类型的str中。<br>函数的变量：<br>is    ：表示一个输入流，例如 cin。<br>str   ：string类型的引用，用来存储输入流中的流信息。<br>delim ：char类型的变量，所设置的截断字符；在不自定义设置的情况下，遇到’\n’，则终止输入。<br>另一种用法：<br>用istringstream iss（string&amp; s）语句空格作为字符串分隔符<br>再用getline (string&amp; iss, string&amp; str，’ ‘);<br>表明不断读取s中的字符并存放在str中</p>
 <p>举例：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;iss</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;sstream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">string</span> s;</span><br><span class="line">	getline(<span class="built_in">cin</span>,s);<span class="comment">//输入一行数据包括空格 </span></span><br><span class="line">	               <span class="comment">//当 cin 读取数据时，它会传递并忽略任何前导白色空格字符（空格、制表符或换行符）。</span></span><br><span class="line">				   <span class="comment">//一旦它接触到第一个非空格字符即开始阅读，当它读取到下一个空白字符时，它将停止读取。</span></span><br><span class="line">	<span class="function"><span class="built_in">istringstream</span> <span class="title">iss</span><span class="params">(s)</span></span>;<span class="comment">//istringstream用空格作为字符串分隔符 </span></span><br><span class="line">	<span class="built_in">string</span> temp;</span><br><span class="line">	<span class="keyword">while</span>(getline(iss,temp,<span class="string">' '</span>))</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;temp&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;iss</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;sstream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">string</span> s;</span><br><span class="line">	getline(<span class="built_in">cin</span>,s);<span class="comment">//输入一行数据包括空格 </span></span><br><span class="line">	               <span class="comment">//当 cin 读取数据时，它会传递并忽略任何前导白色空格字符（空格、制表符或换行符）。</span></span><br><span class="line">				   <span class="comment">//一旦它接触到第一个非空格字符即开始阅读，当它读取到下一个空白字符时，它将停止读取。</span></span><br><span class="line">	<span class="function"><span class="built_in">istringstream</span> <span class="title">iss</span><span class="params">(s)</span></span>;<span class="comment">//istringstream用吧空格作为字符串分隔符 </span></span><br><span class="line">	<span class="built_in">string</span> temp;</span><br><span class="line">	<span class="keyword">while</span>(getline(iss,temp,<span class="string">' '</span>))</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;temp&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -391,6 +414,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/c/" rel="tag"># c++</a>
+          
+        </div>
       
 
       
@@ -495,7 +524,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">78</span>
+                  <span class="site-state-item-count">84</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -506,7 +535,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -584,7 +613,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

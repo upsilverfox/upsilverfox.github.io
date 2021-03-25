@@ -90,7 +90,8 @@
 <meta property="og:description" content="快速排序算法思想">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20200425181404.png">
-<meta property="og:updated_time" content="2020-04-25T10:15:47.168Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20200425204943.png">
+<meta property="og:updated_time" content="2020-04-25T12:49:58.562Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速排序">
 <meta name="twitter:description" content="快速排序算法思想">
@@ -406,6 +407,9 @@
 <li>代码</li>
 </ul>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">6</span>]=&#123;<span class="number">3</span>,<span class="number">6</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">2</span>&#125;,n=<span class="number">6</span>; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">quicksort</span><span class="params">(<span class="keyword">int</span> f,<span class="keyword">int</span> l)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(f&gt;=l) <span class="keyword">return</span> ;</span><br><span class="line">	<span class="keyword">int</span> i=f;</span><br><span class="line">	<span class="keyword">int</span> j=l;</span><br><span class="line">	<span class="keyword">int</span> X=a[i]; </span><br><span class="line">	<span class="keyword">while</span>(i&lt;j)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">while</span>(a[j]&gt;=X&amp;&amp;i&lt;j)</span><br><span class="line">		j=j<span class="number">-1</span>;</span><br><span class="line">		swap(a[i],a[j]);			</span><br><span class="line">		<span class="keyword">while</span>(a[i]&lt;=X&amp;&amp;i&lt;j)</span><br><span class="line">		i=i+<span class="number">1</span>;</span><br><span class="line">		swap(a[i],a[j]);</span><br><span class="line">	&#125;</span><br><span class="line">	quicksort(f,j<span class="number">-1</span>);</span><br><span class="line">	quicksort(j+<span class="number">1</span>,l);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	quicksort(<span class="number">0</span>,n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;a[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20200425204943.png" alt></p>
+
       
     </div>
     
@@ -444,6 +448,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/04/28/最长公共子序列的长度/" rel="prev" title="最长公共子序列的长度">
+                最长公共子序列的长度 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -516,7 +524,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">78</span>
+                  <span class="site-state-item-count">84</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -527,7 +535,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -589,7 +597,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
