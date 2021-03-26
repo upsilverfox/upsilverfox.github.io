@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -113,9 +113,24 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">17</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">16</span></a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">84</span></a>
 
   </li>
   </ul>
@@ -145,10 +160,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/02/c-进制转换/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/26/python-函数与模块的使用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -159,247 +174,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/02/c-进制转换/" class="post-title-link" itemprop="url">c-进制转换</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-03-02 20:45:26" itemprop="dateCreated datePublished" datetime="2020-03-02T20:45:26+08:00">2020-03-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-25 18:23:09" itemprop="dateModified" datetime="2020-04-25T18:23:09+08:00">2020-04-25</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> Max 100000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> R 16</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> Q 8</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> T[Max],G[Max];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">while</span>(n--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">long</span> <span class="keyword">long</span> m=<span class="number">1</span>,temp=<span class="number">0</span>;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;T;</span><br><span class="line">		<span class="comment">//转化R为10进制</span></span><br><span class="line">		<span class="keyword">while</span>(T[m]) &#123; m++;&#125; <span class="comment">//判断T的长度</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;m;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(T[i]&gt;=<span class="string">'0'</span>&amp;&amp;T[i]&lt;=<span class="string">'9'</span>)</span><br><span class="line">			&#123;</span><br><span class="line">			temp=temp+(T[i]-<span class="string">'0'</span>)*<span class="built_in">pow</span>(R,m<span class="number">-1</span>-i);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">			&#123;</span><br><span class="line">				temp=temp+(T[i]-<span class="string">'A'</span>+<span class="number">10</span>)*<span class="built_in">pow</span>(R,m-i<span class="number">-1</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//转化10为Q进制</span></span><br><span class="line">		<span class="keyword">int</span> i=<span class="number">0</span>; m=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span>(temp)</span><br><span class="line">		&#123;</span><br><span class="line">			G[i]=<span class="built_in">fmod</span>(temp,Q)+<span class="string">'0'</span>;</span><br><span class="line">			temp=temp/Q;</span><br><span class="line">			i++;</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">while</span>(G[m]) &#123; m++;&#125; <span class="comment">//判断T的长度 </span></span><br><span class="line">		<span class="keyword">int</span> j=m<span class="number">-1</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;m/<span class="number">2</span>;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			swap(G[i],G[j]);</span><br><span class="line">			j--;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;G;		 </span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="不建议用来16进制转8进制，因数据过大，该算法有一定的缺陷。"><a href="#不建议用来16进制转8进制，因数据过大，该算法有一定的缺陷。" class="headerlink" title="不建议用来16进制转8进制，因数据过大，该算法有一定的缺陷。"></a>不建议用来16进制转8进制，因数据过大，该算法有一定的缺陷。</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/03/02/c-进制转换/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/02/c-数组容量超出问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="银狐">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="welcome">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/02/c-数组容量超出问题/" class="post-title-link" itemprop="url">C-为什么大数组要定义在main函数外</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-03-02 09:47:38" itemprop="dateCreated datePublished" datetime="2020-03-02T09:47:38+08:00">2020-03-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-25 18:31:26" itemprop="dateModified" datetime="2020-04-25T18:31:26+08:00">2020-04-25</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/c/" itemprop="url" rel="index"><span itemprop="name">c++</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>全局变量在静态存储区分配内存，局部变量是在栈上分配内存空间的。（c语言程序在运行时会动态创建一个堆栈段，里面存放着调用栈，保存着函数的调用关系和局部变量。）如果数组太大，可能会造成栈溢出。<br>全局变量在静态存储区内分配内存，而局部变量是在栈内分配内存空间的。C语言编写的程序会在运行期间创建一个栈堆段，用来保存函数的调用关系和局部变量。而在main函数内部定义大数组相当于在站内需要一个很大的空间，会造成栈的溢出。<br>因此，当我们需要定义一个极大的数组时，最好在mian 函数外部定义这个大数组。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/27/c-易错点/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="银狐">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="welcome">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/27/c-易错点/" class="post-title-link" itemprop="url">C-易错点</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-11-27 20:24:26" itemprop="dateCreated datePublished" datetime="2019-11-27T20:24:26+08:00">2019-11-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-25 18:29:29" itemprop="dateModified" datetime="2020-04-25T18:29:29+08:00">2020-04-25</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/c/" itemprop="url" rel="index"><span itemprop="name">c++</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="1-易错点一"><a href="#1-易错点一" class="headerlink" title="1. 易错点一"></a>1. 易错点一</h4><p>a&lt;b&lt;c在c语言中的解释是，a&lt;b先会返回一个值，如果a&lt;b为真则返回1，为假返回0，然后再进行1&lt;c或0&lt;c的运算。</p>
-<h4 id="2-易错点二"><a href="#2-易错点二" class="headerlink" title="2. 易错点二"></a>2. 易错点二</h4><p>若x和n都是int型变量，且x和n的初值都是6，则计算表达式x+=n++后，x的值为 12 ；n的值为：7   </p>
-<h4 id="3-易错点三"><a href="#3-易错点三" class="headerlink" title="3. 易错点三"></a>3. 易错点三</h4><p>设有定义：float a=2,b=4,h=3;以下C语言表达式中与代数式 的计算结果不相符的是（  B   ）<br>A）(a+b)<em>h/2    B）(1/2)</em>(a+b)<em>h    C）(a+b)<em>h</em>1/2    D）h/2</em>(a+b)<br>因为1/2在C语言中计算等于零。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/11/27/c-易错点/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/09/matlab-sum的相关操作/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="银狐">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="welcome">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/09/matlab-sum的相关操作/" class="post-title-link" itemprop="url">matlab-sum的相关操作</a>
+            <a href="/2019/09/26/python-函数与模块的使用/" class="post-title-link" itemprop="url">python-函数与模块的使用</a>
         </h2>
 
         <div class="post-meta">
@@ -410,7 +185,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-11-09 15:53:46 / 修改时间：16:14:04" itemprop="dateCreated datePublished" datetime="2019-11-09T15:53:46+08:00">2019-11-09</time>
+              <time title="创建时间：2019-09-26 19:34:08 / 修改时间：21:28:26" itemprop="dateCreated datePublished" datetime="2019-09-26T19:34:08+08:00">2019-09-26</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -418,7 +193,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/matlab/" itemprop="url" rel="index"><span itemprop="name">matlab</span></a>
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
                 </span>
             </span>
 
@@ -433,10 +208,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="1-题目"><a href="#1-题目" class="headerlink" title="1. 题目"></a>1. 题目</h4><p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20191109155546.png" alt></p>
+          <h4 id="1-函数的定义"><a href="#1-函数的定义" class="headerlink" title="1.函数的定义"></a>1.函数的定义</h4><p> 在Python中可以使用def关键字来定义函数，和c++的类类似，每个函数都有一个名字，而且命名规则跟变量的命名规则是一致的。在函数名后面的圆括号中可以放置传递给函数的参数，这一点和数学上的函数非常相似，程序中函数的参数就相当于是数学上说的函数的自变量，而函数执行完成后我们可以通过return关键字来返回一个值，这相当于数学上说的函数的因变量。<br> 例题：<br> 求从m选取n的组合<br>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/11/09/matlab-sum的相关操作/#more" rel="contents">
+              <a class="btn" href="/2019/09/26/python-函数与模块的使用/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -460,10 +235,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/07/c-变量定义/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/25/项目开发构想/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -474,7 +249,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/11/07/c-变量定义/" class="post-title-link" itemprop="url">C/C++变量定义</a>
+            <a href="/2019/09/25/项目开发构想/" class="post-title-link" itemprop="url">项目开发构想</a>
         </h2>
 
         <div class="post-meta">
@@ -484,14 +259,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-11-07 22:30:10" itemprop="dateCreated datePublished" datetime="2019-11-07T22:30:10+08:00">2019-11-07</time>
+              <time title="创建时间：2019-09-25 22:27:41" itemprop="dateCreated datePublished" datetime="2019-09-25T22:27:41+08:00">2019-09-25</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-25 18:27:46" itemprop="dateModified" datetime="2020-04-25T18:27:46+08:00">2020-04-25</time>
+                <time title="修改时间：2019-10-27 20:18:54" itemprop="dateModified" datetime="2019-10-27T20:18:54+08:00">2019-10-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -499,7 +274,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/c/" itemprop="url" rel="index"><span itemprop="name">c++</span></a>
+                  <a href="/categories/项目开发/" itemprop="url" rel="index"><span itemprop="name">项目开发</span></a>
                 </span>
             </span>
 
@@ -514,14 +289,650 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="整型变量"><a href="#整型变量" class="headerlink" title="整型变量"></a>整型变量</h3><p>整型变量一共具有四种类型：</p>
-<ul>
-<li>整型(int)     4字节  </li>
-<li>长整型(long)  4字节 </li>
-<li>长长整型(long long)   8字节
+          <h4 id="项目构想"><a href="#项目构想" class="headerlink" title="项目构想"></a>项目构想</h4><p>现在有很多大学生面对大学生活很迷茫，不知道自己要干什么，根据这种情况，设计一个软件，以学校为大单位，以专业为小单位将学生在大学各个阶段可以参加的比赛进行分类汇总，以便学生参考。</p>
+<h4 id="项目目标"><a href="#项目目标" class="headerlink" title="项目目标"></a>项目目标</h4><p>大目标： 利用大数据分类汇总所有学校各院各专业的比赛信息<br>小目标： 把桂电的比赛信息汇总出来</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/11/07/c-变量定义/#more" rel="contents">
+              <a class="btn" href="/2019/09/25/项目开发构想/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/25/python-循环结构/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/25/python-循环结构/" class="post-title-link" itemprop="url">python-循环结构</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-09-25 20:34:19" itemprop="dateCreated datePublished" datetime="2019-09-25T20:34:19+08:00">2019-09-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-26 19:56:08" itemprop="dateModified" datetime="2019-09-26T19:56:08+08:00">2019-09-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>在Python中构造循环结构有两种做法，一种是for-in循环，一种是while循环。</p>
+<h4 id="1-for-in循环"><a href="#1-for-in循环" class="headerlink" title="1. for-in循环"></a>1. for-in循环</h4><p>如果明确的知道循环执行的次数或者是要对一个容器进行迭代，那么推荐使用for-in循环，例如求1到100的和:</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/09/25/python-循环结构/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/25/python-分支结构/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/25/python-分支结构/" class="post-title-link" itemprop="url">python-分支结构</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-09-25 20:04:33 / 修改时间：21:03:29" itemprop="dateCreated datePublished" datetime="2019-09-25T20:04:33+08:00">2019-09-25</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="1-if语句的使用"><a href="#1-if语句的使用" class="headerlink" title="1. if语句的使用"></a>1. if语句的使用</h4><p>1） 在Python中，要构造分支结构可以使用if、elif和else关键字。所谓关键字就是有特殊含义的单词，像if和else就是专门用于构造分支结构的关键字，很显然你不能够使用它作为变量名.<br>注：和C/C++、Java等语言不同，Python中没有用花括号来构造代码块而是使用了缩进的方式来设置代码的层次结构，如果if条件成立的情况下需要执行多条语句，只要保持多条语句具有相同的缩进就可以了，换句话说连续的代码如果又保持了相同的缩进那么它们属于同一个代码块，相当于是一个执行的整体。 </p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/09/25/python-分支结构/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/25/设置U盘为第一启动项/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/25/设置U盘为第一启动项/" class="post-title-link" itemprop="url">设置U盘为第一启动项</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-09-25 17:29:41 / 修改时间：21:10:27" itemprop="dateCreated datePublished" datetime="2019-09-25T17:29:41+08:00">2019-09-25</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/刷机教程/" itemprop="url" rel="index"><span itemprop="name">刷机教程</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="如果在刷机过程中电脑出现重启错误怎么办"><a href="#如果在刷机过程中电脑出现重启错误怎么办" class="headerlink" title="如果在刷机过程中电脑出现重启错误怎么办"></a>如果在刷机过程中电脑出现重启错误怎么办</h4><ol>
+<li><p>先试试强制关机后按F12看看能不能进入刷机U盘的界面</p>
+</li>
+<li><p>去bois设置U盘为第一启动项</p>
+<p>1） 那我电脑为例进入bois的快捷键时F2.<br>示例图：</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/09/25/设置U盘为第一启动项/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/python-变量/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/24/python-变量/" class="post-title-link" itemprop="url">python-变量</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-09-24 18:14:23" itemprop="dateCreated datePublished" datetime="2019-09-24T18:14:23+08:00">2019-09-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-27 10:17:05" itemprop="dateModified" datetime="2019-09-27T10:17:05+08:00">2019-09-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="1-变量命名规则"><a href="#1-变量命名规则" class="headerlink" title="1. 变量命名规则"></a>1. 变量命名规则</h4><p>1）硬性规则：<br>变量名由字母（广义的Unicode字符，不包括特殊字符）、数字和下划线构成，数字不能开头。<br>大小写敏感（大写的a和小写的A是两个不同的变量）。<br>不要跟关键字（有特殊含义的单词）和系统保留字（如函数、模块等的名字）冲突。<br>2）PEP 8要求：<br>用小写字母拼写，多个单词用下划线连接。<br>受保护的实例属性用单个下划线开头。<br>私有的实例属性用两个下划线开头。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/09/24/python-变量/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/linux基本操作/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/24/linux基本操作/" class="post-title-link" itemprop="url">linux基本操作</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-09-24 16:12:43 / 修改时间：19:29:27" itemprop="dateCreated datePublished" datetime="2019-09-24T16:12:43+08:00">2019-09-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="cd命令"><a href="#cd命令" class="headerlink" title="cd命令"></a>cd命令</h4><p>这是一个非常基本，也是大家经常需要使用的命令，它用于切换当前目录，它的参数是要切换到的目录的路径，可以是绝对路径，也可以是相对路径。如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd /home 进入 <span class="string">'/ home'</span> 目录<span class="string">' </span></span><br><span class="line"><span class="string">cd .. 返回上一级目录 </span></span><br><span class="line"><span class="string">cd ../.. 返回上两级目录 </span></span><br><span class="line"><span class="string">cd 进入个人的主目录 </span></span><br><span class="line"><span class="string">cd ~user1 进入个人的主目录 </span></span><br><span class="line"><span class="string">cd - 返回上次所在的目录</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/09/24/linux基本操作/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/23/win10自带虚拟机Hyper-V/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/23/win10自带虚拟机Hyper-V/" class="post-title-link" itemprop="url">win10自带虚拟机Hyper-V</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-09-23 17:03:18" itemprop="dateCreated datePublished" datetime="2019-09-23T17:03:18+08:00">2019-09-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-24 19:29:45" itemprop="dateModified" datetime="2019-09-24T19:29:45+08:00">2019-09-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hyper-v/" itemprop="url" rel="index"><span itemprop="name">Hyper-v</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="教你如何使用win10自带虚拟机Hyper-V"><a href="#教你如何使用win10自带虚拟机Hyper-V" class="headerlink" title="教你如何使用win10自带虚拟机Hyper-V"></a>教你如何使用win10自带虚拟机Hyper-V</h4><ol>
+<li>按win+pause break快速打开控制面板的系统和安全中的系统，点击控制面板</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20190923171407.png" alt></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/09/23/win10自带虚拟机Hyper-V/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/23/初识python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/23/初识python/" class="post-title-link" itemprop="url">初识python</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-09-23 16:43:11" itemprop="dateCreated datePublished" datetime="2019-09-23T16:43:11+08:00">2019-09-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-24 19:04:15" itemprop="dateModified" datetime="2019-09-24T19:04:15+08:00">2019-09-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h5 id="Python的优缺点"><a href="#Python的优缺点" class="headerlink" title="Python的优缺点"></a>Python的优缺点</h5><p>Python的优点很多，简单的可以总结为以下几点。<br>简单和明确，做一件事只有一种方法。<br>学习曲线低，跟其他很多语言相比，Python更容易上手。<br>开放源代码，拥有强大的社区和生态圈。<br>解释型语言，天生具有平台可移植性。<br>支持两种主流的编程范式（面向对象编程和函数式编程）都提供了支持。<br>可扩展性和可嵌入性，可以调用C/C++代码，也可以在C/C++中调用Python。<br>代码规范程度高，可读性强，适合有代码洁癖和强迫症的人群。<br>Python的缺点主要集中在以下几点。<br>执行效率稍低，因此计算密集型任务可以由C/C++编写。<br>代码无法加密，但是现在很多公司都不销售卖软件而是销售服务，这个问题会被淡化。<br>在开发时可以选择的框架太多（如Web框架就有100多个），有选择的地方就有错误。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/09/23/初识python/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/23/Excel/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/23/Excel/" class="post-title-link" itemprop="url">Excel</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-09-23 14:25:34" itemprop="dateCreated datePublished" datetime="2019-09-23T14:25:34+08:00">2019-09-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-27 20:21:57" itemprop="dateModified" datetime="2019-10-27T20:21:57+08:00">2019-10-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/办公软件/" itemprop="url" rel="index"><span itemprop="name">办公软件</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="Excel-10大常用公式"><a href="#Excel-10大常用公式" class="headerlink" title="Excel 10大常用公式"></a>Excel 10大常用公式</h4><p>1） 逻辑判断<br>2） 复杂条件逻辑判断<br>3） 汇总求和<br>4） 复杂条件汇总求和<br>5） 查找引用<br>6） 复杂条件查找引用<br>7） 四舍五入<br>8） 文本截取<br>9） 条件计数<br>10）平均值和极值统计</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/09/23/Excel/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -544,7 +955,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -602,6 +1013,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="银狐"
+      src="/images/2.jpg">
   <p class="site-author-name" itemprop="name">银狐</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -616,11 +1029,13 @@
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
+          
         <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
+          
         <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
@@ -654,7 +1069,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">银狐</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
         
@@ -675,7 +1090,7 @@
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 <script src="/js/next-boot.js"></script>
 
 
@@ -702,3 +1117,6 @@
 
 </body>
 </html>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

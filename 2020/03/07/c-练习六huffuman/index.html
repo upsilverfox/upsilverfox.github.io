@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="问题描述　　Huffman树在编码中有着广泛的应用。在这里，我们只关心Huffman树的构造过程。　　给出一列数{pi}={p0, p1, …, pn-1}，用这列数构造Huffman树的过程如下：　　1. 找到{pi}中最小的两个数，设为pa和pb，将pa和pb从{pi}中删除掉，然后将它们的和加入到{pi}中。这个过程的费用记为pa + pb。　　2. 重复步骤1，直到{pi}中只剩下一个数。">
@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="welcome">
 <meta property="og:description" content="问题描述　　Huffman树在编码中有着广泛的应用。在这里，我们只关心Huffman树的构造过程。　　给出一列数{pi}={p0, p1, …, pn-1}，用这列数构造Huffman树的过程如下：　　1. 找到{pi}中最小的两个数，设为pa和pb，将pa和pb从{pi}中删除掉，然后将它们的和加入到{pi}中。这个过程的费用记为pa + pb。　　2. 重复步骤1，直到{pi}中只剩下一个数。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-25T10:28:13.302Z">
+<meta property="og:updated_time" content="2021-03-25T17:18:26.154Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c-练习六huffuman">
 <meta name="twitter:description" content="问题描述　　Huffman树在编码中有着广泛的应用。在这里，我们只关心Huffman树的构造过程。　　给出一列数{pi}={p0, p1, …, pn-1}，用这列数构造Huffman树的过程如下：　　1. 找到{pi}中最小的两个数，设为pa和pb，将pa和pb从{pi}中删除掉，然后将它们的和加入到{pi}中。这个过程的费用记为pa + pb。　　2. 重复步骤1，直到{pi}中只剩下一个数。">
@@ -118,9 +118,24 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">17</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">16</span></a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">84</span></a>
 
   </li>
   </ul>
@@ -154,7 +169,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/07/c-练习六huffuman/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -181,7 +196,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-25 18:28:13" itemprop="dateModified" datetime="2020-04-25T18:28:13+08:00">2020-04-25</time>
+                <time title="修改时间：2021-03-26 01:18:26" itemprop="dateModified" datetime="2021-03-26T01:18:26+08:00">2021-03-26</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -206,7 +221,8 @@
       
         <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>　　Huffman树在编码中有着广泛的应用。在这里，我们只关心Huffman树的构造过程。<br>　　给出一列数{pi}={p0, p1, …, pn-1}，用这列数构造Huffman树的过程如下：<br>　　1. 找到{pi}中最小的两个数，设为pa和pb，将pa和pb从{pi}中删除掉，然后将它们的和加入到{pi}中。这个过程的费用记为pa + pb。<br>　　2. 重复步骤1，直到{pi}中只剩下一个数。<br>　　在上面的操作过程中，把所有的费用相加，就得到了构造Huffman树的总费用。<br>　　本题任务：对于给定的一个数列，现在请你求出用该数列构造Huffman树的总费用。</p>
 <p>　　例如，对于数列{pi}={5, 3, 8, 2, 9}，Huffman树的构造过程如下：<br>　　1. 找到{5, 3, 8, 2, 9}中最小的两个数，分别是2和3，从{pi}中删除它们并将和5加入，得到{5, 8, 9, 5}，费用为5。<br>　　2. 找到{5, 8, 9, 5}中最小的两个数，分别是5和5，从{pi}中删除它们并将和10加入，得到{8, 9, 10}，费用为10。<br>　　3. 找到{8, 9, 10}中最小的两个数，分别是8和9，从{pi}中删除它们并将和17加入，得到{10, 17}，费用为17。<br>　　4. 找到{10, 17}中最小的两个数，分别是10和17，从{pi}中删除它们并将和27加入，得到{27}，费用为27。<br>　　5. 现在，数列中只剩下一个数27，构造过程结束，总费用为5+10+17+27=59。</p>
-<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>　　输入的第一行包含一个正整数n（n&lt;=100）。<br>　　接下来是n个正整数，表示p0, p1, …, pn-1，每个数不超过1000。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><a id="more"></a>
+<p>　　输入的第一行包含一个正整数n（n&lt;=100）。<br>　　接下来是n个正整数，表示p0, p1, …, pn-1，每个数不超过1000。</p>
 <h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>　　输出用这些数构造Huffman树的总费用。</p>
 <h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><p>5<br>5 3 8 2 9</p>
 <h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><p>59</p>
@@ -300,6 +316,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="银狐"
+      src="/images/2.jpg">
   <p class="site-author-name" itemprop="name">银狐</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -314,11 +332,13 @@
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
+          
         <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
+          
         <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
@@ -352,7 +372,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">银狐</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
         
@@ -373,7 +393,7 @@
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 <script src="/js/next-boot.js"></script>
 
 
@@ -400,3 +420,6 @@
 
 </body>
 </html>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

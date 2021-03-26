@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -113,9 +113,24 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">17</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">16</span></a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">84</span></a>
 
   </li>
   </ul>
@@ -148,7 +163,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/03/25/面向对象/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -168,10 +183,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-03-25 23:43:02 / 修改时间：23:55:54" itemprop="dateCreated datePublished" datetime="2021-03-25T23:43:02+08:00">2021-03-25</time>
+              <time title="创建时间：2021-03-25 23:43:02" itemprop="dateCreated datePublished" datetime="2021-03-25T23:43:02+08:00">2021-03-25</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-26 00:54:31" itemprop="dateModified" datetime="2021-03-26T00:54:31+08:00">2021-03-26</time>
+              </span>
 
           
 
@@ -184,8 +205,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>##1、 c++创建结构体（有关有员函数和重载输入输出）</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">student</span>&#123;</span></span><br><span class="line">	<span class="keyword">private</span>:</span><br><span class="line">		<span class="keyword">int</span> age;</span><br><span class="line">		<span class="built_in">string</span> name;</span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">get_stu</span><span class="params">()</span></span>&#123;</span><br><span class="line">			<span class="built_in">cin</span> &gt;&gt; name &gt;&gt; age;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">out_stu</span><span class="params">()</span></span>&#123;</span><br><span class="line">			<span class="built_in">cout</span> &lt;&lt; name &lt;&lt; <span class="string">" "</span> &lt;&lt; age;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//定义友元函数 </span></span><br><span class="line">		<span class="function"><span class="keyword">friend</span> <span class="title">max_stu</span><span class="params">(student s1,student s2)</span></span>;</span><br><span class="line">&#125;; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">max_stu</span><span class="params">(student s1,student s2)</span></span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(s1.age &gt; s2.age) s1.out_stu();</span><br><span class="line">		<span class="keyword">else</span> s2.out_stu();	</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	student stu[<span class="number">2</span>];</span><br><span class="line">	stu[<span class="number">0</span>].get_stu();</span><br><span class="line">	stu[<span class="number">1</span>].get_stu();</span><br><span class="line">	<span class="comment">//使用友元函数 </span></span><br><span class="line">	max_stu(stu[<span class="number">0</span>],stu[<span class="number">1</span>]); </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <h2 id="1、-c-创建结构体（有关有员函数和重载输入输出）"><a href="#1、-c-创建结构体（有关有员函数和重载输入输出）" class="headerlink" title="1、 c++创建结构体（有关有员函数和重载输入输出）"></a>1、 c++创建结构体（有关有员函数和重载输入输出）</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">student</span>&#123;</span></span><br><span class="line">	<span class="keyword">private</span>:</span><br><span class="line">		<span class="keyword">int</span> age;</span><br><span class="line">		<span class="built_in">string</span> name;</span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">get_stu</span><span class="params">()</span></span>&#123;</span><br><span class="line">			<span class="built_in">cin</span> &gt;&gt; name &gt;&gt; age;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">out_stu</span><span class="params">()</span></span>&#123;</span><br><span class="line">			<span class="built_in">cout</span> &lt;&lt; name &lt;&lt; <span class="string">" "</span> &lt;&lt; age;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//定义友元函数 </span></span><br><span class="line">		<span class="function"><span class="keyword">friend</span> <span class="title">max_stu</span><span class="params">(student s1,student s2)</span></span>;</span><br><span class="line">&#125;; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">max_stu</span><span class="params">(student s1,student s2)</span></span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(s1.age &gt; s2.age) s1.out_stu();</span><br><span class="line">		<span class="keyword">else</span> s2.out_stu();	</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	student stu[<span class="number">2</span>];</span><br><span class="line">	stu[<span class="number">0</span>].get_stu();</span><br><span class="line">	stu[<span class="number">1</span>].get_stu();</span><br><span class="line">	<span class="comment">//使用友元函数 </span></span><br><span class="line">	max_stu(stu[<span class="number">0</span>],stu[<span class="number">1</span>]); </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/03/25/面向对象/#more" rel="contents">
@@ -215,7 +235,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/01/14/c-链表相加/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -235,10 +255,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-01-14 15:42:15 / 修改时间：15:43:48" itemprop="dateCreated datePublished" datetime="2021-01-14T15:42:15+08:00">2021-01-14</time>
+              <time title="创建时间：2021-01-14 15:42:15" itemprop="dateCreated datePublished" datetime="2021-01-14T15:42:15+08:00">2021-01-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-26 01:01:30" itemprop="dateModified" datetime="2021-03-26T01:01:30+08:00">2021-03-26</time>
+              </span>
 
           
 
@@ -255,10 +281,14 @@
 <p>给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。</p>
 <p>请你将两个数相加，并以相同形式返回一个表示和的链表。</p>
 <p>你可以假设除了数字 0 之外，这两个数都不会以 0 开头。</p>
-<p>输入：l1 = [2,4,3], l2 = [5,6,4]<br>输出：[7,0,8]<br>解释：342 + 465 = 807.<br>示例 2：</p>
-<p>输入：l1 = [0], l2 = [0]<br>输出：[0]<br>示例 3：</p>
-<p>输入：l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]<br>输出：[8,9,9,9,0,0,0,1]</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode() : val(0), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x, ListNode *next) : val(x), next(next) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">addTwoNumbers</span><span class="params">(ListNode* l1, ListNode* l2)</span> </span>&#123;</span><br><span class="line">    ListNode* l3 = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">    ListNode* p = l3;</span><br><span class="line">    <span class="keyword">int</span> carry = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(l1!=<span class="literal">NULL</span> || l2!=<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> x = (l1!=<span class="literal">NULL</span>) ? l1-&gt;val : <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> y = (l2!=<span class="literal">NULL</span>) ? l2-&gt;val : <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> sum=x+y+carry;</span><br><span class="line">        carry=sum/<span class="number">10</span>;</span><br><span class="line">        p-&gt;next = <span class="keyword">new</span> ListNode(sum % <span class="number">10</span>);</span><br><span class="line">        p=p-&gt;next;</span><br><span class="line">        <span class="keyword">if</span>(l1!=<span class="literal">NULL</span>) l1=l1-&gt;next;</span><br><span class="line">        <span class="keyword">if</span>(l2!=<span class="literal">NULL</span>) l2=l2-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(carry&gt;<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        p-&gt;next = <span class="keyword">new</span> ListNode(carry);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> l3-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/01/14/c-链表相加/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -280,7 +310,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/01/14/c-unodered-set/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -300,10 +330,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-01-14 15:07:36 / 修改时间：15:38:00" itemprop="dateCreated datePublished" datetime="2021-01-14T15:07:36+08:00">2021-01-14</time>
+              <time title="创建时间：2021-01-14 15:07:36" itemprop="dateCreated datePublished" datetime="2021-01-14T15:07:36+08:00">2021-01-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-26 01:01:34" itemprop="dateModified" datetime="2021-03-26T01:01:34+08:00">2021-03-26</time>
+              </span>
 
           
 
@@ -319,24 +355,14 @@
           <p>c++的哈希集合(unodered_set)</p>
 <p>定义</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//定义</span></span><br><span class="line"><span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt; c1;</span><br><span class="line"></span><br><span class="line"><span class="comment">//operator=</span></span><br><span class="line"><span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt; c2;</span><br><span class="line">c2 = c1;</span><br></pre></td></tr></table></figure>
-
-<p>基本操作</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//查找函数 find() 通过给定主键查找元素</span></span><br><span class="line"> <span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt;::iterator find_iter = c1.find(<span class="number">1</span>);</span><br><span class="line"> </span><br><span class="line"> <span class="comment">//value出现的次数 count() 返回匹配给定主键的元素的个数</span></span><br><span class="line"> c1.count(<span class="number">1</span>);</span><br><span class="line"> </span><br><span class="line"> <span class="comment">//返回元素在哪个区域equal_range() 返回值匹配给定搜索值的元素组成的范围</span></span><br><span class="line"> pair&lt;<span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt;::iterator, <span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt;::iterator&gt; pair_equal_range = c1.equal_range(<span class="number">1</span>);</span><br><span class="line"> </span><br><span class="line"> <span class="comment">//插入函数 emplace()</span></span><br><span class="line"> c1.emplace(<span class="number">1</span>);</span><br><span class="line"> </span><br><span class="line"> <span class="comment">//插入函数 emplace_hint() 使用迭代器</span></span><br><span class="line"> c1.emplace_hint(ite_begin, <span class="number">1</span>);</span><br><span class="line"> </span><br><span class="line"> <span class="comment">//插入函数 insert()</span></span><br><span class="line"> c1.insert(<span class="number">1</span>);</span><br><span class="line"> </span><br><span class="line"> <span class="comment">//删除 erase()</span></span><br><span class="line"> c1.erase(<span class="number">1</span>);<span class="comment">//1.迭代器 value 区域</span></span><br><span class="line"> </span><br><span class="line"> <span class="comment">//清空 clear()</span></span><br><span class="line"> c1.clear();</span><br><span class="line"> </span><br><span class="line"> <span class="comment">//交换 swap()</span></span><br></pre></td></tr></table></figure>
-
-<p>容量操作</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//判断是否为空</span></span><br><span class="line">    c1.empty();</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//获取元素个数 size()</span></span><br><span class="line">    c1.size();</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//获取最大存储量 max_size()</span></span><br><span class="line">    c1.max_size();</span><br></pre></td></tr></table></figure>
-
-<p>迭代操作</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//返回头迭代器 begin()</span></span><br><span class="line">  <span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt;::iterator ite_begin = c1.begin();</span><br><span class="line">  </span><br><span class="line">  <span class="comment">//返回尾迭代器 end()</span></span><br><span class="line">  <span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt;::iterator ite_end = c1.end();</span><br><span class="line">  </span><br><span class="line">  <span class="comment">//返回const头迭代器 cbegin()</span></span><br><span class="line">  <span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt;::const_iterator const_ite_begin = c1.cbegin();</span><br><span class="line">  </span><br><span class="line">  <span class="comment">//返回const尾迭代器 cend()</span></span><br><span class="line">  <span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt;::const_iterator const_ite_end = c1.cend();</span><br><span class="line">  </span><br><span class="line">  <span class="comment">//槽迭代器</span></span><br><span class="line">  <span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt;::local_iterator local_iter_begin = c1.begin(<span class="number">1</span>);</span><br><span class="line">  <span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt;::local_iterator local_iter_end = c1.end(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
-
-<p>运用</p>
-<p>给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。</p>
-<p>示例 1:</p>
-<p>输入: s = “abcabcbb”<br>输出: 3<br>解释: 因为无重复字符的最长子串是 “abc”，所以其长度为 3。<br>示例 2:</p>
-<p>输入: s = “bbbbb”<br>输出: 1<br>解释: 因为无重复字符的最长子串是 “b”，所以其长度为 1。<br>示例 3:</p>
-<p>输入: s = “pwwkew”<br>输出: 3<br>解释: 因为无重复字符的最长子串是 “wke”，所以其长度为 3。<br>     请注意，你的答案必须是 子串 的长度，”pwke” 是一个子序列，不是子串。<br>示例 4:</p>
-<p>输入: s = “”<br>输出: 0</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">unordered_set</span>&lt;<span class="keyword">char</span>&gt; str;</span><br><span class="line">    <span class="keyword">int</span> n = s.length();</span><br><span class="line">    <span class="keyword">int</span> rk = <span class="number">-1</span>, ans = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">//右指针等于-1，枚举左指针位置</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;n; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span> ( i != <span class="number">0</span>)</span><br><span class="line">            <span class="comment">//左指针向右移动一格，移除一个元素</span></span><br><span class="line">            str.erase(s[i<span class="number">-1</span>]);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span> (rk+<span class="number">1</span> &lt; n &amp;&amp; !str.count(s[rk+<span class="number">1</span>]))&#123;</span><br><span class="line">                str.insert(s[rk+<span class="number">1</span>]);</span><br><span class="line">                rk++;</span><br><span class="line">            &#125;</span><br><span class="line">            ans = max(ans,rk-i+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;  </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/01/14/c-unodered-set/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -358,7 +384,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/01/在mysql-workbench中手动添加表/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -378,10 +404,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-01 14:32:40 / 修改时间：14:39:47" itemprop="dateCreated datePublished" datetime="2020-05-01T14:32:40+08:00">2020-05-01</time>
+              <time title="创建时间：2020-05-01 14:32:40" itemprop="dateCreated datePublished" datetime="2020-05-01T14:32:40+08:00">2020-05-01</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-26 01:04:45" itemprop="dateModified" datetime="2021-03-26T01:04:45+08:00">2021-03-26</time>
+              </span>
 
           
 
@@ -395,19 +427,15 @@
 
       
           <ol>
-<li>双击打开sql notifier</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20200501143452.png" alt></p>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20200501143631.png" alt></p>
-<ol start="3">
-<li>创建数据库</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20200501143726.png" alt></p>
-<ol start="4">
-<li>创建表</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20200501143932.png" alt></p>
-
+<li>双击打开sql notifier
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/05/01/在mysql-workbench中手动添加表/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -429,7 +457,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/01/mysql的基本应用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -449,10 +477,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-01 10:57:56 / 修改时间：20:09:51" itemprop="dateCreated datePublished" datetime="2020-05-01T10:57:56+08:00">2020-05-01</time>
+              <time title="创建时间：2020-05-01 10:57:56" itemprop="dateCreated datePublished" datetime="2020-05-01T10:57:56+08:00">2020-05-01</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-26 01:05:49" itemprop="dateModified" datetime="2021-03-26T01:05:49+08:00">2021-03-26</time>
+              </span>
 
           
 
@@ -471,32 +505,409 @@
 <li><p>显示数据库<br>命令： show databases</p>
 </li>
 <li><p>删除数据库<br>命令： drop database &lt;数据苦命&gt;</p>
-</li>
-<li><p>连接数据库<br>命令： use &lt;数据库名&gt;</p>
-</li>
-<li><p>创建数据表<br>命令： create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);</p>
-</li>
-<li><p>删除数据表<br>命令： drop table &lt;表名&gt;</p>
-</li>
-<li><p>表的插入<br>命令： insert into &lt;表名&gt; [( &lt;字段名1&gt;[,..&lt;字段名n &gt; ])] values ( 值1 )[, ( 值n )]</p>
-</li>
-<li><p>表的查询<br>命令： select &lt;字段1，字段2，…&gt; from &lt; 表名 &gt; where &lt; 表达式 &gt;</p>
-</li>
-<li><p>删除表中数据<br>命令： delete from 表名 where 表达式</p>
-</li>
-<li><p>修改表中数据<br>语法：update 表名 set 字段=新值,… where 条件</p>
-</li>
-<li><p>修改表名<br>命令：rename table 原表名 to 新表名;</p>
-</li>
-<li><p>一个建库和建表的实例<br>drop database if exists school; //如果存在SCHOOL则删除<br>create database school; //建立库SCHOOL<br>use school; //打开库SCHOOL<br>create table teacher //建立表TEACHER<br>(<br>id int(3) auto_increment not null primary key,<br>name char(10) not null,<br>address varchar(50) default ‘深圳’,<br>year date<br>); //建表结束</p>
-</li>
-</ol>
-<p>//以下为插入字段<br>insert into teacher values(”,’allen’,’大连一中’,’1976-10-10′);<br>insert into teacher values(”,’jack’,’大连二中’,’1975-12-23′);</p>
-<p>如果你在mysql提示符键入上面的命令也可以，但不方便调试。<br>1、你可以将以上命令原样写入一个文本文件中，假设为school.sql，然后复制到c:\下，并在DOS状态进入目录[url=file://\mysql\bin]\mysql\bin[/url]，然后键入以下命令：<br>    mysql -uroot -p密码 &lt; c:\school.sql<br>如果成功，空出一行无任何显示；如有错误，会有提示。（以上命令已经调试，你只要将//的注释去掉即可使用）。</p>
-<p>2、或者进入命令行后使用 mysql&gt; source c:\school.sql; 也可以将school.sql文件导入数据库中。</p>
-<p>参考：<a href="https://www.cnblogs.com/bluealine/p/7832219.htm" target="_blank" rel="noopener">https://www.cnblogs.com/bluealine/p/7832219.htm</a></p>
-<p>代码</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"><span class="comment">#插入</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">inser</span><span class="params">(name)</span>:</span></span><br><span class="line">    <span class="comment">#m123456为mysql数据库的密码，mystudents为数据库</span></span><br><span class="line">    db=pymysql.connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"m123456"</span>,<span class="string">"mystudent"</span>,charset=<span class="string">"utf8"</span>)</span><br><span class="line">    cursor=db.cursor()</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        cursor.execute(<span class="string">"insert into students values (%s,now())"</span>,name)</span><br><span class="line">        db.commit()</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        db.rollback()</span><br><span class="line">    db.close()</span><br><span class="line"><span class="comment">#删除</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">delete</span><span class="params">(name)</span>:</span></span><br><span class="line">    db=pymysql.connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"m123456"</span>,<span class="string">"mystudent"</span>,charset=<span class="string">"utf8"</span>)</span><br><span class="line">    cursor=db.cursor()</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        cursor.execute(<span class="string">"delete from students where Name=%s"</span>,name)</span><br><span class="line">        db.commit()</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        print(<span class="string">"false"</span>)</span><br><span class="line">        db.rollback()</span><br><span class="line">    db.close()</span><br><span class="line"><span class="comment">#查找所有</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">selectall</span><span class="params">()</span>:</span></span><br><span class="line">    db=pymysql.connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"m123456"</span>,<span class="string">"mystudent"</span>,charset=<span class="string">"utf8"</span>)</span><br><span class="line">    cursor=db.cursor()</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        cursor.execute(<span class="string">"select * from students"</span>)</span><br><span class="line">        results = cursor.fetchall()</span><br><span class="line">        print(results)</span><br><span class="line">        db.commit()</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        print(<span class="string">"false"</span>)</span><br><span class="line">        db.rollback()</span><br><span class="line">    db.close()</span><br><span class="line"><span class="comment">#查找部分</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">select</span><span class="params">(name)</span>:</span></span><br><span class="line">    db=pymysql.connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"m123456"</span>,<span class="string">"mystudent"</span>,charset=<span class="string">"utf8"</span>)</span><br><span class="line">    cursor=db.cursor()</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        cursor.execute(<span class="string">"select * from students where Name=%s"</span>,name)</span><br><span class="line">        results = cursor.fetchall()</span><br><span class="line">        print(results)</span><br><span class="line">        db.commit()</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        print(<span class="string">"false"</span>)</span><br><span class="line">        db.rollback()</span><br><span class="line">    db.close()</span><br><span class="line"></span><br><span class="line"><span class="comment">#更改</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">update1</span><span class="params">(name1,name2)</span>:</span></span><br><span class="line">    db=pymysql.connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"m123456"</span>,<span class="string">"mystudent"</span>,charset=<span class="string">"utf8"</span>)</span><br><span class="line">    cursor=db.cursor()</span><br><span class="line">    <span class="keyword">try</span>:     </span><br><span class="line">        <span class="comment">#cursor.execute("update students set Name='mo'  where Name='m'")</span></span><br><span class="line">        sql=<span class="string">"update students set Name=%s where Name=%s"</span></span><br><span class="line">        cursor.execute(sql,(name1,name2))</span><br><span class="line">        db.commit()</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        print(<span class="string">"false"</span>)</span><br><span class="line">        db.rollback()</span><br><span class="line">    db.close()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment">#name1='m'</span></span><br><span class="line">    <span class="comment">#name2='mo'</span></span><br><span class="line">    <span class="comment">#update1(name1,name2)</span></span><br><span class="line">    inser(<span class="string">"mo1"</span>)</span><br><span class="line">    selectall()</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/05/01/mysql的基本应用/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/28/最长公共子序列的长度/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/28/最长公共子序列的长度/" class="post-title-link" itemprop="url">最长公共子序列的长度</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-28 20:54:46" itemprop="dateCreated datePublished" datetime="2020-04-28T20:54:46+08:00">2020-04-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-25 23:50:11" itemprop="dateModified" datetime="2021-03-25T23:50:11+08:00">2021-03-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>代码：<br>递归公式：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> *a,<span class="keyword">int</span> len,<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> left=<span class="number">0</span>,right=len,mid=(left+right)/<span class="number">2</span>;</span><br><span class="line">	<span class="keyword">while</span>(left&lt;=right)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(x&gt;a[mid]) left=mid+<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">if</span>(x&lt;a[mid]) right=mid<span class="number">-1</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">return</span> mid;</span><br><span class="line">		mid=(left+right)/<span class="number">2</span>;</span><br><span class="line"> &#125; </span><br><span class="line"> <span class="keyword">return</span> left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i,j,n,a[<span class="number">100</span>],c[<span class="number">100</span>],len;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		c[i]=<span class="number">1000</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	len=<span class="number">1</span>;</span><br><span class="line">	c[<span class="number">0</span>]=a[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">       j=find(c,n,a[i]);<span class="comment">//二分查找 </span></span><br><span class="line">       c[j]=a[i];</span><br><span class="line">       <span class="keyword">if</span>(j&gt;len)</span><br><span class="line">       len=j+<span class="number">1</span>; </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;len;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/28/最长公共子序列的长度/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/25/快速排序/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/25/快速排序/" class="post-title-link" itemprop="url">快速排序</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-04-25 18:13:04 / 修改时间：20:49:58" itemprop="dateCreated datePublished" datetime="2020-04-25T18:13:04+08:00">2020-04-25</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/排序/" itemprop="url" rel="index"><span itemprop="name">排序</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li>快速排序算法思想<br><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20200425181404.png" alt></li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/25/快速排序/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/23/直接选择排序/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/23/直接选择排序/" class="post-title-link" itemprop="url">直接选择排序</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-23 12:15:08" itemprop="dateCreated datePublished" datetime="2020-04-23T12:15:08+08:00">2020-04-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-25 20:50:51" itemprop="dateModified" datetime="2020-04-25T20:50:51+08:00">2020-04-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/排序/" itemprop="url" rel="index"><span itemprop="name">排序</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20200423123405.png" alt></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/23/直接选择排序/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/23/直接插入排序/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/23/直接插入排序/" class="post-title-link" itemprop="url">直接插入排序</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-23 11:52:32" itemprop="dateCreated datePublished" datetime="2020-04-23T11:52:32+08:00">2020-04-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-25 20:50:39" itemprop="dateModified" datetime="2020-04-25T20:50:39+08:00">2020-04-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/排序/" itemprop="url" rel="index"><span itemprop="name">排序</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://cdn.jsdelivr.net/gh/upsilverfox/turoot/pic20200423123712.png" alt></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/23/直接插入排序/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/16/python—人脸识别/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/16/python—人脸识别/" class="post-title-link" itemprop="url">python—人脸识别</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-16 19:44:01" itemprop="dateCreated datePublished" datetime="2020-04-16T19:44:01+08:00">2020-04-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-01 19:58:47" itemprop="dateModified" datetime="2020-05-01T19:58:47+08:00">2020-05-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li>创建一个images文件夹在同一目录下存放照片作为数据库</li>
+<li>代码
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/16/python—人脸识别/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -514,7 +925,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -572,6 +983,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="银狐"
+      src="/images/2.jpg">
   <p class="site-author-name" itemprop="name">银狐</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -586,11 +999,13 @@
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
+          
         <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
+          
         <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
@@ -624,7 +1039,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">银狐</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
         
@@ -645,7 +1060,7 @@
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 <script src="/js/next-boot.js"></script>
 
 
@@ -672,3 +1087,6 @@
 
 </body>
 </html>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

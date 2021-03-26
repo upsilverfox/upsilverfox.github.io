@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -113,9 +113,24 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">17</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">16</span></a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">84</span></a>
 
   </li>
   </ul>
@@ -145,10 +160,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/27/c-练习四/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/19/c-cmach基本库/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -159,7 +174,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/10/27/c-练习四/" class="post-title-link" itemprop="url">c练习四（有关字符串的操作）</a>
+            <a href="/2019/09/19/c-cmach基本库/" class="post-title-link" itemprop="url">C++cmach基本库</a>
         </h2>
 
         <div class="post-meta">
@@ -169,14 +184,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-10-27 19:55:04" itemprop="dateCreated datePublished" datetime="2019-10-27T19:55:04+08:00">2019-10-27</time>
+              <time title="创建时间：2019-09-19 17:25:18" itemprop="dateCreated datePublished" datetime="2019-09-19T17:25:18+08:00">2019-09-19</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-25 18:28:25" itemprop="dateModified" datetime="2020-04-25T18:28:25+08:00">2020-04-25</time>
+                <time title="修改时间：2020-04-25 18:29:47" itemprop="dateModified" datetime="2020-04-25T18:29:47+08:00">2020-04-25</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -199,17 +214,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="1-项目一"><a href="#1-项目一" class="headerlink" title="1. 项目一"></a>1. 项目一</h4><p><strong><em>问题</em></strong></p>
-<ul>
-<li>描述<br>判断一个由a-z这26个字符组成的字符串中哪个字符出现的次数最多 </li>
-<li>输入<br>第1行是测试数据的组数n，每组测试数据占1行，是一个由a-z这26个字符组成的字符串<br>每组测试数据之间有一个空行，每行数据不超过1000个字符且非空 </li>
-<li>输出<br>n行，每行输出对应一个输入。一行输出包括出现次数最多的字符和该字符出现的次数，中间是一个空格。<br>如果有多个字符出现的次数相同且最多，那么输出ascii码最小的那一个字符 </li>
-<li>样例输入<br>2<br>abbccc<br>adfadffasdf </li>
-<li>样例输出<br>c 3<br>f 4</li>
-</ul>
+          <h3 id="c-的标准库cmath常用函数"><a href="#c-的标准库cmath常用函数" class="headerlink" title="c++的标准库cmath常用函数"></a>c++的标准库cmath常用函数</h3><h4 id="1-求解绝对值"><a href="#1-求解绝对值" class="headerlink" title="1. 求解绝对值"></a>1. 求解绝对值</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">abs</span><span class="params">(<span class="keyword">int</span> i)</span></span>; <span class="comment">//返回整型参数i的绝对值 </span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">fabs</span><span class="params">(<span class="keyword">double</span> i)</span></span>;<span class="comment">//返回双精度参数i的绝对值 </span></span><br><span class="line"><span class="function"><span class="keyword">long</span> <span class="title">labs</span><span class="params">(<span class="keyword">long</span> n)</span></span>;<span class="comment">//返回长整型参数i的绝对值</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/10/27/c-练习四/#more" rel="contents">
+              <a class="btn" href="/2019/09/19/c-cmach基本库/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -233,10 +241,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/27/c-疑问代码/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/19/github代码上传/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -247,7 +255,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/10/27/c-疑问代码/" class="post-title-link" itemprop="url">对于递归求解N个元素的所有子集代码</a>
+            <a href="/2019/09/19/github代码上传/" class="post-title-link" itemprop="url">github代码上传</a>
         </h2>
 
         <div class="post-meta">
@@ -257,14 +265,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-10-27 19:33:09" itemprop="dateCreated datePublished" datetime="2019-10-27T19:33:09+08:00">2019-10-27</time>
+              <time title="创建时间：2019-09-19 13:50:59" itemprop="dateCreated datePublished" datetime="2019-09-19T13:50:59+08:00">2019-09-19</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-25 18:24:04" itemprop="dateModified" datetime="2020-04-25T18:24:04+08:00">2020-04-25</time>
+                <time title="修改时间：2019-09-24 19:29:15" itemprop="dateModified" datetime="2019-09-24T19:29:15+08:00">2019-09-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -272,7 +280,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+                  <a href="/categories/github/" itemprop="url" rel="index"><span itemprop="name">github</span></a>
                 </span>
             </span>
 
@@ -287,10 +295,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="双递归"><a href="#双递归" class="headerlink" title="双递归"></a>双递归</h3><p><strong><em>代码：</em></strong></p>
+          <h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h3><p>1）安装Git Bash<br>因为这个是国外的软件是被限制的，推荐挂个代理<br>本文推荐一个代理软件链接：<a href="https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA" target="_blank" rel="noopener">https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA</a><br>提取码：xfhn<br>目前本人正在使用的一个代理链接：<a href="https://www.52jying.com/nobe" target="_blank" rel="noopener">https://www.52jying.com/nobe</a><br>如果崩了大家可以上网百度一个自己找一个代理网址。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/10/27/c-疑问代码/#more" rel="contents">
+              <a class="btn" href="/2019/09/19/github代码上传/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -314,10 +322,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/26/c-string基本库/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/18/hexo从零开始到搭建完整/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -328,7 +336,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/10/26/c-string基本库/" class="post-title-link" itemprop="url">c++string基本库</a>
+            <a href="/2019/09/18/hexo从零开始到搭建完整/" class="post-title-link" itemprop="url">hexo从零开始到搭建完整</a>
         </h2>
 
         <div class="post-meta">
@@ -338,14 +346,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-10-26 09:03:26" itemprop="dateCreated datePublished" datetime="2019-10-26T09:03:26+08:00">2019-10-26</time>
+              <time title="创建时间：2019-09-18 21:50:46" itemprop="dateCreated datePublished" datetime="2019-09-18T21:50:46+08:00">2019-09-18</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-25 18:29:57" itemprop="dateModified" datetime="2020-04-25T18:29:57+08:00">2020-04-25</time>
+                <time title="修改时间：2021-03-26 00:08:40" itemprop="dateModified" datetime="2021-03-26T00:08:40+08:00">2021-03-26</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -353,7 +361,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/c/" itemprop="url" rel="index"><span itemprop="name">c++</span></a>
+                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
                 </span>
             </span>
 
@@ -368,11 +376,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="1-strcmp函数"><a href="#1-strcmp函数" class="headerlink" title="1. strcmp函数"></a>1. strcmp函数</h3><p>strcmp函数是string compare(字符串比较)的缩写，用于比较两个字符串并根据比较结果返回整数。基本形式为strcmp(str1,str2)，若str1=str2，则返回零；若<br>str1&lt;str2，则返回负数；若str1&gt;str2，则返回正数。</p>
-<h3 id="2-strlen函数"><a href="#2-strlen函数" class="headerlink" title="2. strlen函数"></a>2. strlen函数</h3><p>strlen所作的是一个计数器的工作，它从内存的某个位置（可以是字符串开头，中间某个位置，甚至是某个不确定的内存区域）开始扫描，直到碰到第一个字符串结束符’\0’为止，然后返回计数器值(长度不包含’\0’)。</p>
+          <h4 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h4><p>1）安装Git Bash<br>因为这个是国外的软件是被限制的，推荐挂个代理<br>本文推荐一个代理软件链接：<a href="https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA" target="_blank" rel="noopener">https://pan.baidu.com/s/1trPZKgaAxktM8Il9OpxwvA</a><br>提取码：xfhn<br>目前本人正在使用的一个代理链接：<a href="https://www.52jying.com/nobe" target="_blank" rel="noopener">https://www.52jying.com/nobe</a><br>如果崩了大家可以上网百度一个自己找一个代理网址。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/10/26/c-string基本库/#more" rel="contents">
+              <a class="btn" href="/2019/09/18/hexo从零开始到搭建完整/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -396,10 +403,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/18/python-进程和线程/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/18/刷机教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/2.jpg">
       <meta itemprop="name" content="银狐">
       <meta itemprop="description" content="">
     </span>
@@ -410,7 +417,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/10/18/python-进程和线程/" class="post-title-link" itemprop="url">python-进程和线程</a>
+            <a href="/2019/09/18/刷机教程/" class="post-title-link" itemprop="url">刷机教程</a>
         </h2>
 
         <div class="post-meta">
@@ -420,14 +427,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-10-18 15:33:07" itemprop="dateCreated datePublished" datetime="2019-10-18T15:33:07+08:00">2019-10-18</time>
+              <time title="创建时间：2019-09-18 18:14:00" itemprop="dateCreated datePublished" datetime="2019-09-18T18:14:00+08:00">2019-09-18</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-27 20:54:00" itemprop="dateModified" datetime="2019-10-27T20:54:00+08:00">2019-10-27</time>
+                <time title="修改时间：2019-09-25 17:49:55" itemprop="dateModified" datetime="2019-09-25T17:49:55+08:00">2019-09-25</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -435,7 +442,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                  <a href="/categories/刷机教程/" itemprop="url" rel="index"><span itemprop="name">刷机教程</span></a>
                 </span>
             </span>
 
@@ -450,100 +457,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="1-进程和线程的解释说明"><a href="#1-进程和线程的解释说明" class="headerlink" title="1. 进程和线程的解释说明"></a>1. 进程和线程的解释说明</h4><ul>
-<li><p>进程就是操作系统中执行的一个程序，操作系统以进程为单位分配存储空间，每个进程都有自己的地址空间、数据栈以及其他用于跟踪进程执行的辅助数据，操作系统管理所有进程的执行，为它们合理的分配资源。</p>
-</li>
-<li><p>一个进程还可以拥有多个并发的执行线索，简单的说就是拥有多个可以获得CPU调度的执行单元，这就是所谓的线程。由于线程在同一个进程下，它们可以共享相同的上下文，因此相对于进程而言，线程间的信息共享和通信更加容易。</p>
-</li>
-<li><p>当然多线程也并不是没有坏处，站在其他进程的角度，多线程的程序对其他程序并不友好，因为它占用了更多的CPU执行时间，导致其他程序无法获得足够的CPU执行时间；另一方面，站在开发者的角度，编写和调试多线程的程序都对开发者有较高的要求，对于初学者来说更加困难。</p>
-</li>
-</ul>
+          <h3 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h3><p> 电脑系统崩溃了，必须得安装系统，以下是本人归类装机的教程</p>
+<h3 id="2-准备工作"><a href="#2-准备工作" class="headerlink" title="2. 准备工作"></a>2. 准备工作</h3><p>  自带两个U盘，一个U盘来制作装机U盘，另一个U盘用来下载window10的镜像</p>
+<h3 id="3-下载制作U盘软件制作装机U盘"><a href="#3-下载制作U盘软件制作装机U盘" class="headerlink" title="3.下载制作U盘软件制作装机U盘"></a>3.下载制作U盘软件制作装机U盘</h3><p>这里使用的是PE工具箱。<br>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/10/18/python-进程和线程/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/16/c-练习三/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="银狐">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="welcome">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/16/c-练习三/" class="post-title-link" itemprop="url">C++练习三（poj练习）</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-10-16 15:45:54" itemprop="dateCreated datePublished" datetime="2019-10-16T15:45:54+08:00">2019-10-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-25 18:28:18" itemprop="dateModified" datetime="2020-04-25T18:28:18+08:00">2020-04-25</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/c/" itemprop="url" rel="index"><span itemprop="name">c++</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="1-poj-org的1003题"><a href="#1-poj-org的1003题" class="headerlink" title="1. poj.org的1003题"></a>1. poj.org的1003题</h4><p><strong><em>题目</em></strong></p>
-<ul>
-<li>Description<br>How far can you make a stack of cards overhang a table? If you have one card, you can create a maximum overhang of half a card length. (We’re assuming that the cards must be perpendicular to the table.) With two cards you can make the top card overhang the bottom one by half a card length, and the bottom one overhang the table by a third of a card length, for a total maximum overhang of 1/2 + 1/3 = 5/6 card lengths. In general you can make n cards overhang by 1/2 + 1/3 + 1/4 + … + 1/(n + 1) card lengths, where the top card overhangs the second by 1/2, the second overhangs tha third by 1/3, the third overhangs the fourth by 1/4, etc., and the bottom card overhangs the table by 1/(n + 1). This is illustrated in the figure below.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/10/16/c-练习三/#more" rel="contents">
+              <a class="btn" href="/2019/09/18/刷机教程/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -566,7 +485,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span>
   </nav>
 
 
@@ -624,6 +543,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="银狐"
+      src="/images/2.jpg">
   <p class="site-author-name" itemprop="name">银狐</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -638,11 +559,13 @@
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
+          
         <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
+          
         <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
@@ -676,7 +599,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">银狐</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
         
@@ -697,7 +620,7 @@
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 <script src="/js/next-boot.js"></script>
 
 
@@ -724,3 +647,6 @@
 
 </body>
 </html>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
