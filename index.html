@@ -130,7 +130,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">84</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">85</span></a>
 
   </li>
   </ul>
@@ -156,6 +156,78 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/03/26/算法练习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="银狐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="welcome">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/26/算法练习/" class="post-title-link" itemprop="url">算法练习</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-03-26 20:34:06" itemprop="dateCreated datePublished" datetime="2021-03-26T20:34:06+08:00">2021-03-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-27 00:13:19" itemprop="dateModified" datetime="2021-03-27T00:13:19+08:00">2021-03-27</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="创建结构体（有关有员函数和重载输入输出）"><a href="#创建结构体（有关有员函数和重载输入输出）" class="headerlink" title="创建结构体（有关有员函数和重载输入输出）"></a>创建结构体（有关有员函数和重载输入输出）</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">student</span>&#123;</span></span><br><span class="line">	<span class="keyword">private</span>:</span><br><span class="line">		<span class="keyword">int</span> age;</span><br><span class="line">		<span class="built_in">string</span> name;</span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">get_stu</span><span class="params">()</span></span>&#123;</span><br><span class="line">			<span class="built_in">cin</span> &gt;&gt; name &gt;&gt; age;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">out_stu</span><span class="params">()</span></span>&#123;</span><br><span class="line">			<span class="built_in">cout</span> &lt;&lt; name &lt;&lt; <span class="string">" "</span> &lt;&lt; age;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//定义友元函数 </span></span><br><span class="line">		<span class="function"><span class="keyword">friend</span> <span class="title">max_stu</span><span class="params">(student s1,student s2)</span></span>;</span><br><span class="line">&#125;; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">max_stu</span><span class="params">(student s1,student s2)</span></span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(s1.age &gt; s2.age) s1.out_stu();</span><br><span class="line">		<span class="keyword">else</span> s2.out_stu();	</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	student stu[<span class="number">2</span>];</span><br><span class="line">	stu[<span class="number">0</span>].get_stu();</span><br><span class="line">	stu[<span class="number">1</span>].get_stu();</span><br><span class="line">	<span class="comment">//使用友元函数 </span></span><br><span class="line">	max_stu(stu[<span class="number">0</span>],stu[<span class="number">1</span>]); </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/03/26/算法练习/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -191,7 +263,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-26 00:54:31" itemprop="dateModified" datetime="2021-03-26T00:54:31+08:00">2021-03-26</time>
+                <time title="修改时间：2021-03-26 23:20:59" itemprop="dateModified" datetime="2021-03-26T23:20:59+08:00">2021-03-26</time>
               </span>
 
           
@@ -205,7 +277,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1、-c-创建结构体（有关有员函数和重载输入输出）"><a href="#1、-c-创建结构体（有关有员函数和重载输入输出）" class="headerlink" title="1、 c++创建结构体（有关有员函数和重载输入输出）"></a>1、 c++创建结构体（有关有员函数和重载输入输出）</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">student</span>&#123;</span></span><br><span class="line">	<span class="keyword">private</span>:</span><br><span class="line">		<span class="keyword">int</span> age;</span><br><span class="line">		<span class="built_in">string</span> name;</span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">get_stu</span><span class="params">()</span></span>&#123;</span><br><span class="line">			<span class="built_in">cin</span> &gt;&gt; name &gt;&gt; age;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">out_stu</span><span class="params">()</span></span>&#123;</span><br><span class="line">			<span class="built_in">cout</span> &lt;&lt; name &lt;&lt; <span class="string">" "</span> &lt;&lt; age;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//定义友元函数 </span></span><br><span class="line">		<span class="function"><span class="keyword">friend</span> <span class="title">max_stu</span><span class="params">(student s1,student s2)</span></span>;</span><br><span class="line">&#125;; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">max_stu</span><span class="params">(student s1,student s2)</span></span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(s1.age &gt; s2.age) s1.out_stu();</span><br><span class="line">		<span class="keyword">else</span> s2.out_stu();	</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	student stu[<span class="number">2</span>];</span><br><span class="line">	stu[<span class="number">0</span>].get_stu();</span><br><span class="line">	stu[<span class="number">1</span>].get_stu();</span><br><span class="line">	<span class="comment">//使用友元函数 </span></span><br><span class="line">	max_stu(stu[<span class="number">0</span>],stu[<span class="number">1</span>]); </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <h1 id="c-基本知识"><a href="#c-基本知识" class="headerlink" title="c++基本知识"></a>c++基本知识</h1><h2 id="c-对c的增强主要表现在两个方面"><a href="#c-对c的增强主要表现在两个方面" class="headerlink" title="c++对c的增强主要表现在两个方面"></a>c++对c的增强主要表现在两个方面</h2><ul>
+<li>在原来面向过程的机制基础上，对c语言的功能做了不少补充。</li>
+<li>增加了面向对象的机制。<h2 id="c-的四大特性：抽象、封装、继承和多态"><a href="#c-的四大特性：抽象、封装、继承和多态" class="headerlink" title="c++的四大特性：抽象、封装、继承和多态"></a>c++的四大特性：抽象、封装、继承和多态</h2></li>
+<li>抽象的作用是表现同一类事物的本质。类是对象的抽象，对象是类的特例，或者说类的具体表现。</li>
+<li>封装主要表现在两个方面：<br>（1）将有关数据和操作代码封装在一个对象中形成一个基本单位，各个对象间相互独立，互不干扰。<br>（2）将对象的某些部分进行隐蔽，即隐蔽其内部细节，只留下部分接口，以便与外界联系，接收外界信息。</li>
+<li>继承：在一个已有类的基础上建立一个新的类，该新类获得已有类的已有特征。</li>
+<li>多态：对同一信息，不同对象会产生不同的响应。
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/03/25/面向对象/#more" rel="contents">
@@ -848,80 +926,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/16/python—人脸识别/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/2.jpg">
-      <meta itemprop="name" content="银狐">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="welcome">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/16/python—人脸识别/" class="post-title-link" itemprop="url">python—人脸识别</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-16 19:44:01" itemprop="dateCreated datePublished" datetime="2020-04-16T19:44:01+08:00">2020-04-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-01 19:58:47" itemprop="dateModified" datetime="2020-05-01T19:58:47+08:00">2020-05-01</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <ul>
-<li>创建一个images文件夹在同一目录下存放照片作为数据库</li>
-<li>代码
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/04/16/python—人脸识别/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -993,7 +997,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">84</span>
+          <span class="site-state-item-count">85</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
