@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="welcome">
 <meta property="og:description" content="c++基本知识c++对c的增强主要表现在两个方面 在原来面向过程的机制基础上，对c语言的功能做了不少补充。 增加了面向对象的机制。c++的四大特性：抽象、封装、继承和多态 抽象的作用是表现同一类事物的本质。类是对象的抽象，对象是类的特例，或者说类的具体表现。 封装主要表现在两个方面：（1）将有关数据和操作代码封装在一个对象中形成一个基本单位，各个对象间相互独立，互不干扰。（2）将对象的某些部分进行">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-03-26T15:20:59.594Z">
+<meta property="og:updated_time" content="2021-03-28T08:57:58.199Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面向对象">
 <meta name="twitter:description" content="c++基本知识c++对c的增强主要表现在两个方面 在原来面向过程的机制基础上，对c语言的功能做了不少补充。 增加了面向对象的机制。c++的四大特性：抽象、封装、继承和多态 抽象的作用是表现同一类事物的本质。类是对象的抽象，对象是类的特例，或者说类的具体表现。 封装主要表现在两个方面：（1）将有关数据和操作代码封装在一个对象中形成一个基本单位，各个对象间相互独立，互不干扰。（2）将对象的某些部分进行">
@@ -125,7 +125,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">17</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">21</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -135,7 +135,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">85</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">89</span></a>
 
   </li>
   </ul>
@@ -196,7 +196,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-26 23:20:59" itemprop="dateModified" datetime="2021-03-26T23:20:59+08:00">2021-03-26</time>
+                <time title="修改时间：2021-03-28 16:57:58" itemprop="dateModified" datetime="2021-03-28T16:57:58+08:00">2021-03-28</time>
               </span>
 
           
@@ -228,7 +228,21 @@
 <li>不可重载的五个运算符：<br><strong>.   *   ::   sizeof   ?:</strong></li>
 <li>特性：<br>不能改变运算符的对象个数<br>不能改变运算符的优先级<br>不能改变运算符的结合性<br>不能有默认参数</li>
 <li>双目运算符：&lt; &gt; ==</li>
-<li>流提取和流插入运算符的重载<br><strong>friend istream &amp; operator &gt;&gt; (istream &amp;,自定义类名 &amp;)</strong><br><strong>friend ostream &amp; operator &lt;&lt; (ostream &amp;,自定义类名 &amp;)</strong><h2 id="不同类型数据的转换"><a href="#不同类型数据的转换" class="headerlink" title="不同类型数据的转换"></a>不同类型数据的转换</h2></li>
+<li>流提取和流插入运算符的重载<br><strong>friend istream &amp; operator &gt;&gt; (istream &amp;,自定义类名 &amp;)</strong><br><strong>friend ostream &amp; operator &lt;&lt; (ostream &amp;,自定义类名 &amp;)</strong><h2 id="不同类型数据的转换"><a href="#不同类型数据的转换" class="headerlink" title="不同类型数据的转换"></a>不同类型数据的转换</h2>形式：类型名（数据）、（类型名）数据<h2 id="继承和派生"><a href="#继承和派生" class="headerlink" title="继承和派生"></a>继承和派生</h2></li>
+<li>继承：在一个已有类的基础上建立一个新的类，该新类获得已有类的已有特征。</li>
+<li>从父类产生一个新的子类称为类的派生。</li>
+<li>声明派生类的一般形式：<br>class 派生类名：[继承方式] 基类名{派生类新增加成员}；</li>
+<li>继承方式：公有继承、私有继承、受保护继承。<br>公有继承：在派生类中不可访问基类的私有属性，其他不变。<br>私有继承：在派生类中不可访问基类的私有属性，其他变为私有属性。<br>受保护继承：在派生类中不可访问基类的私有属性，其他变为受保护属性。        </li>
+<li>派生类的构造函数<br>在执行派生类的构造函数时，调用基类的构造函数。</li>
+<li>派生类新增加的同名成员覆盖了基类的同名成员。</li>
+<li>虚基类：使得继承间接共同基类时只保留一份成员。<br>形式：class B:virtual public A{};<br>为了保证虚基类在派生类中之继承一次，应当在该基类的所以直接派生类中声明为虚基类，否则仍然会出现对基类的多次继承。</li>
+<li>基类和派生类之间的转换：<br>1) 派生类对象可以向基类对象赋值<br>2）派生类对象可以代替基类对象向基类对象的引用进行赋值或初始化。<h2 id="多态性"><a href="#多态性" class="headerlink" title="多态性"></a>多态性</h2></li>
+<li>多态：向不同对象发送同一信息，不同对象在接收时会产生不同的行为（即方法）。</li>
+<li>利用虚函数实现多态性<br>虚函数的作用是允许在派生类中定义与基类同名的函数，并且通过基类指针或引用来访问基类和派生类的同名函数。</li>
+<li>确定调用的具体对象的过程称为关联。</li>
+<li>虚析构函数：系统只会调用基类的析构函数，而不执行派生类的析构函数。</li>
+<li>纯虚函数：virtual 函数类型 函数名（参数列表）=0;</li>
+<li>凡是包含纯虚函数的类都是抽象类，<br>这种不用来定义对象而作为一种基本类型用作继承的类称为抽象类。</li>
 </ul>
 
     </div>
@@ -313,7 +327,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#c-基本知识"><span class="nav-number">1.</span> <span class="nav-text">c++基本知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#c-对c的增强主要表现在两个方面"><span class="nav-number">1.1.</span> <span class="nav-text">c++对c的增强主要表现在两个方面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#c-的四大特性：抽象、封装、继承和多态"><span class="nav-number">1.2.</span> <span class="nav-text">c++的四大特性：抽象、封装、继承和多态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类和对象的使用"><span class="nav-number">1.3.</span> <span class="nav-text">类和对象的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对运算符的重载"><span class="nav-number">1.4.</span> <span class="nav-text">对运算符的重载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不同类型数据的转换"><span class="nav-number">1.5.</span> <span class="nav-text">不同类型数据的转换</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#c-基本知识"><span class="nav-number">1.</span> <span class="nav-text">c++基本知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#c-对c的增强主要表现在两个方面"><span class="nav-number">1.1.</span> <span class="nav-text">c++对c的增强主要表现在两个方面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#c-的四大特性：抽象、封装、继承和多态"><span class="nav-number">1.2.</span> <span class="nav-text">c++的四大特性：抽象、封装、继承和多态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类和对象的使用"><span class="nav-number">1.3.</span> <span class="nav-text">类和对象的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对运算符的重载"><span class="nav-number">1.4.</span> <span class="nav-text">对运算符的重载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不同类型数据的转换"><span class="nav-number">1.5.</span> <span class="nav-text">不同类型数据的转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#继承和派生"><span class="nav-number">1.6.</span> <span class="nav-text">继承和派生</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多态性"><span class="nav-number">1.7.</span> <span class="nav-text">多态性</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -329,7 +343,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">85</span>
+          <span class="site-state-item-count">89</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -342,7 +356,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-count">21</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
